@@ -54,7 +54,7 @@ class Graph():
         output = "\nContenu du Graph :\n"
         for node in self.nodes:
             output += node.__str__()+"\n"
-        return output + "\nRAPPEL\n1 = piste verte\n2 = piste bleue\n3 = piste rouge\n4 = piste noire\n5 = remontée mecanique\n"
+        return output + "\n###### RAPPEL ######\n1 = piste verte\n2 = piste bleue\n3 = piste rouge\n4 = piste noire\n5 = remontée mecanique\n"
     
     def gps(self, depart:str, arrivée:str):
         id_depart = self.__get_id(depart)
