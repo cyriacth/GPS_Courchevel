@@ -59,7 +59,9 @@ class Graph():
     def gps(self, depart:str, arrivée:str):
         id_depart = self.__get_id(depart)
         id_arrivée = self.__get_id(arrivée)
-        pass
+        chemin = [] ###
+        self.matrice
+        return id_depart, id_arrivée
 
 
 ###########################
@@ -75,5 +77,7 @@ class Graph():
 n1 = Node("visage", [("cou",[(1,"doux"),(3,"galère")]),("oreille",[(5,"remontée du pic")])])
 n2 = Node("cou", [("visage",[(5,"tire fesses")])])
 n3 = Node("oreille", [("visage",[(1,"tartiflette")]), ("cou",[(4,"le chemin du fou")])])
-graph = Graph([n1, n2, n3])
-print(graph)
+n4 = Node("pied", [('cou',[(3,"combe de ouil")])])
+graph = Graph([n1, n2, n3, n4])
+path = graph.gps("visage", "pied")
+print(path)
