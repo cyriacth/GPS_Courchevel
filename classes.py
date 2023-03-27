@@ -11,10 +11,14 @@ class Piste():
 class Intersection():
     def __init__(self, id):
         self.id = id
-        self.pistes = {}
+        self.entree = {}
+        self.sortie = {}
 
-    def ajouter_piste(self, piste:Piste):
-        self.pistes[piste.id] = piste
+    def ajouter_entree(self, piste:Piste):
+        self.entree[piste.id] = piste
+    
+    def ajouter_sortie(self, piste:Piste):
+        self.sortie[piste.id] = piste
 
 
 class Graph():
@@ -28,7 +32,7 @@ class Graph():
         debut = self.intersections[debut_id]
         fin = self.intersections[fin_id]
         piste = Piste(id, distance, difficulte, debut, fin)
-        debut.ajouter_piste(piste)
-        fin.ajouter_piste(piste)
+        debut.ajouter_sortie(piste)
+        fin.ajouter_entree(piste)
 
 Courchevel = Graph()
