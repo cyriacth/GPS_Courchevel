@@ -82,7 +82,7 @@ class Piste():
         if self.couleur != "yellow":
             return f"'{self.noeud_depart.name}' vers '{self.noeud_fin.name}' < nom_piste : {self.name}, difficulté : {self.couleur}, longueur : {self.longueur} >\n"
         else:
-            return f"{self.noeud_depart.name} vers {self.noeud_fin.name} via remontée {self.name} de longueur {self.longueur}\n"
+            return f"'{self.noeud_depart.name}' vers '{self.noeud_fin.name}' via remontée {self.name} de longueur {self.longueur}\n"
 
 
 class App():
