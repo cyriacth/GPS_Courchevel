@@ -16,7 +16,7 @@ class Noeud():
     
     def show(self, canvas:tk.Canvas):
         self.canvas_id = []
-        self.canvas_id.append(canvas.create_oval(self.x-7, self.y-7, self.x+7, self.y+7, fill="#ff00ff"))
+        self.canvas_id.append(canvas.create_oval(self.x-7, self.y-7, self.x+7, self.y+7, fill="#ff00ff", activefill="yellow"))
         self.canvas_id.append(canvas.create_text(self.x, self.y-15, text=self.name, font=("Arial", 5)))
 
 class Piste():
@@ -66,6 +66,8 @@ class App():
         # Configurer le système de grille
         self.root.columnconfigure(0, weight=1)
         self.root.rowconfigure(0, weight=1)
+
+        # Binding de différentes actions utilisateur
         self.canvas.bind("<Button-1>", self.left_clic)
         self.root.bind("<d>", self.set_diff)
         self.canvas.bind("<Motion>", self.canvas_cursor)
@@ -79,6 +81,7 @@ class App():
         if (noeud:=self.overlapping(cursor,"left_clic")) != None:
             # Mode selection !
             print(f"Mode de selection en cours de developpement <{noeud.name}>")
+            self.canvas.itemconfigure(noeud.canvas_id[0], fill="orange")
             pass
         else: 
             # Mode création de noeuds !
@@ -93,14 +96,16 @@ class App():
                 self.noeuds[-1].show(self.canvas)
                 self.latest_action = "left_clic"
     
-    def overlapping(self, cursor:tuple, context:str):
-        if context == "left_clic":
+    def overlapping(self, xy:tuple, context:str):
+        """Regarde si le curseur"""
+        if context == "left_clic": # cas ou xy correspond au coordonnées du curseur utilisateur
             for noeud in self.noeuds:
-                if 0 <= abs(noeud.x-cursor[0]) <= 15 and 0 <= abs(noeud.y-cursor[1]) <= 15:
+                if 0 <= abs(noeud.x-xy[0]) <= 15 and 0 <= abs(noeud.y-xy[1]) <= 15:
                     return noeud
         return None
     
     def set_diff(self, _=None):
+        """Permet de définir la difficulté des pistes créées"""
         self.diff = askstring("Choisir difficulté","green/blue/red/black/yellow")
     
     def undo(self):
