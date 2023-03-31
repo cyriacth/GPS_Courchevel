@@ -3,6 +3,7 @@ from tkinter.filedialog import askopenfilename
 from tkinter.simpledialog import askstring
 from PIL import Image, ImageTk
 from math import atan2, cos, sin, sqrt
+from string import ascii_lowercase
 
 def draw_arrow(canvas:tk.Canvas, x1, y1, x2, y2, couleur:str):
         # Dessiner une flèche isocèle entre les points (x1, y1) et (x2, y2)
@@ -60,21 +61,31 @@ class Piste():
         self.noeud_depart = noeud_depart
         self.couleur = couleur
         self.noeud_fin = None
-        self.piste = [(self.noeud_depart.x, self.noeud_depart.y)]
+        self.coords = [(self.noeud_depart.x, self.noeud_depart.y)]
         self.canvas_id = []
         self.longueur = 0
     
     def add_chemin(self, xy:tuple, canvas:tk.Canvas):
-        self.piste.append(xy)
-        self.canvas_id.append(draw_arrow(canvas, self.piste[-2][0], self.piste[-2][1], self.piste[-1][0], self.piste[-1][1], self.couleur))
-        self.longueur += int(sqrt((self.piste[-1][0] - self.piste[-2][0]) ** 2 + (self.piste[-1][1] - self.piste[-2][1]) ** 2))
+        self.coords.append(xy)
+        self.canvas_id.append(draw_arrow(canvas, self.coords[-2][0], self.coords[-2][1], self.coords[-1][0], self.coords[-1][1], self.couleur))
+        self.longueur += int(sqrt((self.coords[-1][0] - self.coords[-2][0]) ** 2 + (self.coords[-1][1] - self.coords[-2][1]) ** 2))
+    
+    def rm_chemin(self, canvas:tk.Canvas):
+        id1, id2 = self.canvas_id[-1]
+        canvas.delete(id1)
+        canvas.delete(id2)
+        self.longueur -= int(sqrt((self.coords[-1][0] - self.coords[-2][0]) ** 2 + (self.coords[-1][1] - self.coords[-2][1]) ** 2))
+        del self.coords[-1]
+        del self.canvas_id[-1]
     
     def set_noeud_fin(self, noeud_fin:Noeud, canvas:tk.Canvas):
         self.noeud_fin = noeud_fin
-        self.piste.append((self.noeud_fin.x, self.noeud_fin.y))
-        self.canvas_id.append(draw_arrow(canvas, self.piste[-2][0], self.piste[-2][1], self.piste[-1][0], self.piste[-1][1], self.couleur))
-        self.longueur += int(sqrt((self.piste[-1][0] - self.piste[-2][0]) ** 2 + (self.piste[-1][1] - self.piste[-2][1]) ** 2))
+        self.coords.append((self.noeud_fin.x, self.noeud_fin.y))
+        self.canvas_id.append(draw_arrow(canvas, self.coords[-2][0], self.coords[-2][1], self.coords[-1][0], self.coords[-1][1], self.couleur))
+        self.longueur += int(sqrt((self.coords[-1][0] - self.coords[-2][0]) ** 2 + (self.coords[-1][1] - self.coords[-2][1]) ** 2))
         self.name = askstring(f"Piste n°{Piste.nombre_pistes}", "Choisir un nom")
+        if self.name == "":
+            self.name = str(Piste.nombre_pistes)
         self.noeud_depart.add_sortie(self)
         self.noeud_fin.add_entree(self)
     
@@ -90,7 +101,8 @@ class App():
         self.noeuds = []
         self.pistes = []
         self.diff = "green" # attribu automatique de la difficulté de la piste (en cours)
-        self.latest_action = None # utile dans le câdre de la fonction undo (en cours)
+        self.historique = [] # utile dans le câdre de la fonction undo (en cours)
+        # 0 = placement noeud; 1 = draw_piste; 2 = piste
         self.mode = "noeud" # mode d'édition par défaut
 
         self.root = root
@@ -100,11 +112,11 @@ class App():
         self.image = Image.open(self.image_path)
         self.photo = ImageTk.PhotoImage(self.image)
         self.canvas = tk.Canvas(self.root, width=1400, height=1080, bg="black", scrollregion=(0, 0, self.image.width, self.image.height))
-        self.canvas.grid(row=0, rowspan=4, column=0, sticky=tk.N+tk.S+tk.E+tk.W)
+        self.canvas.grid(row=0, column=0, sticky=tk.N+tk.S+tk.E+tk.W)
 
         # Ajouter des barres de défilement
         self.x_scrollbar = tk.Scrollbar(self.root, orient=tk.HORIZONTAL, command=self.canvas.xview, width= 40)
-        self.x_scrollbar.grid(row=5, column=0, sticky=tk.E+tk.W)
+        self.x_scrollbar.grid(row=1, column=0, sticky=tk.E+tk.W)
         self.y_scrollbar = tk.Scrollbar(self.root, orient=tk.VERTICAL, command=self.canvas.yview, width= 40)
         self.y_scrollbar.grid(row=0, column=1, sticky=tk.N+tk.S)
         self.canvas.config(xscrollcommand=self.x_scrollbar.set, yscrollcommand=self.y_scrollbar.set)
@@ -113,7 +125,7 @@ class App():
 
         self.button_undo = tk.Button(self.root, text="Undo", command=self.undo)
         self.button_undo.grid(row=0, column= 2)
-        self.button_undo = tk.Button(self.root, text="Data", command=self.data)
+        self.button_undo = tk.Button(self.root, text="Export", command=self.export_json)
         self.button_undo.grid(row=1, column= 2)
 
         # Ajouter l'image au canvas
@@ -127,15 +139,22 @@ class App():
         self.canvas.bind("<Button-1>", self.left_clic)
         self.root.bind("<d>", self.set_diff)
         self.canvas.bind("<Motion>", self.canvas_cursor)
+        self.canvas.bind("<Control-Button-1>", self.left_clic_ctrl)
     
+    def left_clic_ctrl(self, event):
+        cursor = event.x + self.image.width*self.x_scrollbar.get()[0], event.y + self.image.height*self.y_scrollbar.get()[0]
+        if self.mode == "noeud":
+            self.rm_noeud(self.overlapping(cursor), False)
+
     def canvas_cursor(self, event):
         self.root.config(cursor="crosshair")
     
     def left_clic(self, event):
         """left_clic a différent comportement selon la valeur que prend self.mode"""
         cursor = event.x + self.image.width*self.x_scrollbar.get()[0], event.y + self.image.height*self.y_scrollbar.get()[0]
+        noeud = self.overlapping(cursor)
         if self.mode == "noeud":
-            if (noeud:=self.overlapping(cursor,"left_clic")) != None:
+            if noeud != None:
                 # Mode piste !
                 print(f"Mode de selection en cours de developpement <{noeud.name}>")
                 self.canvas.itemconfigure(noeud.canvas_id[0], fill="orange")
@@ -147,23 +166,32 @@ class App():
                 nom_noeud = ""
                 while nom_noeud in noms or nom_noeud == "":
                     nom_noeud = askstring(f"Noeud nommé n°{Noeud.nombre_noeuds}", "Saisir nom")
+                    if nom_noeud == "":
+                        nom_noeud = str(Noeud.nombre_noeuds)
                 if nom_noeud != None:
                     self.noeuds.append(Noeud(cursor[0], cursor[1], nom_noeud))
                     self.noeuds[-1].show(self.canvas)
-                    self.latest_action = "left_clic"
+                    self.historique.append(0)
         elif self.mode == "piste":
-            if (noeud:=self.overlapping(cursor, "left_clic")) == None or noeud == self.pistes[-1].noeud_depart:
+            if noeud == None:
                 self.pistes[-1].add_chemin(cursor, self.canvas)
+                self.historique.append(1)
+            elif noeud == self.pistes[-1].noeud_depart:
+                self.rm_piste(self.pistes[-1], False)
+                while self.historique[-1] == 1:
+                    del self.historique[-1]
+                self.canvas.itemconfigure(noeud.canvas_id[0], fill="#ff00ff")
+                self.mode = "noeud"
             else:
                 self.pistes[-1].set_noeud_fin(noeud, self.canvas)
                 self.canvas.itemconfigure(self.pistes[-1].noeud_depart.canvas_id[0], fill="#ff00ff")
                 self.mode = "noeud"
-            
-                
+                self.historique.append(2)
 
-    def overlapping(self, xy:tuple, context:str):
-        """Regarde si le curseur"""
-        if context == "left_clic": # cas ou xy correspond au coordonnées du curseur utilisateur
+
+    def overlapping(self, xy:tuple):
+        """Regarde si le curseur est sur un noeud/..."""
+        if self.mode == "noeud" or self.mode == "piste": # cas ou xy correspond au coordonnées du curseur utilisateur
             for noeud in self.noeuds:
                 if 0 <= abs(noeud.x-xy[0]) <= 15 and 0 <= abs(noeud.y-xy[1]) <= 15:
                     return noeud
@@ -173,17 +201,54 @@ class App():
         """Permet de définir la difficulté des pistes créées"""
         self.diff = askstring("Choisir difficulté","green/blue/red/black/yellow")
     
+    def rm_piste(self, p:Piste|int, deleted:bool=True):
+        """Prend la piste ou son indice dans self.pistes
+        puis l'efface du canvas et de la data"""
+        if type(p) == int:
+            p = self.pistes[p]
+        for (id1, id2) in p.canvas_id:
+            self.canvas.delete(id1)
+            self.canvas.delete(id2)
+        if not deleted:
+            for i in range(len(self.pistes)):
+                if self.pistes[i] == p:
+                    del self.pistes[i]
+                    break
+
+    def rm_noeud(self, noeud:Noeud, deleted:bool=True):
+        if type(noeud) == Noeud:
+            offset = 0
+            for i in range(len(self.pistes)):
+                i -= offset
+                if noeud == self.pistes[i].noeud_depart or noeud == self.pistes[i].noeud_fin:
+                    self.rm_piste(self.pistes[i], False)
+                    offset += 1
+            for canvas_id in noeud.canvas_id:
+                self.canvas.delete(canvas_id)
+            if not deleted:
+                for i in range(len(self.noeuds)):
+                    if noeud == self.noeuds[i]:
+                        del self.noeuds[i]
+                        Noeud.nombre_noeuds -= 1
+                        break
+
     def undo(self):
         """Fonction de retour arrière (à approfondir)"""
-        if self.mode == "noeud":
-            if self.latest_action == "left_clic":
-                for canvas_id in self.noeuds.pop().canvas_id:
-                    self.canvas.delete(canvas_id)
-                Noeud.nombre_noeuds -= 1
-                if len(self.noeuds) == 0:
-                    self.latest_action = None
+        if len(self.historique) > 0:
+            action = self.historique.pop()
+            if self.mode == "noeud":
+                if action == 0: # undo noeud
+                    self.rm_noeud(self.noeuds.pop())
+                elif action == 2: # undo piste
+                    self.rm_piste(self.pistes.pop())
+                    while self.historique[-1] == 1:
+                        del self.historique[-1]
+            elif self.mode == "piste":
+                if action == 1: # undo draw piste
+                    self.pistes[-1].rm_chemin(self.canvas)
+                    
     
-    def data(self):
+    def export_json(self):
         """Affiche la data produite dans le terminal."""
         for noeud in self.noeuds:
             print("#"*30)
