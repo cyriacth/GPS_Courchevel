@@ -1,9 +1,9 @@
 import tkinter as tk
-from tkinter.filedialog import askopenfilename 
+from tkinter.filedialog import askopenfilename, asksaveasfilename
 from tkinter.simpledialog import askstring
 from PIL import Image, ImageTk
 from math import atan2, cos, sin, sqrt
-from string import ascii_lowercase
+import json
 
 def draw_arrow(canvas:tk.Canvas, x1, y1, x2, y2, couleur:str):
         # Dessiner une flèche isocèle entre les points (x1, y1) et (x2, y2)
@@ -32,6 +32,16 @@ class Noeud():
         self.name = name
         self.sorties = []
         self.entrees = []
+    
+    def descriptor(self):
+        """renvoi un dictionnaire decrivant le noeud"""
+        dico = {}
+        dico["name"] = self.name
+        dico["x"] = self.x
+        dico["y"] = self.y
+        dico["entrees"] = [piste.name for piste in self.entrees]
+        dico["sorties"] = [piste.name for piste in self.sorties]
+        return dico
     
     def add_sortie(self, piste:"Piste"):
         self.sorties.append(piste)
@@ -65,6 +75,16 @@ class Piste():
         self.canvas_id = []
         self.longueur = 0
     
+    def descriptor(self):
+        dico = {}
+        dico["name"] = self.name
+        dico["couleur"] = self.couleur
+        dico["noeud_depart"] = self.noeud_depart.name
+        dico["noeud_fin"] = self.noeud_fin.name
+        dico["longueur"] = self.longueur
+        dico["coords"] = self.coords
+        return dico
+    
     def add_chemin(self, xy:tuple, canvas:tk.Canvas):
         self.coords.append(xy)
         self.canvas_id.append(draw_arrow(canvas, self.coords[-2][0], self.coords[-2][1], self.coords[-1][0], self.coords[-1][1], self.couleur))
@@ -85,7 +105,7 @@ class Piste():
         self.longueur += int(sqrt((self.coords[-1][0] - self.coords[-2][0]) ** 2 + (self.coords[-1][1] - self.coords[-2][1]) ** 2))
         self.name = askstring(f"Piste n°{Piste.nombre_pistes}", "Choisir un nom")
         if self.name == "":
-            self.name = str(Piste.nombre_pistes)
+            self.name = "p"+str(Piste.nombre_pistes)
         self.noeud_depart.add_sortie(self)
         self.noeud_fin.add_entree(self)
     
@@ -167,7 +187,7 @@ class App():
                 while nom_noeud in noms or nom_noeud == "":
                     nom_noeud = askstring(f"Noeud nommé n°{Noeud.nombre_noeuds}", "Saisir nom")
                     if nom_noeud == "":
-                        nom_noeud = str(Noeud.nombre_noeuds)
+                        nom_noeud = "n"+str(Noeud.nombre_noeuds)
                 if nom_noeud != None:
                     self.noeuds.append(Noeud(cursor[0], cursor[1], nom_noeud))
                     self.noeuds[-1].show(self.canvas)
@@ -250,10 +270,14 @@ class App():
     
     def export_json(self):
         """Affiche la data produite dans le terminal."""
+        dico = {"noeuds":[],"pistes":[]}
         for noeud in self.noeuds:
-            print("#"*30)
-            print(noeud)
-        print("#"*30)
+            dico["noeuds"].append(noeud.descriptor())
+        for piste in self.pistes:
+            dico["pistes"].append(piste.descriptor())
+        dico["canvas"] = {"width":self.image.width,"height":self.image.height}
+        with open(asksaveasfilename(defaultextension=".json"), "w") as f:
+            json.dump(dico, f, indent=4)
 
 
 if __name__ == "__main__":
