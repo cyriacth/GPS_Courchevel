@@ -5,6 +5,7 @@ from PIL import Image, ImageTk
 from math import atan2, cos, sin, sqrt
 import json
 
+
 def draw_arrow(canvas:tk.Canvas, x1, y1, x2, y2, couleur:str):
         # Dessiner une flèche isocèle entre les points (x1, y1) et (x2, y2)
         arrow_width = 5
@@ -133,6 +134,15 @@ class App():
         self.photo = ImageTk.PhotoImage(self.image)
         self.canvas = tk.Canvas(self.root, width=1400, height=1080, bg="black", scrollregion=(0, 0, self.image.width, self.image.height))
         self.canvas.grid(row=0, column=0, sticky=tk.N+tk.S+tk.E+tk.W)
+        menu_bar = tk.Menu(self.root)
+        self.root.config(menu=menu_bar)
+        file_menu = tk.Menu(menu_bar, tearoff=0)
+        file_menu.add_command(label="Import JSON", command=self.import_json)
+        file_menu.add_command(label="Export JSON", command=self.export_json)
+        file_menu.add_separator()
+        file_menu.add_command(label="Quitter", command=self.root.quit)
+        menu_bar.add_cascade(label="Settings", menu=file_menu)
+        menu_bar.add_command(label="Undo", command=self.undo)
 
         # Ajouter des barres de défilement
         self.x_scrollbar = tk.Scrollbar(self.root, orient=tk.HORIZONTAL, command=self.canvas.xview, width= 40)
@@ -140,15 +150,6 @@ class App():
         self.y_scrollbar = tk.Scrollbar(self.root, orient=tk.VERTICAL, command=self.canvas.yview, width= 40)
         self.y_scrollbar.grid(row=0, column=1, sticky=tk.N+tk.S)
         self.canvas.config(xscrollcommand=self.x_scrollbar.set, yscrollcommand=self.y_scrollbar.set)
-        
-        # Ajouter des boutons (a transformer en menu déroulant)
-
-        self.button_undo = tk.Button(self.root, text="Undo", command=self.undo)
-        self.button_undo.grid(row=0, column= 2, sticky=tk.S)
-        self.button_export = tk.Button(self.root, text="Export", command=self.export_json)
-        self.button_export.grid(row=1, column= 2)
-        self.button_import = tk.Button(self.root, text="Import", command=self.import_json)
-        self.button_import.grid(row=2, column= 2, sticky=tk.N)
 
         # Ajouter l'image au canvas
         self.canvas.create_image(0, 0, anchor=tk.NW, image=self.photo)
@@ -175,7 +176,6 @@ class App():
         """left_clic a différent comportement selon la valeur que prend self.mode"""
         cursor = event.x + self.image.width*self.x_scrollbar.get()[0], event.y + self.image.height*self.y_scrollbar.get()[0]
         noeud = self.overlapping(cursor)
-        print(f"\nnombre_noeuds : {Noeud.nombre_noeuds}\nnombre_pistes : {Piste.nombre_pistes}")
         if self.mode == "noeud":
             if noeud != None:
                 # Mode piste !
@@ -274,7 +274,6 @@ class App():
     def update_canvas(self):
         self.canvas.delete("all")
         # pas fini
-
     
     def export_json(self):
         """exporte tout le contexte de la session courante"""
@@ -288,7 +287,7 @@ class App():
                            "nombre_noeuds":Noeud.nombre_noeuds,
                            "nombre_pistes":Piste.nombre_pistes}
         with open(asksaveasfilename(defaultextension=".json"), "w") as f:
-            json.dump(dico, f, indent=4)
+            json.dump(dico, f, indent=2)
     
     def import_json(self):
         """importe tout le contexte contenu dans un json fait
