@@ -24,7 +24,7 @@ def draw_arrow(canvas:tk.Canvas, x1, y1, x2, y2, couleur:str):
 
 
 class Noeud():
-    nombre_noeuds = 1
+    nombre_noeuds = 0
     def __init__(self, x, y, name:str):
         Noeud.nombre_noeuds += 1
         self.x = x
@@ -141,12 +141,14 @@ class App():
         self.y_scrollbar.grid(row=0, column=1, sticky=tk.N+tk.S)
         self.canvas.config(xscrollcommand=self.x_scrollbar.set, yscrollcommand=self.y_scrollbar.set)
         
-        # Ajouter des boutons
+        # Ajouter des boutons (a transformer en menu déroulant)
 
         self.button_undo = tk.Button(self.root, text="Undo", command=self.undo)
-        self.button_undo.grid(row=0, column= 2)
-        self.button_undo = tk.Button(self.root, text="Export", command=self.export_json)
-        self.button_undo.grid(row=1, column= 2)
+        self.button_undo.grid(row=0, column= 2, sticky=tk.S)
+        self.button_export = tk.Button(self.root, text="Export", command=self.export_json)
+        self.button_export.grid(row=1, column= 2)
+        self.button_import = tk.Button(self.root, text="Import", command=self.import_json)
+        self.button_import.grid(row=2, column= 2, sticky=tk.N)
 
         # Ajouter l'image au canvas
         self.canvas.create_image(0, 0, anchor=tk.NW, image=self.photo)
@@ -173,6 +175,7 @@ class App():
         """left_clic a différent comportement selon la valeur que prend self.mode"""
         cursor = event.x + self.image.width*self.x_scrollbar.get()[0], event.y + self.image.height*self.y_scrollbar.get()[0]
         noeud = self.overlapping(cursor)
+        print(f"\nnombre_noeuds : {Noeud.nombre_noeuds}\nnombre_pistes : {Piste.nombre_pistes}")
         if self.mode == "noeud":
             if noeud != None:
                 # Mode piste !
@@ -185,9 +188,9 @@ class App():
                 noms = [noeud.name for noeud in self.noeuds]
                 nom_noeud = ""
                 while nom_noeud in noms or nom_noeud == "":
-                    nom_noeud = askstring(f"Noeud nommé n°{Noeud.nombre_noeuds}", "Saisir nom")
+                    nom_noeud = askstring(f"Noeud nommé n°{Noeud.nombre_noeuds+1}", "Saisir nom")
                     if nom_noeud == "":
-                        nom_noeud = "n"+str(Noeud.nombre_noeuds)
+                        nom_noeud = "n"+str(Noeud.nombre_noeuds+1)
                 if nom_noeud != None:
                     self.noeuds.append(Noeud(cursor[0], cursor[1], nom_noeud))
                     self.noeuds[-1].show(self.canvas)
@@ -233,6 +236,7 @@ class App():
             for i in range(len(self.pistes)):
                 if self.pistes[i] == p:
                     del self.pistes[i]
+                    Piste.nombre_pistes -= 1
                     break
 
     def rm_noeud(self, noeud:Noeud, deleted:bool=True):
@@ -266,18 +270,31 @@ class App():
             elif self.mode == "piste":
                 if action == 1: # undo draw piste
                     self.pistes[-1].rm_chemin(self.canvas)
-                    
+
+    def update_canvas(self):
+        self.canvas.delete("all")
+        # pas fini
+
     
     def export_json(self):
-        """Affiche la data produite dans le terminal."""
+        """exporte tout le contexte de la session courante"""
         dico = {"noeuds":[],"pistes":[]}
         for noeud in self.noeuds:
             dico["noeuds"].append(noeud.descriptor())
         for piste in self.pistes:
             dico["pistes"].append(piste.descriptor())
-        dico["canvas"] = {"width":self.image.width,"height":self.image.height}
+        dico["details"] = {"canvas_width":self.image.width,
+                           "canvas_height":self.image.height,
+                           "nombre_noeuds":Noeud.nombre_noeuds,
+                           "nombre_pistes":Piste.nombre_pistes}
         with open(asksaveasfilename(defaultextension=".json"), "w") as f:
             json.dump(dico, f, indent=4)
+    
+    def import_json(self):
+        """importe tout le contexte contenu dans un json fait
+        par la fonction App.export_json()"""
+        self.update_canvas()
+
 
 
 if __name__ == "__main__":
