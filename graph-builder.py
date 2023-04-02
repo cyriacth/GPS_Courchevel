@@ -40,8 +40,6 @@ class Noeud():
         dico["name"] = self.name
         dico["x"] = self.x
         dico["y"] = self.y
-        dico["entrees"] = [piste.name for piste in self.entrees]
-        dico["sorties"] = [piste.name for piste in self.sorties]
         return dico
     
     def add_sortie(self, piste:"Piste"):
@@ -67,7 +65,7 @@ class Noeud():
 
 class Piste():
     nombre_pistes = 0
-    def __init__(self, noeud_depart:Noeud, couleur:str=None):
+    def __init__(self, noeud_depart:Noeud, couleur:str):
         Piste.nombre_pistes += 1
         self.noeud_depart = noeud_depart
         self.couleur = couleur
@@ -76,8 +74,12 @@ class Piste():
         self.canvas_id = []
         self.longueur = 0
     
-    def set_couleur(self, couleur:str):
-        self.couleur = couleur
+    def show(self, canvas:tk.Canvas):
+        self.canvas_id = []
+        for i in range(1, len(self.coords)):
+            x1, y1 = self.coords[i-1]
+            x2, y2 = self.coords[i]
+            self.canvas_id.append(draw_arrow(canvas, x1, y1, x2, y2, self.couleur))
     
     def descriptor(self):
         dico = {}
@@ -114,13 +116,6 @@ class Piste():
         self.noeud_depart.add_sortie(self)
         self.noeud_fin.add_entree(self)
     
-    def set_name(self, name:str):
-        self.name = name
-    
-    def from_dict():
-        #les noeuds doivent déjà être définis
-        pass
-    
     def __str__(self) -> str:
         if self.couleur != "yellow":
             return f"'{self.noeud_depart.name}' vers '{self.noeud_fin.name}' < nom_piste : {self.name}, difficulté : {self.couleur}, longueur : {self.longueur} >\n"
@@ -155,6 +150,7 @@ class App():
         file_menu.add_command(label="Quitter", command=self.root.quit)
         menu_bar.add_cascade(label="Settings", menu=file_menu)
         menu_bar.add_command(label="Undo", command=self.undo)
+        menu_bar.add_command(label="Print", command=self.print)
 
         # Ajouter des barres de défilement
         self.x_scrollbar = tk.Scrollbar(self.root, orient=tk.HORIZONTAL, command=self.canvas.xview, width= 40)
@@ -172,6 +168,10 @@ class App():
         self.root.bind("<d>", self.set_diff)
         self.canvas.bind("<Motion>", self.canvas_cursor)
         self.canvas.bind("<Control-Button-1>", self.left_clic_ctrl)
+    
+    def print(self):
+        for noeud in self.noeuds:
+            print(noeud)
     
     def left_clic_ctrl(self, event):
         cursor = event.x + self.image.width*self.x_scrollbar.get()[0], event.y + self.image.height*self.y_scrollbar.get()[0]
@@ -313,14 +313,22 @@ class App():
             dico = json.load(f)
         for noeud in dico["noeuds"]:
             self.noeuds.append(Noeud(noeud["x"], noeud["y"],noeud["name"]))
-            for nom_piste in noeud["sorties"]:
-                self.pistes.append(Piste(self.noeuds[-1]))
-                self.pistes[-1].set_name(nom_piste)
         for piste in dico["pistes"]:
-            pass
+            for noeud in self.noeuds:
+                if piste["noeud_depart"] == noeud.name:
+                    self.pistes.append(Piste(noeud, piste["couleur"]))
+                    self.pistes[-1].coords = piste["coords"]
+                    self.pistes[-1].longueur = piste["longueur"]
+                    self.pistes[-1].name = piste["name"]
+                    noeud.add_sortie(self.pistes[-1])
+                    for noeud in self.noeuds:
+                        if piste["noeud_fin"] == noeud.name:
+                            self.pistes[-1].noeud_fin = noeud
+                            self.pistes[-1].show(self.canvas)
+                            noeud.add_entree(self.pistes[-1])
+        for noeud in self.noeuds:
+            noeud.show(self.canvas)
             
-
-
 
 if __name__ == "__main__":
     root = tk.Tk()
