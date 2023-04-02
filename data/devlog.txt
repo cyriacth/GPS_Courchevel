@@ -1,0 +1,1 @@
+Il faut éviter la redondance dans le json. 

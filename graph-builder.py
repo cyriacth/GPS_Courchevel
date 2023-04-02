@@ -67,7 +67,7 @@ class Noeud():
 
 class Piste():
     nombre_pistes = 0
-    def __init__(self, noeud_depart:Noeud, couleur:str):
+    def __init__(self, noeud_depart:Noeud, couleur:str=None):
         Piste.nombre_pistes += 1
         self.noeud_depart = noeud_depart
         self.couleur = couleur
@@ -75,6 +75,9 @@ class Piste():
         self.coords = [(self.noeud_depart.x, self.noeud_depart.y)]
         self.canvas_id = []
         self.longueur = 0
+    
+    def set_couleur(self, couleur:str):
+        self.couleur = couleur
     
     def descriptor(self):
         dico = {}
@@ -99,16 +102,24 @@ class Piste():
         del self.coords[-1]
         del self.canvas_id[-1]
     
-    def set_noeud_fin(self, noeud_fin:Noeud, canvas:tk.Canvas):
+    def set_noeud_fin(self, noeud_fin:Noeud, canvas:tk.Canvas, nommage:bool=True):
         self.noeud_fin = noeud_fin
         self.coords.append((self.noeud_fin.x, self.noeud_fin.y))
         self.canvas_id.append(draw_arrow(canvas, self.coords[-2][0], self.coords[-2][1], self.coords[-1][0], self.coords[-1][1], self.couleur))
         self.longueur += int(sqrt((self.coords[-1][0] - self.coords[-2][0]) ** 2 + (self.coords[-1][1] - self.coords[-2][1]) ** 2))
-        self.name = askstring(f"Piste n°{Piste.nombre_pistes}", "Choisir un nom")
-        if self.name == "":
-            self.name = "p"+str(Piste.nombre_pistes)
+        if nommage:
+            self.name = askstring(f"Piste n°{Piste.nombre_pistes}", "Choisir un nom")
+            if self.name == "":
+                self.name = "p"+str(Piste.nombre_pistes)
         self.noeud_depart.add_sortie(self)
         self.noeud_fin.add_entree(self)
+    
+    def set_name(self, name:str):
+        self.name = name
+    
+    def from_dict():
+        #les noeuds doivent déjà être définis
+        pass
     
     def __str__(self) -> str:
         if self.couleur != "yellow":
@@ -134,6 +145,7 @@ class App():
         self.photo = ImageTk.PhotoImage(self.image)
         self.canvas = tk.Canvas(self.root, width=1400, height=1080, bg="black", scrollregion=(0, 0, self.image.width, self.image.height))
         self.canvas.grid(row=0, column=0, sticky=tk.N+tk.S+tk.E+tk.W)
+        self.canvas.create_image(0, 0, anchor=tk.NW, image=self.photo)
         menu_bar = tk.Menu(self.root)
         self.root.config(menu=menu_bar)
         file_menu = tk.Menu(menu_bar, tearoff=0)
@@ -150,9 +162,6 @@ class App():
         self.y_scrollbar = tk.Scrollbar(self.root, orient=tk.VERTICAL, command=self.canvas.yview, width= 40)
         self.y_scrollbar.grid(row=0, column=1, sticky=tk.N+tk.S)
         self.canvas.config(xscrollcommand=self.x_scrollbar.set, yscrollcommand=self.y_scrollbar.set)
-
-        # Ajouter l'image au canvas
-        self.canvas.create_image(0, 0, anchor=tk.NW, image=self.photo)
 
         # Configurer le système de grille
         self.root.columnconfigure(0, weight=1)
@@ -270,10 +279,6 @@ class App():
             elif self.mode == "piste":
                 if action == 1: # undo draw piste
                     self.pistes[-1].rm_chemin(self.canvas)
-
-    def update_canvas(self):
-        self.canvas.delete("all")
-        # pas fini
     
     def export_json(self):
         """exporte tout le contexte de la session courante"""
@@ -289,10 +294,31 @@ class App():
         with open(asksaveasfilename(defaultextension=".json"), "w") as f:
             json.dump(dico, f, indent=2)
     
+    def import_image(self):
+        self.image_path = askopenfilename(defaultextension=".jpg", filetypes=[("JPEG files", "*.jpg")])
+        self.image = Image.open(self.image_path)
+        self.photo = ImageTk.PhotoImage(self.image)
+        self.canvas.config(scrollregion=(0, 0, self.image.width, self.image.height))
+        self.canvas.create_image(0, 0, anchor=tk.NW, image=self.photo)
+
     def import_json(self):
         """importe tout le contexte contenu dans un json fait
         par la fonction App.export_json()"""
-        self.update_canvas()
+        self.canvas.delete("all")
+        self.import_image()
+        self.pistes = []
+        self.noeuds = []
+        self.historique = []
+        with open(askopenfilename(defaultextension=".json", filetypes=[("JSON files", "*.json")]),"r") as f:
+            dico = json.load(f)
+        for noeud in dico["noeuds"]:
+            self.noeuds.append(Noeud(noeud["x"], noeud["y"],noeud["name"]))
+            for nom_piste in noeud["sorties"]:
+                self.pistes.append(Piste(self.noeuds[-1]))
+                self.pistes[-1].set_name(nom_piste)
+        for piste in dico["pistes"]:
+            pass
+            
 
 
 
