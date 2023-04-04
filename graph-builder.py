@@ -26,11 +26,13 @@ def draw_arrow(canvas:tk.Canvas, x1, y1, x2, y2, couleur:str):
 
 class Noeud():
     nombre_noeuds = 0
+    names = []
     def __init__(self, x, y, name:str):
         Noeud.nombre_noeuds += 1
         self.x = x
         self.y = y
         self.name = name
+        Noeud.names.append(name)
         self.sorties = []
         self.entrees = []
     
@@ -65,6 +67,7 @@ class Noeud():
 
 class Piste():
     nombre_pistes = 0
+    names = []
     def __init__(self, noeud_depart:Noeud, couleur:str):
         Piste.nombre_pistes += 1
         self.noeud_depart = noeud_depart
@@ -73,7 +76,12 @@ class Piste():
         self.coords = [(self.noeud_depart.x, self.noeud_depart.y)]
         self.canvas_id = []
         self.longueur = 0
+        self.name = None
     
+    def set_name(self, name):
+        self.name = name
+        Piste.names.append(name)
+
     def show(self, canvas:tk.Canvas):
         self.canvas_id = []
         for i in range(1, len(self.coords)):
@@ -104,15 +112,11 @@ class Piste():
         del self.coords[-1]
         del self.canvas_id[-1]
     
-    def set_noeud_fin(self, noeud_fin:Noeud, canvas:tk.Canvas, nommage:bool=True):
+    def set_noeud_fin(self, noeud_fin:Noeud, canvas:tk.Canvas):
         self.noeud_fin = noeud_fin
         self.coords.append((self.noeud_fin.x, self.noeud_fin.y))
         self.canvas_id.append(draw_arrow(canvas, self.coords[-2][0], self.coords[-2][1], self.coords[-1][0], self.coords[-1][1], self.couleur))
         self.longueur += int(sqrt((self.coords[-1][0] - self.coords[-2][0]) ** 2 + (self.coords[-1][1] - self.coords[-2][1]) ** 2))
-        if nommage:
-            self.name = askstring(f"Piste n°{Piste.nombre_pistes}", "Choisir un nom")
-            if self.name == "":
-                self.name = "p"+str(Piste.nombre_pistes)
         self.noeud_depart.add_sortie(self)
         self.noeud_fin.add_entree(self)
     
@@ -194,9 +198,8 @@ class App():
                 self.pistes.append(Piste(noeud, self.diff))
             else: 
                 # Création de noeuds !
-                noms = [noeud.name for noeud in self.noeuds]
                 nom_noeud = ""
-                while nom_noeud in noms or nom_noeud == "":
+                while nom_noeud in Noeud.names or nom_noeud == "":
                     nom_noeud = askstring(f"Noeud nommé n°{Noeud.nombre_noeuds+1}", "Saisir nom")
                     if nom_noeud == "":
                         nom_noeud = "n"+str(Noeud.nombre_noeuds+1)
@@ -216,6 +219,12 @@ class App():
                 self.mode = "noeud"
             else:
                 self.pistes[-1].set_noeud_fin(noeud, self.canvas)
+                nom_piste = ""
+                while nom_piste in Piste.names or nom_piste == "":
+                    nom_piste = askstring(f"Piste n°{Piste.nombre_pistes}", "Saisir nom")
+                    if nom_piste == "":
+                        nom_piste = "p"+str(Piste.nombre_pistes)
+                self.pistes[-1].set_name(nom_piste)
                 self.canvas.itemconfigure(self.pistes[-1].noeud_depart.canvas_id[0], fill="#ff00ff")
                 self.mode = "noeud"
                 self.historique.append(2)
@@ -319,7 +328,7 @@ class App():
                     self.pistes.append(Piste(noeud, piste["couleur"]))
                     self.pistes[-1].coords = piste["coords"]
                     self.pistes[-1].longueur = piste["longueur"]
-                    self.pistes[-1].name = piste["name"]
+                    self.pistes[-1].set_name(piste["name"])
                     noeud.add_sortie(self.pistes[-1])
                     for noeud in self.noeuds:
                         if piste["noeud_fin"] == noeud.name:
