@@ -6,7 +6,7 @@ path_in = "./data/data11.json"
 path_out = "./data/data11_copy.json"
 
 
-OK = False
+WRITE = False
 with open(path_in, "r") as f:
         dico = json.load(f)
 
@@ -21,7 +21,6 @@ if REQUEST == 1: # pour partager aux autres
     for i in range(len(dico["noeuds"])):
         dico["noeuds"][i]["x"] /= 3600 # width
         dico["noeuds"][i]["y"] /= 3601 # height
-    OK = True
 
 
 elif REQUEST == 2: # lissage + dup (pistes)
@@ -46,9 +45,8 @@ elif REQUEST == 2: # lissage + dup (pistes)
                         pistes.append(nom)
             except:
                 pass
-    OK = True
 
 
-if OK:
+if WRITE:
     with open(path_out, "w") as f:
         json.dump(dico, f, indent=2)
