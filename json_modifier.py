@@ -6,7 +6,7 @@ path_in = "./data/data11.json"
 path_out = "./data/data11_copy.json"
 
 
-WRITE = False
+WRITE = True
 with open(path_in, "r") as f:
         dico = json.load(f)
 
@@ -37,7 +37,6 @@ elif REQUEST == 2: # lissage + dup (pistes)
                 if nommage_auto:
                     dico["pistes"][i]["name"] = "p"+str(i+1)
                 else:
-                    print(pistes)
                     if nom in pistes:
                         dico["pistes"][i]["name"] = input(f"nouveau nom pour '{nom}' : ")
                         changements += 1
