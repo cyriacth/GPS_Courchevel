@@ -1,9 +1,10 @@
 import json
+from tkinter.filedialog import askopenfilename, asksaveasfilename
 
 REQUEST = 2
 
-path_in = "./data/data11.json"
-path_out = "./data/data11_copy.json"
+path_in = askopenfilename(initialdir="./data/")
+path_out = asksaveasfilename(initialdir="./data/", defaultextension=".json")
 
 
 WRITE = True
