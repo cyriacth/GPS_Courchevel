@@ -669,6 +669,271 @@
       "name": "n135",
       "x": 1846.0,
       "y": 1740.0
+    },
+    {
+      "name": "n136",
+      "x": 1998.0,
+      "y": 1404.0
+    },
+    {
+      "name": "n137",
+      "x": 1910.0,
+      "y": 1443.0
+    },
+    {
+      "name": "n138",
+      "x": 1841.0,
+      "y": 1926.0
+    },
+    {
+      "name": "bas COSPILLOT",
+      "x": 1625.0,
+      "y": 1871.0
+    },
+    {
+      "name": "n139",
+      "x": 1853.0,
+      "y": 1974.0
+    },
+    {
+      "name": "n140",
+      "x": 1763.0,
+      "y": 2070.0
+    },
+    {
+      "name": "n141",
+      "x": 1843.0,
+      "y": 2134.0
+    },
+    {
+      "name": "bas GRANGETTES",
+      "x": 1702.0,
+      "y": 2141.0
+    },
+    {
+      "name": "bas TOVETS",
+      "x": 1907.0,
+      "y": 2158.0
+    },
+    {
+      "name": "bas PLANTREY",
+      "x": 2096.0,
+      "y": 1945.9999999999998
+    },
+    {
+      "name": "n145",
+      "x": 2095.0,
+      "y": 1368.0
+    },
+    {
+      "name": "haut COQS/CHENUS",
+      "x": 2195.0,
+      "y": 1341.0
+    },
+    {
+      "name": "haut LOZE/PLANTREY",
+      "x": 2245.0,
+      "y": 1456.0
+    },
+    {
+      "name": "haut BOUC BLANC",
+      "x": 2230.0,
+      "y": 1382.0
+    },
+    {
+      "name": "haut DOU DES LANCHES",
+      "x": 2562.0,
+      "y": 1246.0
+    },
+    {
+      "name": "haut FORET",
+      "x": 2529.0,
+      "y": 1630.0
+    },
+    {
+      "name": "bas DOU DES LANCHES",
+      "x": 2614.0,
+      "y": 1639.0
+    },
+    {
+      "name": "bas STADE/ BOUC BLANC/ haut GROS MURGER",
+      "x": 2863.0,
+      "y": 1812.0
+    },
+    {
+      "name": "bas LA TANIA/ GROS MURGER",
+      "x": 3255.0,
+      "y": 2100.0
+    },
+    {
+      "name": "bas FORET/ PRAZ",
+      "x": 2680.0,
+      "y": 2236.0
+    },
+    {
+      "name": "haut PRAZ",
+      "x": 2064.0,
+      "y": 1853.0
+    },
+    {
+      "name": "n156",
+      "x": 1924.0,
+      "y": 1615.0
+    },
+    {
+      "name": "n157",
+      "x": 2083.0,
+      "y": 1476.0
+    },
+    {
+      "name": "n158",
+      "x": 2107.0,
+      "y": 1438.0
+    },
+    {
+      "name": "n159",
+      "x": 2304.0,
+      "y": 1521.0
+    },
+    {
+      "name": "n160",
+      "x": 2358.0,
+      "y": 1520.0
+    },
+    {
+      "name": "n161",
+      "x": 2387.0,
+      "y": 1624.0
+    },
+    {
+      "name": "n162",
+      "x": 2366.0,
+      "y": 1627.0
+    },
+    {
+      "name": "n163",
+      "x": 2205.0,
+      "y": 2014.0
+    },
+    {
+      "name": "n164",
+      "x": 2271.0,
+      "y": 1946.0
+    },
+    {
+      "name": "n165",
+      "x": 1968.0,
+      "y": 2128.0
+    },
+    {
+      "name": "n166",
+      "x": 2300.0,
+      "y": 2134.0
+    },
+    {
+      "name": "n167",
+      "x": 2392.0,
+      "y": 2176.0
+    },
+    {
+      "name": "n168",
+      "x": 2452.0,
+      "y": 2243.0
+    },
+    {
+      "name": "n169",
+      "x": 2787.0,
+      "y": 2111.0
+    },
+    {
+      "name": "n170",
+      "x": 2691.0,
+      "y": 1837.0
+    },
+    {
+      "name": "n171",
+      "x": 2845.0,
+      "y": 1936.0
+    },
+    {
+      "name": "n172",
+      "x": 2954.0,
+      "y": 1811.0
+    },
+    {
+      "name": "n173",
+      "x": 3324.0,
+      "y": 2041.0
+    },
+    {
+      "name": "n174",
+      "x": 3334.0,
+      "y": 2087.0
+    },
+    {
+      "name": "haut LA TANIA",
+      "x": 2608.0,
+      "y": 1679.0
+    },
+    {
+      "name": "n176",
+      "x": 2010.0,
+      "y": 1615.0
+    },
+    {
+      "name": "n177",
+      "x": 2252.0,
+      "y": 1659.0
+    },
+    {
+      "name": "n178",
+      "x": 2199.0,
+      "y": 1773.0
+    },
+    {
+      "name": "n179",
+      "x": 2045.0,
+      "y": 1777.0
+    },
+    {
+      "name": "n180",
+      "x": 1968.0,
+      "y": 1810.0
+    },
+    {
+      "name": "n181",
+      "x": 2169.0,
+      "y": 1398.0
+    },
+    {
+      "name": "n182",
+      "x": 2487.0,
+      "y": 1555.0
+    },
+    {
+      "name": "n183",
+      "x": 2870.0,
+      "y": 1844.0
+    },
+    {
+      "name": "n184",
+      "x": 3065.0,
+      "y": 2028.0
+    },
+    {
+      "name": "haut EPICEA",
+      "x": 2290.0,
+      "y": 1741.0
+    },
+    {
+      "name": "bas EPICEA",
+      "x": 2145.0,
+      "y": 1955.0
+    },
+    {
+      "name": "n187",
+      "x": 2393.0,
+      "y": 1300.0
     }
   ],
   "pistes": [
@@ -5399,12 +5664,1707 @@
           1805.0
         ]
       ]
+    },
+    {
+      "name": "p229",
+      "couleur": "green",
+      "noeud_depart": "n136",
+      "noeud_fin": "n137",
+      "longueur": 119,
+      "coords": [
+        [
+          1998.0,
+          1404.0
+        ],
+        [
+          1957.0,
+          1388.0
+        ],
+        [
+          1929.0,
+          1403.0
+        ],
+        [
+          1910.0,
+          1443.0
+        ]
+      ]
+    },
+    {
+      "name": "p230",
+      "couleur": "blue",
+      "noeud_depart": "n136",
+      "noeud_fin": "n137",
+      "longueur": 96,
+      "coords": [
+        [
+          1998.0,
+          1404.0
+        ],
+        [
+          1910.0,
+          1443.0
+        ]
+      ]
+    },
+    {
+      "name": "p231",
+      "couleur": "green",
+      "noeud_depart": "n137",
+      "noeud_fin": "n123",
+      "longueur": 166,
+      "coords": [
+        [
+          1910.0,
+          1443.0
+        ],
+        [
+          1878.0,
+          1531.0
+        ],
+        [
+          1875.0,
+          1604.0
+        ]
+      ]
+    },
+    {
+      "name": "Cospillot 1",
+      "couleur": "blue",
+      "noeud_depart": "haut COSPILLOT",
+      "noeud_fin": "bas COSPILLOT",
+      "longueur": 298,
+      "coords": [
+        [
+          1447.0,
+          1635.0
+        ],
+        [
+          1460.0,
+          1682.0
+        ],
+        [
+          1591.0,
+          1823.0
+        ],
+        [
+          1625.0,
+          1871.0
+        ]
+      ]
+    },
+    {
+      "name": "p233",
+      "couleur": "blue",
+      "noeud_depart": "bas COSPILLOT",
+      "noeud_fin": "n138",
+      "longueur": 227,
+      "coords": [
+        [
+          1625.0,
+          1871.0
+        ],
+        [
+          1650.0,
+          1867.0
+        ],
+        [
+          1707.0,
+          1900.0
+        ],
+        [
+          1806.0,
+          1910.0
+        ],
+        [
+          1841.0,
+          1926.0
+        ]
+      ]
+    },
+    {
+      "name": "p234",
+      "couleur": "blue",
+      "noeud_depart": "bas VERDONS",
+      "noeud_fin": "n138",
+      "longueur": 110,
+      "coords": [
+        [
+          1854.0,
+          1833.0
+        ],
+        [
+          1877.0,
+          1878.0
+        ],
+        [
+          1841.0,
+          1926.0
+        ]
+      ]
+    },
+    {
+      "name": "p235",
+      "couleur": "blue",
+      "noeud_depart": "n138",
+      "noeud_fin": "n139",
+      "longueur": 49,
+      "coords": [
+        [
+          1841.0,
+          1926.0
+        ],
+        [
+          1853.0,
+          1974.0
+        ]
+      ]
+    },
+    {
+      "name": "p236",
+      "couleur": "blue",
+      "noeud_depart": "n138",
+      "noeud_fin": "n140",
+      "longueur": 349,
+      "coords": [
+        [
+          1841.0,
+          1926.0
+        ],
+        [
+          1806.0,
+          1972.0
+        ],
+        [
+          1649.0,
+          2000.0
+        ],
+        [
+          1763.0,
+          2070.0
+        ]
+      ]
+    },
+    {
+      "name": "Tovets",
+      "couleur": "blue",
+      "noeud_depart": "n139",
+      "noeud_fin": "n140",
+      "longueur": 131,
+      "coords": [
+        [
+          1853.0,
+          1974.0
+        ],
+        [
+          1763.0,
+          2070.0
+        ]
+      ]
+    },
+    {
+      "name": "Stade",
+      "couleur": "blue",
+      "noeud_depart": "n139",
+      "noeud_fin": "n141",
+      "longueur": 160,
+      "coords": [
+        [
+          1853.0,
+          1974.0
+        ],
+        [
+          1843.0,
+          2134.0
+        ]
+      ]
+    },
+    {
+      "name": "p239",
+      "couleur": "blue",
+      "noeud_depart": "n140",
+      "noeud_fin": "n141",
+      "longueur": 104,
+      "coords": [
+        [
+          1763.0,
+          2070.0
+        ],
+        [
+          1833.0,
+          2115.0
+        ],
+        [
+          1843.0,
+          2134.0
+        ]
+      ]
+    },
+    {
+      "name": "p240",
+      "couleur": "blue",
+      "noeud_depart": "n140",
+      "noeud_fin": "bas GRANGETTES",
+      "longueur": 122,
+      "coords": [
+        [
+          1763.0,
+          2070.0
+        ],
+        [
+          1735.0,
+          2099.0
+        ],
+        [
+          1683.0,
+          2132.0
+        ],
+        [
+          1702.0,
+          2141.0
+        ]
+      ]
+    },
+    {
+      "name": "p241",
+      "couleur": "blue",
+      "noeud_depart": "n141",
+      "noeud_fin": "bas TOVETS",
+      "longueur": 76,
+      "coords": [
+        [
+          1843.0,
+          2134.0
+        ],
+        [
+          1850.0,
+          2152.0
+        ],
+        [
+          1907.0,
+          2158.0
+        ]
+      ]
+    },
+    {
+      "name": "Grand couloir",
+      "couleur": "black",
+      "noeud_depart": "haut SAULIRE",
+      "noeud_fin": "n74",
+      "longueur": 359,
+      "coords": [
+        [
+          1784.0,
+          680.0
+        ],
+        [
+          1791.0,
+          703.0
+        ],
+        [
+          1799.0,
+          753.0
+        ],
+        [
+          1832.0,
+          765.0
+        ],
+        [
+          1879.0,
+          865.0
+        ],
+        [
+          1865.0,
+          924.0
+        ],
+        [
+          1840.0,
+          1001.0
+        ]
+      ]
+    },
+    {
+      "name": "MARMOTTES",
+      "couleur": "yellow",
+      "noeud_depart": "CREUX",
+      "noeud_fin": "VIZELLE",
+      "longueur": 725,
+      "coords": [
+        [
+          963.0,
+          1069.0
+        ],
+        [
+          1610.0,
+          740.0
+        ]
+      ]
+    },
+    {
+      "name": "SUISSES",
+      "couleur": "yellow",
+      "noeud_depart": "bas SUISSES",
+      "noeud_fin": "VIZELLE",
+      "longueur": 612,
+      "coords": [
+        [
+          1288.0,
+          1261.0
+        ],
+        [
+          1610.0,
+          740.0
+        ]
+      ]
+    },
+    {
+      "name": "SAULIRE",
+      "couleur": "yellow",
+      "noeud_depart": "n82",
+      "noeud_fin": "haut SAULIRE",
+      "longueur": 614,
+      "coords": [
+        [
+          1751.0,
+          1294.0
+        ],
+        [
+          1784.0,
+          680.0
+        ]
+      ]
+    },
+    {
+      "name": "VIZELLE",
+      "couleur": "yellow",
+      "noeud_depart": "n82",
+      "noeud_fin": "VIZELLE",
+      "longueur": 571,
+      "coords": [
+        [
+          1751.0,
+          1294.0
+        ],
+        [
+          1610.0,
+          740.0
+        ]
+      ]
+    },
+    {
+      "name": "BELLECOTE",
+      "couleur": "yellow",
+      "noeud_depart": "bas BELLECOTE",
+      "noeud_fin": "n102",
+      "longueur": 365,
+      "coords": [
+        [
+          1780.0,
+          1805.0
+        ],
+        [
+          1705.0,
+          1798.0
+        ],
+        [
+          1660.0,
+          1771.0
+        ],
+        [
+          1617.0,
+          1705.0
+        ],
+        [
+          1588.0,
+          1547.0
+        ]
+      ]
+    },
+    {
+      "name": "ROC MUGNIER",
+      "couleur": "yellow",
+      "noeud_depart": "PRAMERUEL",
+      "noeud_fin": "haut Roc mugnier",
+      "longueur": 535,
+      "coords": [
+        [
+          937.0,
+          1484.0
+        ],
+        [
+          436.0,
+          1295.0
+        ]
+      ]
+    },
+    {
+      "name": "AIGUILLE DU FRUIT",
+      "couleur": "yellow",
+      "noeud_depart": "PRAMERUEL",
+      "noeud_fin": "haut AIGUILLE DU FRUIT",
+      "longueur": 479,
+      "coords": [
+        [
+          937.0,
+          1484.0
+        ],
+        [
+          1150.0,
+          1054.0
+        ]
+      ]
+    },
+    {
+      "name": "CREUX NOIRS",
+      "couleur": "yellow",
+      "noeud_depart": "bas CREUX NOIRS",
+      "noeud_fin": "haut CREUX NOIRS",
+      "longueur": 538,
+      "coords": [
+        [
+          1128.0,
+          898.0
+        ],
+        [
+          1481.0,
+          492.0
+        ]
+      ]
+    },
+    {
+      "name": "ALTIPORT",
+      "couleur": "yellow",
+      "noeud_depart": "n97",
+      "noeud_fin": "n96",
+      "longueur": 199,
+      "coords": [
+        [
+          1401.0,
+          1624.0
+        ],
+        [
+          1371.0,
+          1427.0
+        ]
+      ]
+    },
+    {
+      "name": "PRALONG",
+      "couleur": "yellow",
+      "noeud_depart": "bas PRALONG",
+      "noeud_fin": "n87",
+      "longueur": 443,
+      "coords": [
+        [
+          1473.0,
+          1630.0
+        ],
+        [
+          1527.0,
+          1190.0
+        ]
+      ]
+    },
+    {
+      "name": "BIOLLAY",
+      "couleur": "yellow",
+      "noeud_depart": "bas COQS",
+      "noeud_fin": "n88",
+      "longueur": 509,
+      "coords": [
+        [
+          1783.0,
+          1630.0
+        ],
+        [
+          1744.0,
+          1611.0
+        ],
+        [
+          1650.0,
+          1487.0
+        ],
+        [
+          1552.0,
+          1191.0
+        ]
+      ]
+    },
+    {
+      "name": "COSPILLOT",
+      "couleur": "yellow",
+      "noeud_depart": "bas COSPILLOT",
+      "noeud_fin": "haut COSPILLOT",
+      "longueur": 312,
+      "coords": [
+        [
+          1625.0,
+          1871.0
+        ],
+        [
+          1565.0,
+          1831.0
+        ],
+        [
+          1438.0,
+          1667.0
+        ],
+        [
+          1447.0,
+          1635.0
+        ]
+      ]
+    },
+    {
+      "name": "p255",
+      "couleur": "green",
+      "noeud_depart": "n133",
+      "noeud_fin": "bas BELLECOTE",
+      "longueur": 28,
+      "coords": [
+        [
+          1758.0,
+          1787.0
+        ],
+        [
+          1780.0,
+          1805.0
+        ]
+      ]
+    },
+    {
+      "name": "p256",
+      "couleur": "green",
+      "noeud_depart": "bas BELLECOTE",
+      "noeud_fin": "bas JARDIN ALPIN",
+      "longueur": 51,
+      "coords": [
+        [
+          1780.0,
+          1805.0
+        ],
+        [
+          1823.0,
+          1834.0
+        ]
+      ]
+    },
+    {
+      "name": "p257",
+      "couleur": "blue",
+      "noeud_depart": "n127",
+      "noeud_fin": "bas LOZE",
+      "longueur": 74,
+      "coords": [
+        [
+          1896.0,
+          1734.0
+        ],
+        [
+          1870.0,
+          1784.0
+        ],
+        [
+          1875.0,
+          1802.0
+        ]
+      ]
+    },
+    {
+      "name": "p258",
+      "couleur": "blue",
+      "noeud_depart": "bas LOZE",
+      "noeud_fin": "bas VERDONS",
+      "longueur": 37,
+      "coords": [
+        [
+          1875.0,
+          1802.0
+        ],
+        [
+          1854.0,
+          1833.0
+        ]
+      ]
+    },
+    {
+      "name": "p259",
+      "couleur": "red",
+      "noeud_depart": "n161",
+      "noeud_fin": "n162",
+      "longueur": 21,
+      "coords": [
+        [
+          2387.0,
+          1624.0
+        ],
+        [
+          2366.0,
+          1627.0
+        ]
+      ]
+    },
+    {
+      "name": "TROIK",
+      "couleur": "yellow",
+      "noeud_depart": "n174",
+      "noeud_fin": "n173",
+      "longueur": 47,
+      "coords": [
+        [
+          3334.0,
+          2087.0
+        ],
+        [
+          3324.0,
+          2041.0
+        ]
+      ]
+    },
+    {
+      "name": "p261",
+      "couleur": "green",
+      "noeud_depart": "n173",
+      "noeud_fin": "n174",
+      "longueur": 47,
+      "coords": [
+        [
+          3324.0,
+          2041.0
+        ],
+        [
+          3334.0,
+          2087.0
+        ]
+      ]
+    },
+    {
+      "name": "p262",
+      "couleur": "green",
+      "noeud_depart": "n174",
+      "noeud_fin": "bas LA TANIA/ GROS MURGER",
+      "longueur": 80,
+      "coords": [
+        [
+          3334.0,
+          2087.0
+        ],
+        [
+          3255.0,
+          2100.0
+        ]
+      ]
+    },
+    {
+      "name": "GRANGETTES",
+      "couleur": "yellow",
+      "noeud_depart": "bas GRANGETTES",
+      "noeud_fin": "bas VERDONS",
+      "longueur": 343,
+      "coords": [
+        [
+          1702.0,
+          2141.0
+        ],
+        [
+          1854.0,
+          1833.0
+        ]
+      ]
+    },
+    {
+      "name": "TOVETS",
+      "couleur": "yellow",
+      "noeud_depart": "bas TOVETS",
+      "noeud_fin": "bas VERDONS",
+      "longueur": 329,
+      "coords": [
+        [
+          1907.0,
+          2158.0
+        ],
+        [
+          1854.0,
+          1833.0
+        ]
+      ]
+    },
+    {
+      "name": "PRAZ",
+      "couleur": "yellow",
+      "noeud_depart": "bas FORET/ PRAZ",
+      "noeud_fin": "haut PRAZ",
+      "longueur": 743,
+      "coords": [
+        [
+          2680.0,
+          2236.0
+        ],
+        [
+          2311.0,
+          1914.0
+        ],
+        [
+          2064.0,
+          1853.0
+        ]
+      ]
+    },
+    {
+      "name": "FORET",
+      "couleur": "yellow",
+      "noeud_depart": "bas FORET/ PRAZ",
+      "noeud_fin": "haut FORET",
+      "longueur": 624,
+      "coords": [
+        [
+          2680.0,
+          2236.0
+        ],
+        [
+          2529.0,
+          1630.0
+        ]
+      ]
+    },
+    {
+      "name": "BOUC BLANC",
+      "couleur": "yellow",
+      "noeud_depart": "bas STADE/ BOUC BLANC/ haut GROS MURGER",
+      "noeud_fin": "haut BOUC BLANC",
+      "longueur": 765,
+      "coords": [
+        [
+          2863.0,
+          1812.0
+        ],
+        [
+          2230.0,
+          1382.0
+        ]
+      ]
+    },
+    {
+      "name": "DOU DES LANCHES",
+      "couleur": "yellow",
+      "noeud_depart": "bas DOU DES LANCHES",
+      "noeud_fin": "haut DOU DES LANCHES",
+      "longueur": 396,
+      "coords": [
+        [
+          2614.0,
+          1639.0
+        ],
+        [
+          2562.0,
+          1246.0
+        ]
+      ]
+    },
+    {
+      "name": "LA TANIA",
+      "couleur": "yellow",
+      "noeud_depart": "bas LA TANIA/ GROS MURGER",
+      "noeud_fin": "haut LA TANIA",
+      "longueur": 771,
+      "coords": [
+        [
+          3255.0,
+          2100.0
+        ],
+        [
+          2608.0,
+          1679.0
+        ]
+      ]
+    },
+    {
+      "name": "GROS MURGER",
+      "couleur": "yellow",
+      "noeud_depart": "bas LA TANIA/ GROS MURGER",
+      "noeud_fin": "bas STADE/ BOUC BLANC/ haut GROS MURGER",
+      "longueur": 486,
+      "coords": [
+        [
+          3255.0,
+          2100.0
+        ],
+        [
+          2863.0,
+          1812.0
+        ]
+      ]
+    },
+    {
+      "name": "PLANTREY",
+      "couleur": "yellow",
+      "noeud_depart": "bas PLANTREY",
+      "noeud_fin": "haut LOZE/PLANTREY",
+      "longueur": 512,
+      "coords": [
+        [
+          2096.0,
+          1945.9999999999998
+        ],
+        [
+          2245.0,
+          1456.0
+        ]
+      ]
+    },
+    {
+      "name": "VERDONS",
+      "couleur": "yellow",
+      "noeud_depart": "bas VERDONS",
+      "noeud_fin": "n82",
+      "longueur": 548,
+      "coords": [
+        [
+          1854.0,
+          1833.0
+        ],
+        [
+          1815.0,
+          1557.0
+        ],
+        [
+          1751.0,
+          1294.0
+        ]
+      ]
+    },
+    {
+      "name": "SOURCES ROCHER DE L'OMBRE",
+      "couleur": "yellow",
+      "noeud_depart": "bas SOURCES / ROCHER DE L'OMBRE",
+      "noeud_fin": "haut SOURCES / ROCHER DE L'OMBRE",
+      "longueur": 285,
+      "coords": [
+        [
+          1787.0,
+          1539.0
+        ],
+        [
+          1862.0,
+          1264.0
+        ]
+      ]
+    },
+    {
+      "name": "COQS",
+      "couleur": "yellow",
+      "noeud_depart": "bas COQS",
+      "noeud_fin": "haut COQS/CHENUS",
+      "longueur": 503,
+      "coords": [
+        [
+          1783.0,
+          1630.0
+        ],
+        [
+          2195.0,
+          1341.0
+        ]
+      ]
+    },
+    {
+      "name": "p275",
+      "couleur": "green",
+      "noeud_depart": "n105",
+      "noeud_fin": "n102",
+      "longueur": 62,
+      "coords": [
+        [
+          1552.0,
+          1496.0
+        ],
+        [
+          1588.0,
+          1547.0
+        ]
+      ]
+    },
+    {
+      "name": "p276",
+      "couleur": "green",
+      "noeud_depart": "haut COQS/CHENUS",
+      "noeud_fin": "haut BOUC BLANC",
+      "longueur": 53,
+      "coords": [
+        [
+          2195.0,
+          1341.0
+        ],
+        [
+          2230.0,
+          1382.0
+        ]
+      ]
+    },
+    {
+      "name": "p277",
+      "couleur": "green",
+      "noeud_depart": "haut BOUC BLANC",
+      "noeud_fin": "haut LOZE/PLANTREY",
+      "longueur": 75,
+      "coords": [
+        [
+          2230.0,
+          1382.0
+        ],
+        [
+          2245.0,
+          1456.0
+        ]
+      ]
+    },
+    {
+      "name": "Loze est",
+      "couleur": "green",
+      "noeud_depart": "n158",
+      "noeud_fin": "n136",
+      "longueur": 114,
+      "coords": [
+        [
+          2107.0,
+          1438.0
+        ],
+        [
+          1998.0,
+          1404.0
+        ]
+      ]
+    },
+    {
+      "name": "p279",
+      "couleur": "green",
+      "noeud_depart": "haut LOZE/PLANTREY",
+      "noeud_fin": "n158",
+      "longueur": 139,
+      "coords": [
+        [
+          2245.0,
+          1456.0
+        ],
+        [
+          2107.0,
+          1438.0
+        ]
+      ]
+    },
+    {
+      "name": "p280",
+      "couleur": "green",
+      "noeud_depart": "haut EPICEA",
+      "noeud_fin": "n178",
+      "longueur": 102,
+      "coords": [
+        [
+          2290.0,
+          1741.0
+        ],
+        [
+          2232.0,
+          1743.0
+        ],
+        [
+          2199.0,
+          1773.0
+        ]
+      ]
+    },
+    {
+      "name": "p281",
+      "couleur": "green",
+      "noeud_depart": "n178",
+      "noeud_fin": "n179",
+      "longueur": 154,
+      "coords": [
+        [
+          2199.0,
+          1773.0
+        ],
+        [
+          2045.0,
+          1777.0
+        ]
+      ]
+    },
+    {
+      "name": "p282",
+      "couleur": "green",
+      "noeud_depart": "n179",
+      "noeud_fin": "n180",
+      "longueur": 83,
+      "coords": [
+        [
+          2045.0,
+          1777.0
+        ],
+        [
+          2019.0,
+          1788.0
+        ],
+        [
+          1968.0,
+          1810.0
+        ]
+      ]
+    },
+    {
+      "name": "p283",
+      "couleur": "green",
+      "noeud_depart": "n180",
+      "noeud_fin": "bas VERDONS",
+      "longueur": 118,
+      "coords": [
+        [
+          1968.0,
+          1810.0
+        ],
+        [
+          1908.0,
+          1810.0
+        ],
+        [
+          1854.0,
+          1833.0
+        ]
+      ]
+    },
+    {
+      "name": "Plantrey",
+      "couleur": "green",
+      "noeud_depart": "bas VERDONS",
+      "noeud_fin": "bas PLANTREY",
+      "longueur": 299,
+      "coords": [
+        [
+          1854.0,
+          1833.0
+        ],
+        [
+          1890.0,
+          1841.0
+        ],
+        [
+          1890.0,
+          1891.0
+        ],
+        [
+          1950.0,
+          1918.0
+        ],
+        [
+          2096.0,
+          1945.9999999999998
+        ]
+      ]
+    },
+    {
+      "name": "p285",
+      "couleur": "green",
+      "noeud_depart": "bas PLANTREY",
+      "noeud_fin": "bas EPICEA",
+      "longueur": 49,
+      "coords": [
+        [
+          2096.0,
+          1945.9999999999998
+        ],
+        [
+          2145.0,
+          1955.0
+        ]
+      ]
+    },
+    {
+      "name": "p286",
+      "couleur": "green",
+      "noeud_depart": "haut LA TANIA",
+      "noeud_fin": "n183",
+      "longueur": 435,
+      "coords": [
+        [
+          2608.0,
+          1679.0
+        ],
+        [
+          2663.0,
+          1687.0
+        ],
+        [
+          2679.0,
+          1749.0
+        ],
+        [
+          2696.0,
+          1750.0
+        ],
+        [
+          2711.0,
+          1807.0
+        ],
+        [
+          2775.0,
+          1809.0
+        ],
+        [
+          2759.0,
+          1849.0
+        ],
+        [
+          2792.0,
+          1854.0
+        ],
+        [
+          2819.0,
+          1846.0
+        ],
+        [
+          2823.0,
+          1867.0
+        ],
+        [
+          2870.0,
+          1844.0
+        ]
+      ]
+    },
+    {
+      "name": "p287",
+      "couleur": "green",
+      "noeud_depart": "bas STADE/ BOUC BLANC/ haut GROS MURGER",
+      "noeud_fin": "n183",
+      "longueur": 32,
+      "coords": [
+        [
+          2863.0,
+          1812.0
+        ],
+        [
+          2870.0,
+          1844.0
+        ]
+      ]
+    },
+    {
+      "name": "p288",
+      "couleur": "green",
+      "noeud_depart": "n183",
+      "noeud_fin": "n171",
+      "longueur": 113,
+      "coords": [
+        [
+          2870.0,
+          1844.0
+        ],
+        [
+          2864.0,
+          1894.0
+        ],
+        [
+          2831.0,
+          1916.0
+        ],
+        [
+          2845.0,
+          1936.0
+        ]
+      ]
+    },
+    {
+      "name": "p289",
+      "couleur": "green",
+      "noeud_depart": "n171",
+      "noeud_fin": "n184",
+      "longueur": 350,
+      "coords": [
+        [
+          2845.0,
+          1936.0
+        ],
+        [
+          2892.0,
+          1946.0
+        ],
+        [
+          2907.0,
+          1933.0
+        ],
+        [
+          2925.0,
+          1977.0
+        ],
+        [
+          2943.0,
+          1954.0
+        ],
+        [
+          2968.0,
+          2014.0
+        ],
+        [
+          3013.0,
+          1994.0
+        ],
+        [
+          3033.0,
+          2047.0
+        ],
+        [
+          3065.0,
+          2028.0
+        ]
+      ]
+    },
+    {
+      "name": "p290",
+      "couleur": "green",
+      "noeud_depart": "n183",
+      "noeud_fin": "bas STADE/ BOUC BLANC/ haut GROS MURGER",
+      "longueur": 32,
+      "coords": [
+        [
+          2870.0,
+          1844.0
+        ],
+        [
+          2863.0,
+          1812.0
+        ]
+      ]
+    },
+    {
+      "name": "Plan fontaine",
+      "couleur": "green",
+      "noeud_depart": "n184",
+      "noeud_fin": "n173",
+      "longueur": 290,
+      "coords": [
+        [
+          3065.0,
+          2028.0
+        ],
+        [
+          3091.0,
+          2014.0
+        ],
+        [
+          3094.0,
+          2037.0
+        ],
+        [
+          3212.0,
+          2007.0
+        ],
+        [
+          3324.0,
+          2041.0
+        ]
+      ]
+    },
+    {
+      "name": "Col de la loze",
+      "couleur": "blue",
+      "noeud_depart": "haut DOU DES LANCHES",
+      "noeud_fin": "n187",
+      "longueur": 177,
+      "coords": [
+        [
+          2562.0,
+          1246.0
+        ],
+        [
+          2393.0,
+          1300.0
+        ]
+      ]
+    },
+    {
+      "name": "p293",
+      "couleur": "blue",
+      "noeud_depart": "n187",
+      "noeud_fin": "haut COQS/CHENUS",
+      "longueur": 202,
+      "coords": [
+        [
+          2393.0,
+          1300.0
+        ],
+        [
+          2280.0,
+          1331.0
+        ],
+        [
+          2195.0,
+          1341.0
+        ]
+      ]
+    },
+    {
+      "name": "An\u00e9mones",
+      "couleur": "blue",
+      "noeud_depart": "haut COQS/CHENUS",
+      "noeud_fin": "n145",
+      "longueur": 111,
+      "coords": [
+        [
+          2195.0,
+          1341.0
+        ],
+        [
+          2144.0,
+          1333.0
+        ],
+        [
+          2095.0,
+          1368.0
+        ]
+      ]
+    },
+    {
+      "name": "p295",
+      "couleur": "blue",
+      "noeud_depart": "n145",
+      "noeud_fin": "n136",
+      "longueur": 103,
+      "coords": [
+        [
+          2095.0,
+          1368.0
+        ],
+        [
+          1998.0,
+          1404.0
+        ]
+      ]
+    },
+    {
+      "name": "p296",
+      "couleur": "blue",
+      "noeud_depart": "n145",
+      "noeud_fin": "n158",
+      "longueur": 71,
+      "coords": [
+        [
+          2095.0,
+          1368.0
+        ],
+        [
+          2107.0,
+          1438.0
+        ]
+      ]
+    },
+    {
+      "name": "p297",
+      "couleur": "blue",
+      "noeud_depart": "n158",
+      "noeud_fin": "n157",
+      "longueur": 44,
+      "coords": [
+        [
+          2107.0,
+          1438.0
+        ],
+        [
+          2083.0,
+          1476.0
+        ]
+      ]
+    },
+    {
+      "name": "p298",
+      "couleur": "blue",
+      "noeud_depart": "n157",
+      "noeud_fin": "n176",
+      "longueur": 179,
+      "coords": [
+        [
+          2083.0,
+          1476.0
+        ],
+        [
+          2091.0,
+          1534.0
+        ],
+        [
+          2039.0,
+          1611.0
+        ],
+        [
+          2010.0,
+          1615.0
+        ]
+      ]
+    },
+    {
+      "name": "p299",
+      "couleur": "blue",
+      "noeud_depart": "n176",
+      "noeud_fin": "n156",
+      "longueur": 86,
+      "coords": [
+        [
+          2010.0,
+          1615.0
+        ],
+        [
+          1924.0,
+          1615.0
+        ]
+      ]
+    },
+    {
+      "name": "p300",
+      "couleur": "blue",
+      "noeud_depart": "n156",
+      "noeud_fin": "n123",
+      "longueur": 50,
+      "coords": [
+        [
+          1924.0,
+          1615.0
+        ],
+        [
+          1875.0,
+          1604.0
+        ]
+      ]
+    },
+    {
+      "name": "p301",
+      "couleur": "blue",
+      "noeud_depart": "haut LOZE/PLANTREY",
+      "noeud_fin": "n159",
+      "longueur": 87,
+      "coords": [
+        [
+          2245.0,
+          1456.0
+        ],
+        [
+          2304.0,
+          1521.0
+        ]
+      ]
+    },
+    {
+      "name": "p302",
+      "couleur": "blue",
+      "noeud_depart": "n159",
+      "noeud_fin": "n161",
+      "longueur": 132,
+      "coords": [
+        [
+          2304.0,
+          1521.0
+        ],
+        [
+          2387.0,
+          1624.0
+        ]
+      ]
+    },
+    {
+      "name": "Arolles",
+      "couleur": "blue",
+      "noeud_depart": "n161",
+      "noeud_fin": "haut FORET",
+      "longueur": 150,
+      "coords": [
+        [
+          2387.0,
+          1624.0
+        ],
+        [
+          2494.0,
+          1650.0
+        ],
+        [
+          2529.0,
+          1630.0
+        ]
+      ]
+    },
+    {
+      "name": "p304",
+      "couleur": "blue",
+      "noeud_depart": "haut FORET",
+      "noeud_fin": "haut LA TANIA",
+      "longueur": 111,
+      "coords": [
+        [
+          2529.0,
+          1630.0
+        ],
+        [
+          2577.0,
+          1692.0
+        ],
+        [
+          2608.0,
+          1679.0
+        ]
+      ]
+    },
+    {
+      "name": "p305",
+      "couleur": "blue",
+      "noeud_depart": "haut LA TANIA",
+      "noeud_fin": "bas DOU DES LANCHES",
+      "longueur": 40,
+      "coords": [
+        [
+          2608.0,
+          1679.0
+        ],
+        [
+          2614.0,
+          1639.0
+        ]
+      ]
+    },
+    {
+      "name": "p306",
+      "couleur": "blue",
+      "noeud_depart": "bas DOU DES LANCHES",
+      "noeud_fin": "haut LA TANIA",
+      "longueur": 40,
+      "coords": [
+        [
+          2614.0,
+          1639.0
+        ],
+        [
+          2608.0,
+          1679.0
+        ]
+      ]
+    },
+    {
+      "name": "p307",
+      "couleur": "blue",
+      "noeud_depart": "bas DOU DES LANCHES",
+      "noeud_fin": "bas STADE/ BOUC BLANC/ haut GROS MURGER",
+      "longueur": 310,
+      "coords": [
+        [
+          2614.0,
+          1639.0
+        ],
+        [
+          2737.0,
+          1693.0
+        ],
+        [
+          2812.0,
+          1738.0
+        ],
+        [
+          2863.0,
+          1812.0
+        ]
+      ]
+    },
+    {
+      "name": "p308",
+      "couleur": "blue",
+      "noeud_depart": "bas STADE/ BOUC BLANC/ haut GROS MURGER",
+      "noeud_fin": "n172",
+      "longueur": 91,
+      "coords": [
+        [
+          2863.0,
+          1812.0
+        ],
+        [
+          2954.0,
+          1811.0
+        ]
+      ]
+    },
+    {
+      "name": "Foly\u00e8res",
+      "couleur": "blue",
+      "noeud_depart": "n172",
+      "noeud_fin": "n173",
+      "longueur": 451,
+      "coords": [
+        [
+          2954.0,
+          1811.0
+        ],
+        [
+          3073.0,
+          1843.0
+        ],
+        [
+          3252.0,
+          1952.0
+        ],
+        [
+          3271.0,
+          2004.0
+        ],
+        [
+          3324.0,
+          2041.0
+        ]
+      ]
+    },
+    {
+      "name": "Chabichou",
+      "couleur": "blue",
+      "noeud_depart": "n180",
+      "noeud_fin": "haut PRAZ",
+      "longueur": 110,
+      "coords": [
+        [
+          1968.0,
+          1810.0
+        ],
+        [
+          2004.0,
+          1845.0
+        ],
+        [
+          2064.0,
+          1853.0
+        ]
+      ]
+    },
+    {
+      "name": "p311",
+      "couleur": "blue",
+      "noeud_depart": "haut PRAZ",
+      "noeud_fin": "bas PLANTREY",
+      "longueur": 135,
+      "coords": [
+        [
+          2064.0,
+          1853.0
+        ],
+        [
+          2099.0,
+          1850.0
+        ],
+        [
+          2081.0,
+          1906.0
+        ],
+        [
+          2096.0,
+          1945.9999999999998
+        ]
+      ]
     }
   ],
   "details": {
     "canvas_width": 3601,
     "canvas_height": 3000,
-    "nombre_noeuds": 134,
-    "nombre_pistes": 228
+    "nombre_noeuds": 187,
+    "nombre_pistes": 311
   }
 }
