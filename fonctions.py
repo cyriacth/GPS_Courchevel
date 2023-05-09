@@ -2,7 +2,7 @@
 import json
 import heapq
 
-def dijkstra(graphe, start, end, couleur):
+def dijkstra(graphe, start, end, niveau):
     # Initialisation des structures de données
     distances = {node['name']: float('inf') for node in graphe['noeuds']}
     distances[start] = 0
@@ -21,9 +21,34 @@ def dijkstra(graphe, start, end, couleur):
         visited.add(current_node)
 
         # Mise à jour des distances pour chaque voisin du noeud courant
-        for edge in get_neighbors(graphe, current_node, couleur):
+        for edge in get_neighbors(graphe, current_node):
             neighbor = edge['noeud_fin']
-            distance = current_distance + edge['longueur']
+            poids = edge['longueur']
+            couleur = edge['couleur']
+
+            if niveau == "débutant":
+                if couleur == "blue":
+                    distance = current_distance + poids*1.5
+                elif couleur == "red":
+                    distance = current_distance + poids*2
+                elif couleur == "black":
+                    distance = current_distance + poids*4
+                else:
+                    distance = current_distance + edge['longueur']
+                
+            elif niveau == "moyen":
+                if couleur == "red":
+                    distance = current_distance + poids*1.5
+                elif couleur == "black":
+                    distance = current_distance + poids*2
+                else:
+                    distance = current_distance + edge['longueur']
+
+            else:
+                distance = current_distance + edge['longueur']
+
+
+
             if distance < distances[neighbor]:
                 distances[neighbor] = distance
                 predecessors[neighbor] = current_node
@@ -39,14 +64,11 @@ def dijkstra(graphe, start, end, couleur):
 
     return path, distances[end]
 
-def get_neighbors(graphe, node, couleur):
-    # Création d'un classement de couleur
-    color_rank = {'yellow': 0, 'green': 1, 'blue': 2, 'red': 3, 'black': 4}
-
+def get_neighbors(graphe, node):
     # Retourne la liste des voisins d'un noeud dans le graphe
     neighbors = []
     for edge in graphe['pistes']:
-        if edge['noeud_depart'] == node and color_rank[edge['couleur']] <= color_rank[couleur]:
+        if edge['noeud_depart'] == node:
             neighbors.append(edge)
     return neighbors
 
@@ -55,7 +77,7 @@ with open('data\courchevel.json') as f:
     graphe = json.load(f)
 
 # Exécution de l'algorithme de Dijkstra pour trouver le plus court chemin entre A et E
-path, distance = dijkstra(graphe, 'n30', 'bas Belv\u00e9d\u00e8re', 'green')
+path, distance = dijkstra(graphe, 'COL DE CHANROSSA', 'bas Roc merlet', 'débutant')
 
 # Affichage du résultat
 print('Le plus court chemin est :', ' -> '.join(path))
