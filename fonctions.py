@@ -41,7 +41,7 @@ def dijkstra(graphe, start, end, couleur):
 
 def get_neighbors(graphe, node, couleur):
     # Création d'un classement de couleur
-    color_rank = {'green': 1, 'blue': 2, 'red': 3, 'black': 4}
+    color_rank = {'yellow': 0, 'green': 1, 'blue': 2, 'red': 3, 'black': 4}
 
     # Retourne la liste des voisins d'un noeud dans le graphe
     neighbors = []
