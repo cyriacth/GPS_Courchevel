@@ -73,9 +73,9 @@ def get_neighbors(graph, node):
 with open('data\courchevel.json') as f:
     graph = json.load(f)
 
-# Exécution de l'algorithme de Dijkstra pour trouver le plus court chemin entre A et E
+# Exécution de l'algorithme de Dijkstra pour trouver le plus court chemin entre deux points
 path, distance = dijkstra(graph, 'bas GRANGETTES', 'COL DE CHANROSSA', 'débutant')
 
 # Affichage du résultat
-print('Le plus court chemin est :', ' -> '.join(path))
-print('La distance totale est :', distance)
+print('Le plus court chemin est :', ' -> '.join(path)) #path est une liste
+print('La distance totale est :', distance) #distance correspond à la distance totale entre les deux noeuds
