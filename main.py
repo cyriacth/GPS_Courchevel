@@ -85,7 +85,7 @@ class App():
         self.image = Image.open("./data/plan-pistes.jpg")
         self.photo = ImageTk.PhotoImage(self.image)
         self.canvas = tk.Canvas(self.root, width=1400, height=1080, bg="black", scrollregion=(0, 0, self.image.width, self.image.height))
-        self.canvas.grid(row=0, column=0, sticky=tk.N+tk.S+tk.E+tk.W)
+        self.canvas.grid(row=0, column=0, columnspan=2, sticky=tk.N+tk.S+tk.E+tk.W)
         self.canvas.create_image(0, 0, anchor=tk.NW, image=self.photo)
         menu_bar = tk.Menu(self.root)
         self.root.config(menu=menu_bar)
@@ -94,10 +94,18 @@ class App():
 
         # Ajouter des barres de défilement
         self.x_scrollbar = tk.Scrollbar(self.root, orient=tk.HORIZONTAL, command=self.canvas.xview, width= 40)
-        self.x_scrollbar.grid(row=1, column=0, sticky=tk.E+tk.W)
+        self.x_scrollbar.grid(row=1, column=0, columnspan=2, sticky=tk.E+tk.W)
         self.y_scrollbar = tk.Scrollbar(self.root, orient=tk.VERTICAL, command=self.canvas.yview, width= 40)
-        self.y_scrollbar.grid(row=0, column=1, sticky=tk.N+tk.S)
+        self.y_scrollbar.grid(row=0, rowspan=1, column=2, sticky=tk.N+tk.S)
         self.canvas.config(xscrollcommand=self.x_scrollbar.set, yscrollcommand=self.y_scrollbar.set)
+
+        # Ajouter des checkbox
+        self.state_check_box_pistes = tk.BooleanVar()
+        self.check_box_pistes = tk.Checkbutton(self.root, text="Pistes", variable=self.state_check_box_pistes, onvalue=1, offvalue=0, command= self.refresh)
+        self.check_box_pistes.grid(row=2, column=0, sticky=tk.E)
+        self.state_check_box_noeuds = tk.BooleanVar()
+        self.check_box_noeuds = tk.Checkbutton(self.root, text="Noeuds", variable=self.state_check_box_noeuds, onvalue=1, offvalue=0, command= self.refresh)
+        self.check_box_noeuds.grid(row=2, column=1, sticky=tk.W)
 
         # Configurer le système de grille
         self.root.columnconfigure(0, weight=1)
@@ -106,10 +114,23 @@ class App():
         # Binding de différentes actions utilisateur
         self.canvas.bind("<Button-1>", self.left_clic)
         self.canvas.bind("<Motion>", self.canvas_cursor)
+    
+
+    def refresh(self):
+        p, n = self.state_check_box_pistes.get(), self.state_check_box_noeuds.get()
+        print("pistes"*p+"noeuds"*n)
 
 
     def canvas_cursor(self, event):
         self.root.config(cursor="crosshair")
+
+    
+    def button_help(self):
+        pass
+
+
+    def button_readme(self):
+        pass
     
 
     def left_clic(self, event):
