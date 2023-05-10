@@ -12,7 +12,9 @@ def dijkstra(graph, start, end, niveau):
     all_temps[start] = 0
     visited = set()
     predecessors = {}
+    edge_names = {}
 
+    
     # Boucle principale de l'algorithme
     while len(visited) != len(graph['noeuds']):
         # Recherche du noeud non visité avec le plus petite temps
@@ -61,16 +63,19 @@ def dijkstra(graph, start, end, niveau):
             if temps < all_temps[neighbor]:
                 all_temps[neighbor] = temps
                 predecessors[neighbor] = min_node
+                edge_names[(min_node, neighbor)] = edge['name']
 
     # Construction du chemin le plus court en remontant les prédecesseurs
     path = []
+    edge_path = []
     node = end
     while node != start:
         path.insert(0, node)
+        edge_path.insert(0, edge_names[(predecessors[node], node)])
         node = predecessors[node]
     path.insert(0, start)
 
-    return path, all_temps[end]
+    return path, all_temps[end], edge_path
 
 
 def get_neighbors(graph, node):
@@ -228,8 +233,8 @@ class App():
             self.noeud_depart = noeud
         elif noeud and self.noeud_depart:
             self.canvas.itemconfigure(noeud.canvas_id[0], fill="orange")
-            chemin, temps = dijkstra(self.json, self.noeud_depart.name, noeud.name, self.niveau.get())
-            print(chemin, temps)
+            chemin, temps, pistes = dijkstra(self.json, self.noeud_depart.name, noeud.name, self.niveau.get())
+            print(chemin, temps, pistes)
             self.noeud_depart = None
 
 
