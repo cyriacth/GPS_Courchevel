@@ -769,29 +769,29 @@
 		"couleur": "green",
 		"noeud_depart": "bas Roc merlet",
 		"noeud_fin": "haut Pyramides",
-		"longueur": 34,
+		"longueur": 621.95,
 		"coords": [
 			[220.0, 927.0],
 			[186.0, 932.0]
 		],
-		"temps": 4.86
+		"temps": 88.85
 	}, {
 		"name": "p2",
 		"couleur": "green",
 		"noeud_depart": "haut Pyramides",
 		"noeud_fin": "bas Roc merlet",
-		"longueur": 34,
+		"longueur": 621.95,
 		"coords": [
 			[186.0, 932.0],
 			[220.0, 927.0]
 		],
-		"temps": 4.86
+		"temps": 88.85
 	}, {
 		"name": "Rochers",
 		"couleur": "red",
 		"noeud_depart": "n26",
 		"noeud_fin": "bas Chapelets",
-		"longueur": 287,
+		"longueur": 5250.0,
 		"coords": [
 			[452.0, 1506.0],
 			[438.0, 1545.0],
@@ -800,13 +800,13 @@
 			[349.0, 1667.0],
 			[339.0, 1757.0]
 		],
-		"temps": 41.0
+		"temps": 750.0
 	}, {
 		"name": "Bel air",
 		"couleur": "red",
 		"noeud_depart": "BEL AIR",
 		"noeud_fin": "bas Chapelets",
-		"longueur": 344,
+		"longueur": 6292.68,
 		"coords": [
 			[536.0, 1507.0],
 			[477.0, 1525.0],
@@ -814,83 +814,83 @@
 			[370.0, 1753.0],
 			[339.0, 1757.0]
 		],
-		"temps": 49.14
+		"temps": 898.95
 	}, {
 		"name": "p5",
 		"couleur": "red",
 		"noeud_depart": "n26",
 		"noeud_fin": "BEL AIR",
-		"longueur": 84,
+		"longueur": 1536.59,
 		"coords": [
 			[452.0, 1506.0],
 			[536.0, 1507.0]
 		],
-		"temps": 12.0
+		"temps": 219.51
 	}, {
 		"name": "p6",
 		"couleur": "red",
 		"noeud_depart": "n27",
 		"noeud_fin": "n26",
-		"longueur": 53,
+		"longueur": 969.51,
 		"coords": [
 			[459.0, 1453.0],
 			[452.0, 1506.0]
 		],
-		"temps": 7.57
+		"temps": 138.5
 	}, {
 		"name": "p7",
 		"couleur": "red",
 		"noeud_depart": "n27",
 		"noeud_fin": "BEL AIR",
-		"longueur": 94,
+		"longueur": 1719.51,
 		"coords": [
 			[459.0, 1453.0],
 			[536.0, 1507.0]
 		],
-		"temps": 13.43
+		"temps": 245.64
 	}, {
 		"name": "p8",
 		"couleur": "red",
 		"noeud_depart": "haut Chapelets",
 		"noeud_fin": "n23",
-		"longueur": 107,
+		"longueur": 1957.32,
 		"coords": [
 			[176.0, 1272.0],
 			[150.0, 1284.0],
 			[132.0, 1361.0]
 		],
-		"temps": 15.29
+		"temps": 279.62
 	}, {
 		"name": "Chapelets",
 		"couleur": "red",
 		"noeud_depart": "n23",
 		"noeud_fin": "n24",
-		"longueur": 283,
+		"longueur": 5176.83,
 		"coords": [
 			[132.0, 1361.0],
 			[79.0, 1469.0],
 			[213.0, 1562.0]
 		],
-		"temps": 40.43
+		"temps": 739.55
 	}, {
 		"name": "T\u00e9tras",
 		"couleur": "red",
 		"noeud_depart": "n23",
 		"noeud_fin": "n24",
-		"longueur": 234,
+		"longueur": 4280.49,
 		"coords": [
 			[132.0, 1361.0],
 			[201.0, 1420.0],
 			[219.0, 1490.0],
 			[213.0, 1562.0]
 		],
-		"temps": 33.43
+		"temps": 611.5
 	}, {
 		"name": "p11",
 		"couleur": "red",
 		"noeud_depart": "n24",
 		"noeud_fin": "bas Chapelets",
-		"longueur": 257,
+		"longueur": 4701.22,
 		"coords": [
 			[213.0, 1562.0],
 			[216.0, 1634.0],
@@ -898,58 +898,58 @@
 			[269.0, 1721.0],
 			[339.0, 1757.0]
 		],
-		"temps": 36.71
+		"temps": 671.6
 	}, {
 		"name": "p12",
 		"couleur": "green",
 		"noeud_depart": "haut Chapelets",
 		"noeud_fin": "haut SIGNAL",
-		"longueur": 44,
+		"longueur": 804.88,
 		"coords": [
 			[176.0, 1272.0],
 			[218.0, 1257.0]
 		],
-		"temps": 6.29
+		"temps": 114.98
 	}, {
 		"name": "p13",
 		"couleur": "green",
 		"noeud_depart": "haut SIGNAL",
 		"noeud_fin": "haut Chapelets",
-		"longueur": 44,
+		"longueur": 804.88,
 		"coords": [
 			[218.0, 1257.0],
 			[176.0, 1272.0]
 		],
-		"temps": 6.29
+		"temps": 114.98
 	}, {
 		"name": "CHAPELETS",
 		"couleur": "t\u00e9l\u00e9si\u00e8ges",
 		"noeud_depart": "bas Chapelets",
 		"noeud_fin": "haut Chapelets",
-		"longueur": 511,
+		"longueur": 9347.56,
 		"coords": [
 			[339.0, 1757.0],
 			[176.0, 1272.0]
 		],
-		"temps": 282.16999999999996
+		"temps": 4124.16
 	}, {
 		"name": "p15",
 		"couleur": "red",
 		"noeud_depart": "haut SIGNAL",
 		"noeud_fin": "n14",
-		"longueur": 59,
+		"longueur": 1079.27,
 		"coords": [
 			[218.0, 1257.0],
 			[213.0, 1278.0],
 			[250.0, 1287.0]
 		],
-		"temps": 8.43
+		"temps": 154.18
 	}, {
 		"name": "Rochers2",
 		"couleur": "red",
 		"noeud_depart": "n14",
 		"noeud_fin": "n27",
-		"longueur": 268,
+		"longueur": 4902.44,
 		"coords": [
 			[250.0, 1287.0],
 			[311.0, 1344.0],
@@ -957,24 +957,24 @@
 			[412.0, 1428.0],
 			[459.0, 1453.0]
 		],
-		"temps": 38.29
+		"temps": 700.35
 	}, {
 		"name": "p17",
 		"couleur": "blue",
 		"noeud_depart": "haut SIGNAL",
 		"noeud_fin": "n14",
-		"longueur": 43,
+		"longueur": 786.59,
 		"coords": [
 			[218.0, 1257.0],
 			[250.0, 1287.0]
 		],
-		"temps": 6.14
+		"temps": 112.37
 	}, {
 		"name": "Easy Way",
 		"couleur": "blue",
 		"noeud_depart": "haut SIGNAL",
 		"noeud_fin": "n12",
-		"longueur": 142,
+		"longueur": 2597.56,
 		"coords": [
 			[218.0, 1257.0],
 			[251.0, 1236.0],
@@ -982,162 +982,162 @@
 			[316.0, 1251.0],
 			[336.0, 1278.0]
 		],
-		"temps": 20.29
+		"temps": 371.08
 	}, {
 		"name": "p19",
 		"couleur": "blue",
 		"noeud_depart": "n14",
 		"noeud_fin": "n12",
-		"longueur": 86,
+		"longueur": 1573.17,
 		"coords": [
 			[250.0, 1287.0],
 			[336.0, 1278.0]
 		],
-		"temps": 12.29
+		"temps": 224.74
 	}, {
 		"name": "Grandes bosses",
 		"couleur": "blue",
 		"noeud_depart": "n12",
 		"noeud_fin": "haut Roc mugnier",
-		"longueur": 101,
+		"longueur": 1847.56,
 		"coords": [
 			[336.0, 1278.0],
 			[436.0, 1295.0]
 		],
-		"temps": 14.43
+		"temps": 263.94
 	}, {
 		"name": "p21",
 		"couleur": "blue",
 		"noeud_depart": "haut Roc mugnier",
 		"noeud_fin": "n22",
-		"longueur": 79,
+		"longueur": 1445.12,
 		"coords": [
 			[436.0, 1295.0],
 			[462.0, 1370.0]
 		],
-		"temps": 11.29
+		"temps": 206.45
 	}, {
 		"name": "p22",
 		"couleur": "blue",
 		"noeud_depart": "haut Roc mugnier",
 		"noeud_fin": "n18",
-		"longueur": 36,
+		"longueur": 658.54,
 		"coords": [
 			[436.0, 1295.0],
 			[461.0, 1321.0]
 		],
-		"temps": 5.14
+		"temps": 94.08
 	}, {
 		"name": "p23",
 		"couleur": "blue",
 		"noeud_depart": "n18",
 		"noeud_fin": "bas Pyramides",
-		"longueur": 33,
+		"longueur": 603.66,
 		"coords": [
 			[461.0, 1321.0],
 			[484.0, 1296.0]
 		],
-		"temps": 4.71
+		"temps": 86.24
 	}, {
 		"name": "Lac ariondaz",
 		"couleur": "blue",
 		"noeud_depart": "n10",
 		"noeud_fin": "haut Roc mugnier",
-		"longueur": 219,
+		"longueur": 4006.1,
 		"coords": [
 			[319.0, 1133.0],
 			[315.0, 1196.0],
 			[381.0, 1247.0],
 			[436.0, 1295.0]
 		],
-		"temps": 31.29
+		"temps": 572.3
 	}, {
 		"name": "Ariondaz",
 		"couleur": "blue",
 		"noeud_depart": "n14",
 		"noeud_fin": "n22",
-		"longueur": 227,
+		"longueur": 4152.44,
 		"coords": [
 			[250.0, 1287.0],
 			[462.0, 1370.0]
 		],
-		"temps": 32.43
+		"temps": 593.21
 	}, {
 		"name": "Ariondaz2",
 		"couleur": "blue",
 		"noeud_depart": "n22",
 		"noeud_fin": "BEL AIR",
-		"longueur": 160,
+		"longueur": 2926.83,
 		"coords": [
 			[462.0, 1370.0],
 			[487.0, 1399.0],
 			[490.0, 1440.0],
 			[536.0, 1507.0]
 		],
-		"temps": 22.86
+		"temps": 418.12
 	}, {
 		"name": "p27",
 		"couleur": "blue",
 		"noeud_depart": "n10",
 		"noeud_fin": "bas Pyramides",
-		"longueur": 237,
+		"longueur": 4335.37,
 		"coords": [
 			[319.0, 1133.0],
 			[355.0, 1206.0],
 			[408.0, 1246.0],
 			[484.0, 1296.0]
 		],
-		"temps": 33.86
+		"temps": 619.34
 	}, {
 		"name": "p28",
 		"couleur": "blue",
 		"noeud_depart": "n16",
 		"noeud_fin": "bas Pyramides",
-		"longueur": 37,
+		"longueur": 676.83,
 		"coords": [
 			[471.0, 1261.0],
 			[484.0, 1296.0]
 		],
-		"temps": 5.29
+		"temps": 96.69
 	}, {
 		"name": "p29",
 		"couleur": "blue",
 		"noeud_depart": "n18",
 		"noeud_fin": "n20",
-		"longueur": 44,
+		"longueur": 804.88,
 		"coords": [
 			[461.0, 1321.0],
 			[504.0, 1332.0]
 		],
-		"temps": 6.29
+		"temps": 114.98
 	}, {
 		"name": "p30",
 		"couleur": "blue",
 		"noeud_depart": "bas Pyramides",
 		"noeud_fin": "n20",
-		"longueur": 41,
+		"longueur": 750.0,
 		"coords": [
 			[484.0, 1296.0],
 			[504.0, 1332.0]
 		],
-		"temps": 5.86
+		"temps": 107.14
 	}, {
 		"name": "p31",
 		"couleur": "blue",
 		"noeud_depart": "n20",
 		"noeud_fin": "n21",
-		"longueur": 54,
+		"longueur": 987.8,
 		"coords": [
 			[504.0, 1332.0],
 			[549.0, 1362.0]
 		],
-		"temps": 7.71
+		"temps": 141.11
 	}, {
 		"name": "Plan mugnier",
 		"couleur": "blue",
 		"noeud_depart": "n9",
 		"noeud_fin": "n16",
-		"longueur": 278,
+		"longueur": 5085.37,
 		"coords": [
 			[346.0, 1061.0],
 			[457.0, 1152.0],
@@ -1145,119 +1145,119 @@
 			[501.0, 1226.0],
 			[471.0, 1261.0]
 		],
-		"temps": 39.71
+		"temps": 726.48
 	}, {
 		"name": "Mont russe",
 		"couleur": "blue",
 		"noeud_depart": "n9",
 		"noeud_fin": "n16",
-		"longueur": 237,
+		"longueur": 4335.37,
 		"coords": [
 			[346.0, 1061.0],
 			[377.0, 1137.0],
 			[436.0, 1213.0],
 			[471.0, 1261.0]
 		],
-		"temps": 33.86
+		"temps": 619.34
 	}, {
 		"name": "p34",
 		"couleur": "blue",
 		"noeud_depart": "n7",
 		"noeud_fin": "n9",
-		"longueur": 121,
+		"longueur": 2213.41,
 		"coords": [
 			[252.0, 984.0],
 			[346.0, 1061.0]
 		],
-		"temps": 17.29
+		"temps": 316.2
 	}, {
 		"name": "p35",
 		"couleur": "blue",
 		"noeud_depart": "n7",
 		"noeud_fin": "n8",
-		"longueur": 46,
+		"longueur": 841.46,
 		"coords": [
 			[252.0, 984.0],
 			[235.0, 1027.0]
 		],
-		"temps": 6.57
+		"temps": 120.21
 	}, {
 		"name": "Pyramide2",
 		"couleur": "blue",
 		"noeud_depart": "n8",
 		"noeud_fin": "n10",
-		"longueur": 134,
+		"longueur": 2451.22,
 		"coords": [
 			[235.0, 1027.0],
 			[273.0, 1082.0],
 			[319.0, 1133.0]
 		],
-		"temps": 19.14
+		"temps": 350.17
 	}, {
 		"name": "Pyramide",
 		"couleur": "blue",
 		"noeud_depart": "haut Pyramides",
 		"noeud_fin": "n8",
-		"longueur": 112,
+		"longueur": 2048.78,
 		"coords": [
 			[186.0, 932.0],
 			[182.0, 953.0],
 			[235.0, 1027.0]
 		],
-		"temps": 16.0
+		"temps": 292.68
 	}, {
 		"name": "Pyramide bis",
 		"couleur": "blue",
 		"noeud_depart": "haut Pyramides",
 		"noeud_fin": "n7",
-		"longueur": 86,
+		"longueur": 1573.17,
 		"coords": [
 			[186.0, 932.0],
 			[215.0, 943.0],
 			[252.0, 984.0]
 		],
-		"temps": 12.29
+		"temps": 224.74
 	}, {
 		"name": "Pyramide bis2",
 		"couleur": "blue",
 		"noeud_depart": "bas Roc merlet",
 		"noeud_fin": "n7",
-		"longueur": 70,
+		"longueur": 1280.49,
 		"coords": [
 			[220.0, 927.0],
 			[216.0, 944.0],
 			[252.0, 984.0]
 		],
-		"temps": 10.0
+		"temps": 182.93
 	}, {
 		"name": "p40",
 		"couleur": "red",
 		"noeud_depart": "n18",
 		"noeud_fin": "n19",
-		"longueur": 69,
+		"longueur": 1262.2,
 		"coords": [
 			[461.0, 1321.0],
 			[504.0, 1307.0],
 			[528.0, 1309.0]
 		],
-		"temps": 9.86
+		"temps": 180.31
 	}, {
 		"name": "p41",
 		"couleur": "red",
 		"noeud_depart": "bas Pyramides",
 		"noeud_fin": "n19",
-		"longueur": 45,
+		"longueur": 823.17,
 		"coords": [
 			[484.0, 1296.0],
 			[528.0, 1309.0]
 		],
-		"temps": 6.43
+		"temps": 117.6
 	}, {
 		"name": "Roc mugnier",
 		"couleur": "red",
 		"noeud_depart": "n19",
 		"noeud_fin": "PRAMERUEL",
-		"longueur": 459,
+		"longueur": 8396.34,
 		"coords": [
 			[528.0, 1309.0],
 			[600.0, 1315.0],
@@ -1268,36 +1268,36 @@
 			[885.0, 1478.0],
 			[937.0, 1484.0]
 		],
-		"temps": 65.57
+		"temps": 1199.48
 	}, {
 		"name": "Praline",
 		"couleur": "green",
 		"noeud_depart": "n30",
 		"noeud_fin": "bas Chapelets",
-		"longueur": 276,
+		"longueur": 5048.78,
 		"coords": [
 			[612.0, 1712.0],
 			[390.0, 1743.0],
 			[339.0, 1757.0]
 		],
-		"temps": 39.43
+		"temps": 721.25
 	}, {
 		"name": "p44",
 		"couleur": "green",
 		"noeud_depart": "n33",
 		"noeud_fin": "n29",
-		"longueur": 37,
+		"longueur": 676.83,
 		"coords": [
 			[733.0, 1859.0],
 			[696.0, 1866.0]
 		],
-		"temps": 5.29
+		"temps": 96.69
 	}, {
 		"name": "Roc merlet",
 		"couleur": "red",
 		"noeud_depart": "COL DE CHANROSSA",
 		"noeud_fin": "bas Roc merlet",
-		"longueur": 262,
+		"longueur": 4792.68,
 		"coords": [
 			[392.0, 764.0],
 			[374.0, 794.0],
@@ -1307,25 +1307,25 @@
 			[212.0, 908.0],
 			[220.0, 927.0]
 		],
-		"temps": 37.43
+		"temps": 684.67
 	}, {
 		"name": "p46",
 		"couleur": "red",
 		"noeud_depart": "COL DE CHANROSSA",
 		"noeud_fin": "n2",
-		"longueur": 118,
+		"longueur": 2158.54,
 		"coords": [
 			[392.0, 764.0],
 			[449.0, 788.0],
 			[506.0, 798.0]
 		],
-		"temps": 16.86
+		"temps": 308.36
 	}, {
 		"name": "Jean Pachod",
 		"couleur": "red",
 		"noeud_depart": "n2",
 		"noeud_fin": "CREUX",
-		"longueur": 541,
+		"longueur": 9896.34,
 		"coords": [
 			[506.0, 798.0],
 			[603.0, 876.0],
@@ -1334,13 +1334,13 @@
 			[807.0, 1012.0],
 			[963.0, 1069.0]
 		],
-		"temps": 77.29
+		"temps": 1413.76
 	}, {
 		"name": "chanrossa",
 		"couleur": "black",
 		"noeud_depart": "n2",
 		"noeud_fin": "CREUX",
-		"longueur": 567,
+		"longueur": 10371.95,
 		"coords": [
 			[506.0, 798.0],
 			[618.0, 818.0],
@@ -1352,69 +1352,69 @@
 			[962.0, 1044.0],
 			[963.0, 1069.0]
 		],
-		"temps": 81.0
+		"temps": 1481.71
 	}, {
 		"name": "CHANROSSA",
 		"couleur": "t\u00e9l\u00e9si\u00e8ges",
 		"noeud_depart": "CREUX",
 		"noeud_fin": "COL DE CHANROSSA",
-		"longueur": 647,
+		"longueur": 11835.37,
 		"coords": [
 			[963.0, 1069.0],
 			[392.0, 764.0]
 		],
-		"temps": 341.3
+		"temps": 5205.81
 	}, {
 		"name": "ROC MERLET",
 		"couleur": "t\u00e9l\u00e9si\u00e8ges",
 		"noeud_depart": "bas Roc merlet",
 		"noeud_fin": "COL DE CHANROSSA",
-		"longueur": 236,
+		"longueur": 4317.07,
 		"coords": [
 			[220.0, 927.0],
 			[392.0, 764.0]
 		],
-		"temps": 162.61
+		"temps": 1936.99
 	}, {
 		"name": "PYRAMIDES",
 		"couleur": "t\u00e9l\u00e9skis",
 		"noeud_depart": "bas Pyramides",
 		"noeud_fin": "haut Pyramides",
-		"longueur": 470,
+		"longueur": 8597.56,
 		"coords": [
 			[484.0, 1296.0],
 			[186.0, 932.0]
 		],
-		"temps": 183.68
+		"temps": 2322.52
 	}, {
 		"name": "GRANGES",
 		"couleur": "t\u00e9l\u00e9skis",
 		"noeud_depart": "n29",
 		"noeud_fin": "haut Granges",
-		"longueur": 286,
+		"longueur": 5231.71,
 		"coords": [
 			[696.0, 1866.0],
 			[639.0, 1768.0],
 			[672.0, 1598.0]
 		],
-		"temps": 135.26
+		"temps": 1436.77
 	}, {
 		"name": "SIGNAL",
 		"couleur": "t\u00e9l\u00e9si\u00e8ges",
 		"noeud_depart": "bas Signal",
 		"noeud_fin": "haut SIGNAL",
-		"longueur": 663,
+		"longueur": 12128.05,
 		"coords": [
 			[759.0, 1641.0],
 			[218.0, 1257.0]
 		],
-		"temps": 348.26
+		"temps": 5333.07
 	}, {
 		"name": "Creux2",
 		"couleur": "blue",
 		"noeud_depart": "n39",
 		"noeud_fin": "CREUX",
-		"longueur": 463,
+		"longueur": 8469.51,
 		"coords": [
 			[1284.0, 825.0],
 			[1198.0, 845.0],
@@ -1424,176 +1424,176 @@
 			[985.0, 1020.0],
 			[963.0, 1069.0]
 		],
-		"temps": 66.14
+		"temps": 1209.93
 	}, {
 		"name": "Creux 1",
 		"couleur": "blue",
 		"noeud_depart": "n40",
 		"noeud_fin": "n39",
-		"longueur": 228,
+		"longueur": 4170.73,
 		"coords": [
 			[1498.0, 746.0],
 			[1284.0, 825.0]
 		],
-		"temps": 32.57
+		"temps": 595.82
 	}, {
 		"name": "Lac creux",
 		"couleur": "blue",
 		"noeud_depart": "n39",
 		"noeud_fin": "bas CREUX NOIRS",
-		"longueur": 172,
+		"longueur": 3146.34,
 		"coords": [
 			[1284.0, 825.0],
 			[1128.0, 898.0]
 		],
-		"temps": 24.57
+		"temps": 449.48
 	}, {
 		"name": "p57",
 		"couleur": "blue",
 		"noeud_depart": "bas CREUX NOIRS",
 		"noeud_fin": "n42",
-		"longueur": 212,
+		"longueur": 3878.05,
 		"coords": [
 			[1128.0, 898.0],
 			[1078.0, 944.0],
 			[1063.0, 997.0],
 			[1077.0, 1086.0]
 		],
-		"temps": 30.29
+		"temps": 554.01
 	}, {
 		"name": "p58",
 		"couleur": "blue",
 		"noeud_depart": "n42",
 		"noeud_fin": "n4",
-		"longueur": 68,
+		"longueur": 1243.9,
 		"coords": [
 			[1077.0, 1086.0],
 			[1032.0, 1093.0],
 			[1016.0, 1076.0]
 		],
-		"temps": 9.71
+		"temps": 177.7
 	}, {
 		"name": "p59",
 		"couleur": "blue",
 		"noeud_depart": "n4",
 		"noeud_fin": "CREUX",
-		"longueur": 53,
+		"longueur": 969.51,
 		"coords": [
 			[1016.0, 1076.0],
 			[963.0, 1069.0]
 		],
-		"temps": 7.57
+		"temps": 138.5
 	}, {
 		"name": "Rama",
 		"couleur": "blue",
 		"noeud_depart": "haut AIGUILLE DU FRUIT",
 		"noeud_fin": "n42",
-		"longueur": 79,
+		"longueur": 1445.12,
 		"coords": [
 			[1150.0, 1054.0],
 			[1077.0, 1086.0]
 		],
-		"temps": 11.29
+		"temps": 206.45
 	}, {
 		"name": "p61",
 		"couleur": "blue",
 		"noeud_depart": "n42",
 		"noeud_fin": "n44",
-		"longueur": 116,
+		"longueur": 2121.95,
 		"coords": [
 			[1077.0, 1086.0],
 			[1101.0, 1145.0],
 			[1142.0, 1179.0]
 		],
-		"temps": 16.57
+		"temps": 303.14
 	}, {
 		"name": "p62",
 		"couleur": "blue",
 		"noeud_depart": "haut AIGUILLE DU FRUIT",
 		"noeud_fin": "n44",
-		"longueur": 131,
+		"longueur": 2396.34,
 		"coords": [
 			[1150.0, 1054.0],
 			[1152.0, 1125.0],
 			[1137.0, 1138.0],
 			[1142.0, 1179.0]
 		],
-		"temps": 18.71
+		"temps": 342.33
 	}, {
 		"name": "Altiport",
 		"couleur": "blue",
 		"noeud_depart": "n44",
 		"noeud_fin": "n45",
-		"longueur": 70,
+		"longueur": 1280.49,
 		"coords": [
 			[1142.0, 1179.0],
 			[1190.0, 1231.0]
 		],
-		"temps": 10.0
+		"temps": 182.93
 	}, {
 		"name": "p64",
 		"couleur": "blue",
 		"noeud_depart": "n45",
 		"noeud_fin": "bas SUISSES",
-		"longueur": 102,
+		"longueur": 1865.85,
 		"coords": [
 			[1190.0, 1231.0],
 			[1288.0, 1261.0]
 		],
-		"temps": 14.57
+		"temps": 266.55
 	}, {
 		"name": "petite bosse 3",
 		"couleur": "green",
 		"noeud_depart": "n50",
 		"noeud_fin": "n51",
-		"longueur": 94,
+		"longueur": 1719.51,
 		"coords": [
 			[753.0, 1495.0],
 			[794.0, 1503.0],
 			[839.0, 1532.0]
 		],
-		"temps": 13.43
+		"temps": 245.64
 	}, {
 		"name": "petite bosse 2",
 		"couleur": "green",
 		"noeud_depart": "n49",
 		"noeud_fin": "n50",
-		"longueur": 67,
+		"longueur": 1225.61,
 		"coords": [
 			[686.0, 1493.0],
 			[753.0, 1495.0]
 		],
-		"temps": 9.57
+		"temps": 175.09
 	}, {
 		"name": "petite bosse 1",
 		"couleur": "green",
 		"noeud_depart": "n48",
 		"noeud_fin": "n49",
-		"longueur": 46,
+		"longueur": 841.46,
 		"coords": [
 			[640.0, 1488.0],
 			[686.0, 1493.0]
 		],
-		"temps": 6.57
+		"temps": 120.21
 	}, {
 		"name": "petite bosse",
 		"couleur": "green",
 		"noeud_depart": "BEL AIR",
 		"noeud_fin": "n48",
-		"longueur": 120,
+		"longueur": 2195.12,
 		"coords": [
 			[536.0, 1507.0],
 			[558.0, 1487.0],
 			[563.0, 1475.0],
 			[640.0, 1488.0]
 		],
-		"temps": 17.14
+		"temps": 313.59
 	}, {
 		"name": "Creux",
 		"couleur": "blue",
 		"noeud_depart": "CREUX",
 		"noeud_fin": "PRAMERUEL",
-		"longueur": 453,
+		"longueur": 8286.59,
 		"coords": [
 			[963.0, 1069.0],
 			[951.0, 1086.0],
@@ -1607,25 +1607,25 @@
 			[937.0, 1431.0],
 			[937.0, 1484.0]
 		],
-		"temps": 64.71
+		"temps": 1183.8
 	}, {
 		"name": "Grandes bosses2",
 		"couleur": "blue",
 		"noeud_depart": "n21",
 		"noeud_fin": "n49",
-		"longueur": 189,
+		"longueur": 3457.32,
 		"coords": [
 			[549.0, 1362.0],
 			[635.0, 1435.0],
 			[686.0, 1493.0]
 		],
-		"temps": 27.0
+		"temps": 493.9
 	}, {
 		"name": "Gentiane",
 		"couleur": "blue",
 		"noeud_depart": "n21",
 		"noeud_fin": "n50",
-		"longueur": 256,
+		"longueur": 4682.93,
 		"coords": [
 			[549.0, 1362.0],
 			[640.0, 1378.0],
@@ -1633,110 +1633,110 @@
 			[710.0, 1468.0],
 			[753.0, 1495.0]
 		],
-		"temps": 36.57
+		"temps": 668.99
 	}, {
 		"name": "p72",
 		"couleur": "blue",
 		"noeud_depart": "n50",
 		"noeud_fin": "n52",
-		"longueur": 102,
+		"longueur": 1865.85,
 		"coords": [
 			[753.0, 1495.0],
 			[768.0, 1515.0],
 			[761.0, 1544.0],
 			[741.0, 1588.0]
 		],
-		"temps": 14.57
+		"temps": 266.55
 	}, {
 		"name": "p73",
 		"couleur": "blue",
 		"noeud_depart": "n49",
 		"noeud_fin": "n52",
-		"longueur": 112,
+		"longueur": 2048.78,
 		"coords": [
 			[686.0, 1493.0],
 			[729.0, 1541.0],
 			[741.0, 1588.0]
 		],
-		"temps": 16.0
+		"temps": 292.68
 	}, {
 		"name": "Signal 1",
 		"couleur": "blue",
 		"noeud_depart": "n48",
 		"noeud_fin": "n47",
-		"longueur": 182,
+		"longueur": 3329.27,
 		"coords": [
 			[640.0, 1488.0],
 			[698.0, 1563.0],
 			[704.0, 1598.0],
 			[722.0, 1648.0]
 		],
-		"temps": 26.0
+		"temps": 475.61
 	}, {
 		"name": "Ariondaz bis",
 		"couleur": "blue",
 		"noeud_depart": "BEL AIR",
 		"noeud_fin": "haut Granges",
-		"longueur": 165,
+		"longueur": 3018.29,
 		"coords": [
 			[536.0, 1507.0],
 			[596.0, 1532.0],
 			[672.0, 1598.0]
 		],
-		"temps": 23.57
+		"temps": 431.18
 	}, {
 		"name": "p76",
 		"couleur": "blue",
 		"noeud_depart": "haut Granges",
 		"noeud_fin": "n47",
-		"longueur": 70,
+		"longueur": 1280.49,
 		"coords": [
 			[672.0, 1598.0],
 			[722.0, 1648.0]
 		],
-		"temps": 10.0
+		"temps": 182.93
 	}, {
 		"name": "p77",
 		"couleur": "blue",
 		"noeud_depart": "haut Granges",
 		"noeud_fin": "n53",
-		"longueur": 78,
+		"longueur": 1426.83,
 		"coords": [
 			[672.0, 1598.0],
 			[683.0, 1676.0]
 		],
-		"temps": 11.14
+		"temps": 203.83
 	}, {
 		"name": "Granges",
 		"couleur": "blue",
 		"noeud_depart": "n53",
 		"noeud_fin": "n29",
-		"longueur": 197,
+		"longueur": 3603.66,
 		"coords": [
 			[683.0, 1676.0],
 			[663.0, 1776.0],
 			[670.0, 1813.0],
 			[696.0, 1866.0]
 		],
-		"temps": 28.14
+		"temps": 514.81
 	}, {
 		"name": "p79",
 		"couleur": "blue",
 		"noeud_depart": "n47",
 		"noeud_fin": "n32",
-		"longueur": 122,
+		"longueur": 2231.71,
 		"coords": [
 			[722.0, 1648.0],
 			[727.0, 1700.0],
 			[795.0, 1718.0]
 		],
-		"temps": 17.43
+		"temps": 318.82
 	}, {
 		"name": "Tipis",
 		"couleur": "blue",
 		"noeud_depart": "bas Signal",
 		"noeud_fin": "n54",
-		"longueur": 539,
+		"longueur": 9859.76,
 		"coords": [
 			[759.0, 1641.0],
 			[798.0, 1679.0],
@@ -1749,13 +1749,13 @@
 			[987.0, 1928.0],
 			[1035.0, 1978.0]
 		],
-		"temps": 77.0
+		"temps": 1408.54
 	}, {
 		"name": "p81",
 		"couleur": "blue",
 		"noeud_depart": "n32",
 		"noeud_fin": "n54",
-		"longueur": 377,
+		"longueur": 6896.34,
 		"coords": [
 			[795.0, 1718.0],
 			[815.0, 1732.0],
@@ -1765,47 +1765,47 @@
 			[974.0, 1928.0],
 			[1035.0, 1978.0]
 		],
-		"temps": 53.86
+		"temps": 985.19
 	}, {
 		"name": "p82",
 		"couleur": "green",
 		"noeud_depart": "haut Belv\u00e9d\u00e8re",
 		"noeud_fin": "n33",
-		"longueur": 96,
+		"longueur": 1756.1,
 		"coords": [
 			[826.0, 1835.0],
 			[733.0, 1859.0]
 		],
-		"temps": 13.71
+		"temps": 250.87
 	}, {
 		"name": "Praline bis",
 		"couleur": "green",
 		"noeud_depart": "bas Chapelets",
 		"noeud_fin": "n56",
-		"longueur": 310,
+		"longueur": 5670.73,
 		"coords": [
 			[339.0, 1757.0],
 			[469.0, 1802.0],
 			[638.0, 1842.0]
 		],
-		"temps": 44.29
+		"temps": 810.1
 	}, {
 		"name": "p84",
 		"couleur": "green",
 		"noeud_depart": "n56",
 		"noeud_fin": "n29",
-		"longueur": 62,
+		"longueur": 1134.15,
 		"coords": [
 			[638.0, 1842.0],
 			[696.0, 1866.0]
 		],
-		"temps": 8.86
+		"temps": 162.02
 	}, {
 		"name": "Carabosse",
 		"couleur": "blue",
 		"noeud_depart": "n30",
 		"noeud_fin": "n56",
-		"longueur": 259,
+		"longueur": 4737.8,
 		"coords": [
 			[612.0, 1712.0],
 			[599.0, 1729.0],
@@ -1817,93 +1817,93 @@
 			[605.0, 1814.0],
 			[638.0, 1842.0]
 		],
-		"temps": 37.0
+		"temps": 676.83
 	}, {
 		"name": "p86",
 		"couleur": "green",
 		"noeud_depart": "n29",
 		"noeud_fin": "n55",
-		"longueur": 187,
+		"longueur": 3420.73,
 		"coords": [
 			[696.0, 1866.0],
 			[770.0, 1895.0],
 			[877.0, 1911.0]
 		],
-		"temps": 26.71
+		"temps": 488.68
 	}, {
 		"name": "p87",
 		"couleur": "green",
 		"noeud_depart": "haut Belv\u00e9d\u00e8re",
 		"noeud_fin": "n55",
-		"longueur": 94,
+		"longueur": 1719.51,
 		"coords": [
 			[826.0, 1835.0],
 			[860.0, 1862.0],
 			[877.0, 1911.0]
 		],
-		"temps": 13.43
+		"temps": 245.64
 	}, {
 		"name": "Belv\u00e9d\u00e8re",
 		"couleur": "green",
 		"noeud_depart": "n55",
 		"noeud_fin": "bas Belv\u00e9d\u00e8re",
-		"longueur": 299,
+		"longueur": 5469.51,
 		"coords": [
 			[877.0, 1911.0],
 			[1135.0, 2064.0]
 		],
-		"temps": 42.71
+		"temps": 781.36
 	}, {
 		"name": "BELVEDERE",
 		"couleur": "t\u00e9l\u00e9skis",
 		"noeud_depart": "bas Belv\u00e9d\u00e8re",
 		"noeud_fin": "haut Belv\u00e9d\u00e8re",
-		"longueur": 401,
+		"longueur": 7335.37,
 		"coords": [
 			[1135.0, 2064.0],
 			[865.0, 1927.0],
 			[826.0, 1835.0]
 		],
-		"temps": 165.53
+		"temps": 1990.36
 	}, {
 		"name": "p90",
 		"couleur": "green",
 		"noeud_depart": "n47",
 		"noeud_fin": "n53",
-		"longueur": 48,
+		"longueur": 878.05,
 		"coords": [
 			[722.0, 1648.0],
 			[683.0, 1676.0]
 		],
-		"temps": 6.86
+		"temps": 125.44
 	}, {
 		"name": "p91",
 		"couleur": "green",
 		"noeud_depart": "n53",
 		"noeud_fin": "n30",
-		"longueur": 79,
+		"longueur": 1445.12,
 		"coords": [
 			[683.0, 1676.0],
 			[612.0, 1712.0]
 		],
-		"temps": 11.29
+		"temps": 206.45
 	}, {
 		"name": "p92",
 		"couleur": "green",
 		"noeud_depart": "bas Signal",
 		"noeud_fin": "n47",
-		"longueur": 37,
+		"longueur": 676.83,
 		"coords": [
 			[759.0, 1641.0],
 			[722.0, 1648.0]
 		],
-		"temps": 5.29
+		"temps": 96.69
 	}, {
 		"name": "p93",
 		"couleur": "green",
 		"noeud_depart": "n51",
 		"noeud_fin": "bas Signal",
-		"longueur": 177,
+		"longueur": 3237.8,
 		"coords": [
 			[839.0, 1532.0],
 			[864.0, 1552.0],
@@ -1912,185 +1912,185 @@
 			[780.0, 1633.0],
 			[759.0, 1641.0]
 		],
-		"temps": 25.29
+		"temps": 462.54
 	}, {
 		"name": "PTE BOSSE",
 		"couleur": "t\u00e9l\u00e9skis",
 		"noeud_depart": "bas Signal",
 		"noeud_fin": "n51",
-		"longueur": 166,
+		"longueur": 3036.59,
 		"coords": [
 			[759.0, 1641.0],
 			[845.0, 1606.0],
 			[839.0, 1532.0]
 		],
-		"temps": 103.68
+		"temps": 859.1
 	}, {
 		"name": "p95",
 		"couleur": "blue",
 		"noeud_depart": "n52",
 		"noeud_fin": "bas Signal",
-		"longueur": 55,
+		"longueur": 1006.1,
 		"coords": [
 			[741.0, 1588.0],
 			[759.0, 1641.0]
 		],
-		"temps": 7.86
+		"temps": 143.73
 	}, {
 		"name": "Gravelles",
 		"couleur": "blue",
 		"noeud_depart": "n51",
 		"noeud_fin": "PRAMERUEL",
-		"longueur": 112,
+		"longueur": 2048.78,
 		"coords": [
 			[839.0, 1532.0],
 			[876.0, 1498.0],
 			[937.0, 1484.0]
 		],
-		"temps": 16.0
+		"temps": 292.68
 	}, {
 		"name": "Liberty Ride",
 		"couleur": "red",
 		"noeud_depart": "n32",
 		"noeud_fin": "n33",
-		"longueur": 183,
+		"longueur": 3347.56,
 		"coords": [
 			[795.0, 1718.0],
 			[723.0, 1763.0],
 			[715.0, 1808.0],
 			[733.0, 1859.0]
 		],
-		"temps": 26.14
+		"temps": 478.22
 	}, {
 		"name": "p98",
 		"couleur": "green",
 		"noeud_depart": "bas Belv\u00e9d\u00e8re",
 		"noeud_fin": "bas Ariondaz",
-		"longueur": 33,
+		"longueur": 603.66,
 		"coords": [
 			[1135.0, 2064.0],
 			[1161.0, 2043.0]
 		],
-		"temps": 4.71
+		"temps": 86.24
 	}, {
 		"name": "p99",
 		"couleur": "green",
 		"noeud_depart": "bas Ariondaz",
 		"noeud_fin": "bas Belv\u00e9d\u00e8re",
-		"longueur": 33,
+		"longueur": 603.66,
 		"coords": [
 			[1161.0, 2043.0],
 			[1135.0, 2064.0]
 		],
-		"temps": 4.71
+		"temps": 86.24
 	}, {
 		"name": "p100",
 		"couleur": "green",
 		"noeud_depart": "bas Ariondaz",
 		"noeud_fin": "n57",
-		"longueur": 25,
+		"longueur": 457.32,
 		"coords": [
 			[1161.0, 2043.0],
 			[1175.0, 2022.0]
 		],
-		"temps": 3.57
+		"temps": 65.33
 	}, {
 		"name": "p101",
 		"couleur": "green",
 		"noeud_depart": "n57",
 		"noeud_fin": "bas Ariondaz",
-		"longueur": 25,
+		"longueur": 457.32,
 		"coords": [
 			[1175.0, 2022.0],
 			[1161.0, 2043.0]
 		],
-		"temps": 3.57
+		"temps": 65.33
 	}, {
 		"name": "p102",
 		"couleur": "green",
 		"noeud_depart": "n57",
 		"noeud_fin": "bas PETIT MORIOND",
-		"longueur": 67,
+		"longueur": 1225.61,
 		"coords": [
 			[1175.0, 2022.0],
 			[1238.0, 1997.0]
 		],
-		"temps": 9.57
+		"temps": 175.09
 	}, {
 		"name": "p103",
 		"couleur": "green",
 		"noeud_depart": "haut PETIT MORIOND",
 		"noeud_fin": "n57",
-		"longueur": 78,
+		"longueur": 1426.83,
 		"coords": [
 			[1158.0, 1945.0],
 			[1175.0, 2022.0]
 		],
-		"temps": 11.14
+		"temps": 203.83
 	}, {
 		"name": "PETIT MORIOND",
 		"couleur": "t\u00e9l\u00e9skis",
 		"noeud_depart": "bas PETIT MORIOND",
 		"noeud_fin": "haut PETIT MORIOND",
-		"longueur": 95,
+		"longueur": 1737.8,
 		"coords": [
 			[1238.0, 1997.0],
 			[1158.0, 1945.0]
 		],
-		"temps": 85.0
+		"temps": 517.3199999999999
 	}, {
 		"name": "p105",
 		"couleur": "blue",
 		"noeud_depart": "n54",
 		"noeud_fin": "bas Belv\u00e9d\u00e8re",
-		"longueur": 138,
+		"longueur": 2524.39,
 		"coords": [
 			[1035.0, 1978.0],
 			[1130.0, 2037.0],
 			[1135.0, 2064.0]
 		],
-		"temps": 19.71
+		"temps": 360.63
 	}, {
 		"name": "ARIONDAZ",
 		"couleur": "t\u00e9l\u00e9cabine",
 		"noeud_depart": "bas Ariondaz",
 		"noeud_fin": "BEL AIR",
-		"longueur": 823,
+		"longueur": 15054.88,
 		"coords": [
 			[1161.0, 2043.0],
 			[536.0, 1507.0]
 		],
-		"temps": 197.17
+		"temps": 2569.15
 	}, {
 		"name": "p107",
 		"couleur": "black",
 		"noeud_depart": "haut CREUX NOIRS",
 		"noeud_fin": "n61",
-		"longueur": 62,
+		"longueur": 1134.15,
 		"coords": [
 			[1481.0, 492.0],
 			[1496.0, 553.0]
 		],
-		"temps": 8.86
+		"temps": 162.02
 	}, {
 		"name": "Roches grises",
 		"couleur": "black",
 		"noeud_depart": "n61",
 		"noeud_fin": "n40",
-		"longueur": 193,
+		"longueur": 3530.49,
 		"coords": [
 			[1496.0, 553.0],
 			[1496.0, 612.0],
 			[1502.0, 667.0],
 			[1498.0, 746.0]
 		],
-		"temps": 27.57
+		"temps": 504.36
 	}, {
 		"name": "p109",
 		"couleur": "red",
 		"noeud_depart": "n61",
 		"noeud_fin": "n40",
-		"longueur": 251,
+		"longueur": 4591.46,
 		"coords": [
 			[1496.0, 553.0],
 			[1513.0, 596.0],
@@ -2099,718 +2099,718 @@
 			[1540.0, 713.0],
 			[1498.0, 746.0]
 		],
-		"temps": 35.86
+		"temps": 655.92
 	}, {
 		"name": "p110",
 		"couleur": "red",
 		"noeud_depart": "haut SAULIRE",
 		"noeud_fin": "n64",
-		"longueur": 83,
+		"longueur": 1518.29,
 		"coords": [
 			[1784.0, 680.0],
 			[1727.0, 672.0],
 			[1708.0, 653.0]
 		],
-		"temps": 11.86
+		"temps": 216.9
 	}, {
 		"name": "p111",
 		"couleur": "green",
 		"noeud_depart": "VIZELLE",
 		"noeud_fin": "n68",
-		"longueur": 22,
+		"longueur": 402.44,
 		"coords": [
 			[1610.0, 740.0],
 			[1627.0, 725.0]
 		],
-		"temps": 3.14
+		"temps": 57.49
 	}, {
 		"name": "p112",
 		"couleur": "green",
 		"noeud_depart": "n68",
 		"noeud_fin": "VIZELLE",
-		"longueur": 22,
+		"longueur": 402.44,
 		"coords": [
 			[1627.0, 725.0],
 			[1610.0, 740.0]
 		],
-		"temps": 3.14
+		"temps": 57.49
 	}, {
 		"name": "p113",
 		"couleur": "blue",
 		"noeud_depart": "n68",
 		"noeud_fin": "n63",
-		"longueur": 44,
+		"longueur": 804.88,
 		"coords": [
 			[1627.0, 725.0],
 			[1666.0, 704.0]
 		],
-		"temps": 6.29
+		"temps": 114.98
 	}, {
 		"name": "p114",
 		"couleur": "blue",
 		"noeud_depart": "haut SAULIRE",
 		"noeud_fin": "n66",
-		"longueur": 35,
+		"longueur": 640.24,
 		"coords": [
 			[1784.0, 680.0],
 			[1750.0, 691.0]
 		],
-		"temps": 5.0
+		"temps": 91.46
 	}, {
 		"name": "p115",
 		"couleur": "blue",
 		"noeud_depart": "n66",
 		"noeud_fin": "n63",
-		"longueur": 87,
+		"longueur": 1591.46,
 		"coords": [
 			[1750.0, 691.0],
 			[1703.0, 687.0],
 			[1666.0, 704.0]
 		],
-		"temps": 12.43
+		"temps": 227.35
 	}, {
 		"name": "p116",
 		"couleur": "blue",
 		"noeud_depart": "n63",
 		"noeud_fin": "n64",
-		"longueur": 66,
+		"longueur": 1207.32,
 		"coords": [
 			[1666.0, 704.0],
 			[1708.0, 653.0]
 		],
-		"temps": 9.43
+		"temps": 172.47
 	}, {
 		"name": "p117",
 		"couleur": "blue",
 		"noeud_depart": "n64",
 		"noeud_fin": "n40",
-		"longueur": 233,
+		"longueur": 4262.2,
 		"coords": [
 			[1708.0, 653.0],
 			[1686.0, 647.0],
 			[1583.0, 698.0],
 			[1498.0, 746.0]
 		],
-		"temps": 33.29
+		"temps": 608.89
 	}, {
 		"name": "p118",
 		"couleur": "red",
 		"noeud_depart": "n70",
 		"noeud_fin": "n67",
-		"longueur": 58,
+		"longueur": 1060.98,
 		"coords": [
 			[1631.0, 815.0],
 			[1673.0, 774.0]
 		],
-		"temps": 8.29
+		"temps": 151.57
 	}, {
 		"name": "p119",
 		"couleur": "red",
 		"noeud_depart": "n68",
 		"noeud_fin": "n67",
-		"longueur": 67,
+		"longueur": 1225.61,
 		"coords": [
 			[1627.0, 725.0],
 			[1673.0, 774.0]
 		],
-		"temps": 9.57
+		"temps": 175.09
 	}, {
 		"name": "p120",
 		"couleur": "red",
 		"noeud_depart": "n66",
 		"noeud_fin": "n67",
-		"longueur": 120,
+		"longueur": 2195.12,
 		"coords": [
 			[1750.0, 691.0],
 			[1706.0, 713.0],
 			[1675.0, 753.0],
 			[1673.0, 774.0]
 		],
-		"temps": 17.14
+		"temps": 313.59
 	}, {
 		"name": "Combe saulire",
 		"couleur": "red",
 		"noeud_depart": "n67",
 		"noeud_fin": "n71",
-		"longueur": 164,
+		"longueur": 3000.0,
 		"coords": [
 			[1673.0, 774.0],
 			[1759.0, 914.0]
 		],
-		"temps": 23.43
+		"temps": 428.57
 	}, {
 		"name": "p122",
 		"couleur": "red",
 		"noeud_depart": "n74",
 		"noeud_fin": "n73",
-		"longueur": 27,
+		"longueur": 493.9,
 		"coords": [
 			[1840.0, 1001.0],
 			[1862.0, 1017.0]
 		],
-		"temps": 3.86
+		"temps": 70.56
 	}, {
 		"name": "p123",
 		"couleur": "red",
 		"noeud_depart": "n71",
 		"noeud_fin": "n74",
-		"longueur": 124,
+		"longueur": 2268.29,
 		"coords": [
 			[1759.0, 914.0],
 			[1788.0, 974.0],
 			[1840.0, 1001.0]
 		],
-		"temps": 17.71
+		"temps": 324.04
 	}, {
 		"name": "p124",
 		"couleur": "red",
 		"noeud_depart": "n73",
 		"noeud_fin": "n75",
-		"longueur": 144,
+		"longueur": 2634.15,
 		"coords": [
 			[1862.0, 1017.0],
 			[1896.0, 1060.0],
 			[1880.0, 1102.0],
 			[1850.0, 1137.0]
 		],
-		"temps": 20.57
+		"temps": 376.31
 	}, {
 		"name": "p125",
 		"couleur": "red",
 		"noeud_depart": "n75",
 		"noeud_fin": "n76",
-		"longueur": 38,
+		"longueur": 695.12,
 		"coords": [
 			[1850.0, 1137.0],
 			[1823.0, 1164.0]
 		],
-		"temps": 5.43
+		"temps": 99.3
 	}, {
 		"name": "p126",
 		"couleur": "red",
 		"noeud_depart": "n70",
 		"noeud_fin": "n78",
-		"longueur": 31,
+		"longueur": 567.07,
 		"coords": [
 			[1631.0, 815.0],
 			[1620.0, 844.0]
 		],
-		"temps": 4.43
+		"temps": 81.01
 	}, {
 		"name": "p127",
 		"couleur": "red",
 		"noeud_depart": "n78",
 		"noeud_fin": "n77",
-		"longueur": 149,
+		"longueur": 2725.61,
 		"coords": [
 			[1620.0, 844.0],
 			[1598.0, 891.0],
 			[1653.0, 929.0],
 			[1685.0, 922.0]
 		],
-		"temps": 21.29
+		"temps": 389.37
 	}, {
 		"name": "p128",
 		"couleur": "red",
 		"noeud_depart": "n77",
 		"noeud_fin": "n71",
-		"longueur": 78,
+		"longueur": 1426.83,
 		"coords": [
 			[1685.0, 922.0],
 			[1727.0, 905.0],
 			[1759.0, 914.0]
 		],
-		"temps": 11.14
+		"temps": 203.83
 	}, {
 		"name": "p129",
 		"couleur": "black",
 		"noeud_depart": "n78",
 		"noeud_fin": "n77",
-		"longueur": 100,
+		"longueur": 1829.27,
 		"coords": [
 			[1620.0, 844.0],
 			[1642.0, 867.0],
 			[1685.0, 922.0]
 		],
-		"temps": 14.29
+		"temps": 261.32
 	}, {
 		"name": "Pylones",
 		"couleur": "black",
 		"noeud_depart": "n77",
 		"noeud_fin": "n72",
-		"longueur": 253,
+		"longueur": 4628.05,
 		"coords": [
 			[1685.0, 922.0],
 			[1789.0, 1021.0],
 			[1809.0, 1076.0],
 			[1802.0, 1128.0]
 		],
-		"temps": 36.14
+		"temps": 661.15
 	}, {
 		"name": "T\u00e9l\u00e9phone",
 		"couleur": "black",
 		"noeud_depart": "n73",
 		"noeud_fin": "n72",
-		"longueur": 126,
+		"longueur": 2304.88,
 		"coords": [
 			[1862.0, 1017.0],
 			[1802.0, 1128.0]
 		],
-		"temps": 18.0
+		"temps": 329.27
 	}, {
 		"name": "p132",
 		"couleur": "black",
 		"noeud_depart": "n72",
 		"noeud_fin": "n76",
-		"longueur": 41,
+		"longueur": 750.0,
 		"coords": [
 			[1802.0, 1128.0],
 			[1823.0, 1164.0]
 		],
-		"temps": 5.86
+		"temps": 107.14
 	}, {
 		"name": "Bosses",
 		"couleur": "black",
 		"noeud_depart": "n75",
 		"noeud_fin": "haut SOURCES / ROCHER DE L'OMBRE",
-		"longueur": 132,
+		"longueur": 2414.63,
 		"coords": [
 			[1850.0, 1137.0],
 			[1875.0, 1228.0],
 			[1862.0, 1264.0]
 		],
-		"temps": 18.86
+		"temps": 344.95
 	}, {
 		"name": "p134",
 		"couleur": "red",
 		"noeud_depart": "n87",
 		"noeud_fin": "n88",
-		"longueur": 25,
+		"longueur": 457.32,
 		"coords": [
 			[1527.0, 1190.0],
 			[1552.0, 1191.0]
 		],
-		"temps": 3.57
+		"temps": 65.33
 	}, {
 		"name": "p135",
 		"couleur": "red",
 		"noeud_depart": "n88",
 		"noeud_fin": "n85",
-		"longueur": 118,
+		"longueur": 2158.54,
 		"coords": [
 			[1552.0, 1191.0],
 			[1611.0, 1190.0],
 			[1668.0, 1208.0]
 		],
-		"temps": 16.86
+		"temps": 308.36
 	}, {
 		"name": "p136",
 		"couleur": "blue",
 		"noeud_depart": "n116",
 		"noeud_fin": "PRAMERUEL",
-		"longueur": 135,
+		"longueur": 2469.51,
 		"coords": [
 			[1068.0, 1508.0],
 			[1015.0, 1487.0],
 			[937.0, 1484.0]
 		],
-		"temps": 19.29
+		"temps": 352.79
 	}, {
 		"name": "Pram\u00e9ruel",
 		"couleur": "blue",
 		"noeud_depart": "n96",
 		"noeud_fin": "n116",
-		"longueur": 348,
+		"longueur": 6365.85,
 		"coords": [
 			[1371.0, 1427.0],
 			[1282.0, 1528.0],
 			[1068.0, 1508.0]
 		],
-		"temps": 49.71
+		"temps": 909.41
 	}, {
 		"name": "Pralong",
 		"couleur": "blue",
 		"noeud_depart": "n92",
 		"noeud_fin": "n94",
-		"longueur": 157,
+		"longueur": 2871.95,
 		"coords": [
 			[1486.0, 1270.0],
 			[1435.0, 1334.0],
 			[1400.0, 1348.0],
 			[1396.0, 1387.0]
 		],
-		"temps": 22.43
+		"temps": 410.28
 	}, {
 		"name": "p139",
 		"couleur": "blue",
 		"noeud_depart": "n94",
 		"noeud_fin": "n95",
-		"longueur": 26,
+		"longueur": 475.61,
 		"coords": [
 			[1396.0, 1387.0],
 			[1402.0, 1413.0]
 		],
-		"temps": 3.71
+		"temps": 67.94
 	}, {
 		"name": "p140",
 		"couleur": "blue",
 		"noeud_depart": "n95",
 		"noeud_fin": "n96",
-		"longueur": 34,
+		"longueur": 621.95,
 		"coords": [
 			[1402.0, 1413.0],
 			[1371.0, 1427.0]
 		],
-		"temps": 4.86
+		"temps": 88.85
 	}, {
 		"name": "p141",
 		"couleur": "blue",
 		"noeud_depart": "n95",
 		"noeud_fin": "n97",
-		"longueur": 231,
+		"longueur": 4225.61,
 		"coords": [
 			[1402.0, 1413.0],
 			[1424.0, 1446.0],
 			[1430.0, 1601.0],
 			[1401.0, 1624.0]
 		],
-		"temps": 33.0
+		"temps": 603.66
 	}, {
 		"name": "p142",
 		"couleur": "blue",
 		"noeud_depart": "n92",
 		"noeud_fin": "bas SUISSES",
-		"longueur": 198,
+		"longueur": 3621.95,
 		"coords": [
 			[1486.0, 1270.0],
 			[1288.0, 1261.0]
 		],
-		"temps": 28.29
+		"temps": 517.42
 	}, {
 		"name": "p143",
 		"couleur": "blue",
 		"noeud_depart": "bas SUISSES",
 		"noeud_fin": "n132",
-		"longueur": 34,
+		"longueur": 621.95,
 		"coords": [
 			[1288.0, 1261.0],
 			[1296.0, 1295.0]
 		],
-		"temps": 4.86
+		"temps": 88.85
 	}, {
 		"name": "p144",
 		"couleur": "blue",
 		"noeud_depart": "n132",
 		"noeud_fin": "n94",
-		"longueur": 135,
+		"longueur": 2469.51,
 		"coords": [
 			[1296.0, 1295.0],
 			[1396.0, 1387.0]
 		],
-		"temps": 19.29
+		"temps": 352.79
 	}, {
 		"name": "p145",
 		"couleur": "blue",
 		"noeud_depart": "n94",
 		"noeud_fin": "n105",
-		"longueur": 190,
+		"longueur": 3475.61,
 		"coords": [
 			[1396.0, 1387.0],
 			[1552.0, 1496.0]
 		],
-		"temps": 27.14
+		"temps": 496.52
 	}, {
 		"name": "Biollay",
 		"couleur": "blue",
 		"noeud_depart": "n98",
 		"noeud_fin": "n105",
-		"longueur": 143,
+		"longueur": 2615.85,
 		"coords": [
 			[1525.0, 1363.0],
 			[1514.0, 1434.0],
 			[1552.0, 1496.0]
 		],
-		"temps": 20.43
+		"temps": 373.69
 	}, {
 		"name": "p147",
 		"couleur": "blue",
 		"noeud_depart": "n98",
 		"noeud_fin": "n99",
-		"longueur": 133,
+		"longueur": 2432.93,
 		"coords": [
 			[1525.0, 1363.0],
 			[1598.0, 1475.0]
 		],
-		"temps": 19.0
+		"temps": 347.56
 	}, {
 		"name": "p148",
 		"couleur": "blue",
 		"noeud_depart": "n91",
 		"noeud_fin": "n98",
-		"longueur": 99,
+		"longueur": 1810.98,
 		"coords": [
 			[1540.0, 1265.0],
 			[1525.0, 1363.0]
 		],
-		"temps": 14.14
+		"temps": 258.71
 	}, {
 		"name": "p149",
 		"couleur": "blue",
 		"noeud_depart": "n111",
 		"noeud_fin": "n91",
-		"longueur": 32,
+		"longueur": 585.37,
 		"coords": [
 			[1532.0, 1233.0],
 			[1540.0, 1265.0]
 		],
-		"temps": 4.57
+		"temps": 83.62
 	}, {
 		"name": "p150",
 		"couleur": "blue",
 		"noeud_depart": "n110",
 		"noeud_fin": "n111",
-		"longueur": 22,
+		"longueur": 402.44,
 		"coords": [
 			[1528.0, 1211.0],
 			[1532.0, 1233.0]
 		],
-		"temps": 3.14
+		"temps": 57.49
 	}, {
 		"name": "p151",
 		"couleur": "blue",
 		"noeud_depart": "n110",
 		"noeud_fin": "n92",
-		"longueur": 72,
+		"longueur": 1317.07,
 		"coords": [
 			[1528.0, 1211.0],
 			[1486.0, 1270.0]
 		],
-		"temps": 10.29
+		"temps": 188.15
 	}, {
 		"name": "Biollay verdons",
 		"couleur": "blue",
 		"noeud_depart": "n111",
 		"noeud_fin": "n85",
-		"longueur": 138,
+		"longueur": 2524.39,
 		"coords": [
 			[1532.0, 1233.0],
 			[1668.0, 1208.0]
 		],
-		"temps": 19.71
+		"temps": 360.63
 	}, {
 		"name": "p153",
 		"couleur": "blue",
 		"noeud_depart": "n85",
 		"noeud_fin": "n84",
-		"longueur": 39,
+		"longueur": 713.41,
 		"coords": [
 			[1668.0, 1208.0],
 			[1701.0, 1230.0]
 		],
-		"temps": 5.57
+		"temps": 101.92
 	}, {
 		"name": "p154",
 		"couleur": "blue",
 		"noeud_depart": "n84",
 		"noeud_fin": "n82",
-		"longueur": 88,
+		"longueur": 1609.76,
 		"coords": [
 			[1701.0, 1230.0],
 			[1705.0, 1263.0],
 			[1751.0, 1294.0]
 		],
-		"temps": 12.57
+		"temps": 229.97
 	}, {
 		"name": "p155",
 		"couleur": "blue",
 		"noeud_depart": "n105",
 		"noeud_fin": "n104",
-		"longueur": 105,
+		"longueur": 1920.73,
 		"coords": [
 			[1552.0, 1496.0],
 			[1521.0, 1597.0]
 		],
-		"temps": 15.0
+		"temps": 274.39
 	}, {
 		"name": "Petit lac",
 		"couleur": "blue",
 		"noeud_depart": "n82",
 		"noeud_fin": "n89",
-		"longueur": 125,
+		"longueur": 2286.59,
 		"coords": [
 			[1751.0, 1294.0],
 			[1683.0, 1327.0],
 			[1667.0, 1375.0]
 		],
-		"temps": 17.86
+		"temps": 326.66
 	}, {
 		"name": "p157",
 		"couleur": "blue",
 		"noeud_depart": "n89",
 		"noeud_fin": "n99",
-		"longueur": 121,
+		"longueur": 2213.41,
 		"coords": [
 			[1667.0, 1375.0],
 			[1630.0, 1441.0],
 			[1598.0, 1475.0]
 		],
-		"temps": 17.29
+		"temps": 316.2
 	}, {
 		"name": "Sources",
 		"couleur": "blue",
 		"noeud_depart": "haut SOURCES / ROCHER DE L'OMBRE",
 		"noeud_fin": "bas SOURCES / ROCHER DE L'OMBRE",
-		"longueur": 316,
+		"longueur": 5780.49,
 		"coords": [
 			[1862.0, 1264.0],
 			[1896.0, 1287.0],
 			[1821.0, 1491.0],
 			[1787.0, 1539.0]
 		],
-		"temps": 45.14
+		"temps": 825.78
 	}, {
 		"name": "p159",
 		"couleur": "blue",
 		"noeud_depart": "n123",
 		"noeud_fin": "n126",
-		"longueur": 94,
+		"longueur": 1719.51,
 		"coords": [
 			[1875.0, 1604.0],
 			[1870.0, 1647.0],
 			[1892.0, 1694.0]
 		],
-		"temps": 13.43
+		"temps": 245.64
 	}, {
 		"name": "p160",
 		"couleur": "blue",
 		"noeud_depart": "n126",
 		"noeud_fin": "n127",
-		"longueur": 40,
+		"longueur": 731.71,
 		"coords": [
 			[1892.0, 1694.0],
 			[1896.0, 1734.0]
 		],
-		"temps": 5.71
+		"temps": 104.53
 	}, {
 		"name": "p161",
 		"couleur": "blue",
 		"noeud_depart": "n105",
 		"noeud_fin": "n101",
-		"longueur": 24,
+		"longueur": 439.02,
 		"coords": [
 			[1552.0, 1496.0],
 			[1568.0, 1477.0]
 		],
-		"temps": 3.43
+		"temps": 62.72
 	}, {
 		"name": "p162",
 		"couleur": "blue",
 		"noeud_depart": "n101",
 		"noeud_fin": "n105",
-		"longueur": 24,
+		"longueur": 439.02,
 		"coords": [
 			[1568.0, 1477.0],
 			[1552.0, 1496.0]
 		],
-		"temps": 3.43
+		"temps": 62.72
 	}, {
 		"name": "p163",
 		"couleur": "blue",
 		"noeud_depart": "n101",
 		"noeud_fin": "n99",
-		"longueur": 30,
+		"longueur": 548.78,
 		"coords": [
 			[1568.0, 1477.0],
 			[1598.0, 1475.0]
 		],
-		"temps": 4.29
+		"temps": 78.4
 	}, {
 		"name": "p164",
 		"couleur": "blue",
 		"noeud_depart": "n99",
 		"noeud_fin": "n101",
-		"longueur": 30,
+		"longueur": 548.78,
 		"coords": [
 			[1598.0, 1475.0],
 			[1568.0, 1477.0]
 		],
-		"temps": 4.29
+		"temps": 78.4
 	}, {
 		"name": "p165",
 		"couleur": "blue",
 		"noeud_depart": "n101",
 		"noeud_fin": "n100",
-		"longueur": 57,
+		"longueur": 1042.68,
 		"coords": [
 			[1568.0, 1477.0],
 			[1620.0, 1502.0]
 		],
-		"temps": 8.14
+		"temps": 148.95
 	}, {
 		"name": "p166",
 		"couleur": "blue",
 		"noeud_depart": "n99",
 		"noeud_fin": "n100",
-		"longueur": 34,
+		"longueur": 621.95,
 		"coords": [
 			[1598.0, 1475.0],
 			[1620.0, 1502.0]
 		],
-		"temps": 4.86
+		"temps": 88.85
 	}, {
 		"name": "p167",
 		"couleur": "blue",
 		"noeud_depart": "n100",
 		"noeud_fin": "n107",
-		"longueur": 48,
+		"longueur": 878.05,
 		"coords": [
 			[1620.0, 1502.0],
 			[1662.0, 1527.0]
 		],
-		"temps": 6.86
+		"temps": 125.44
 	}, {
 		"name": "p168",
 		"couleur": "blue",
 		"noeud_depart": "n107",
 		"noeud_fin": "bas COQS",
-		"longueur": 163,
+		"longueur": 2981.71,
 		"coords": [
 			[1662.0, 1527.0],
 			[1756.0, 1582.0],
 			[1783.0, 1630.0]
 		],
-		"temps": 23.29
+		"temps": 425.96
 	}, {
 		"name": "Suisses",
 		"couleur": "black",
 		"noeud_depart": "n120",
 		"noeud_fin": "n119",
-		"longueur": 260,
+		"longueur": 4756.1,
 		"coords": [
 			[1463.0, 788.0],
 			[1453.0, 810.0],
 			[1498.0, 856.0],
 			[1400.0, 998.0]
 		],
-		"temps": 37.14
+		"temps": 679.44
 	}, {
 		"name": "p170",
 		"couleur": "black",
 		"noeud_depart": "n118",
 		"noeud_fin": "n119",
-		"longueur": 93,
+		"longueur": 1701.22,
 		"coords": [
 			[1356.0, 933.0],
 			[1403.0, 958.0],
 			[1400.0, 998.0]
 		],
-		"temps": 13.29
+		"temps": 243.03
 	}, {
 		"name": "p171",
 		"couleur": "black",
 		"noeud_depart": "n119",
 		"noeud_fin": "bas SUISSES",
-		"longueur": 324,
+		"longueur": 5926.83,
 		"coords": [
 			[1400.0, 998.0],
 			[1385.0, 1071.0],
@@ -2818,46 +2818,46 @@
 			[1367.0, 1206.0],
 			[1288.0, 1261.0]
 		],
-		"temps": 46.29
+		"temps": 846.69
 	}, {
 		"name": "p172",
 		"couleur": "red",
 		"noeud_depart": "VIZELLE",
 		"noeud_fin": "n70",
-		"longueur": 77,
+		"longueur": 1408.54,
 		"coords": [
 			[1610.0, 740.0],
 			[1631.0, 815.0]
 		],
-		"temps": 11.0
+		"temps": 201.22
 	}, {
 		"name": "p173",
 		"couleur": "black",
 		"noeud_depart": "VIZELLE",
 		"noeud_fin": "n70",
-		"longueur": 77,
+		"longueur": 1408.54,
 		"coords": [
 			[1610.0, 740.0],
 			[1631.0, 815.0]
 		],
-		"temps": 11.0
+		"temps": 201.22
 	}, {
 		"name": "p174",
 		"couleur": "black",
 		"noeud_depart": "n70",
 		"noeud_fin": "n78",
-		"longueur": 31,
+		"longueur": 567.07,
 		"coords": [
 			[1631.0, 815.0],
 			[1620.0, 844.0]
 		],
-		"temps": 4.43
+		"temps": 81.01
 	}, {
 		"name": "M",
 		"couleur": "black",
 		"noeud_depart": "n78",
 		"noeud_fin": "n86",
-		"longueur": 324,
+		"longueur": 5926.83,
 		"coords": [
 			[1620.0, 844.0],
 			[1551.0, 941.0],
@@ -2865,395 +2865,395 @@
 			[1635.0, 1081.0],
 			[1641.0, 1122.0]
 		],
-		"temps": 46.29
+		"temps": 846.69
 	}, {
 		"name": "p176",
 		"couleur": "black",
 		"noeud_depart": "n86",
 		"noeud_fin": "n85",
-		"longueur": 95,
+		"longueur": 1737.8,
 		"coords": [
 			[1641.0, 1122.0],
 			[1636.0, 1156.0],
 			[1668.0, 1208.0]
 		],
-		"temps": 13.57
+		"temps": 248.26
 	}, {
 		"name": "p177",
 		"couleur": "black",
 		"noeud_depart": "n86",
 		"noeud_fin": "n84",
-		"longueur": 134,
+		"longueur": 2451.22,
 		"coords": [
 			[1641.0, 1122.0],
 			[1694.0, 1163.0],
 			[1701.0, 1230.0]
 		],
-		"temps": 19.14
+		"temps": 350.17
 	}, {
 		"name": "p178",
 		"couleur": "red",
 		"noeud_depart": "VIZELLE",
 		"noeud_fin": "n120",
-		"longueur": 154,
+		"longueur": 2817.07,
 		"coords": [
 			[1610.0, 740.0],
 			[1463.0, 788.0]
 		],
-		"temps": 22.0
+		"temps": 402.44
 	}, {
 		"name": "Marmottes",
 		"couleur": "red",
 		"noeud_depart": "n120",
 		"noeud_fin": "n117",
-		"longueur": 305,
+		"longueur": 5579.27,
 		"coords": [
 			[1463.0, 788.0],
 			[1266.0, 873.0],
 			[1222.0, 953.0]
 		],
-		"temps": 43.57
+		"temps": 797.04
 	}, {
 		"name": "p180",
 		"couleur": "red",
 		"noeud_depart": "n120",
 		"noeud_fin": "n118",
-		"longueur": 180,
+		"longueur": 3292.68,
 		"coords": [
 			[1463.0, 788.0],
 			[1412.0, 851.0],
 			[1356.0, 933.0]
 		],
-		"temps": 25.71
+		"temps": 470.38
 	}, {
 		"name": "p181",
 		"couleur": "red",
 		"noeud_depart": "n118",
 		"noeud_fin": "n117",
-		"longueur": 135,
+		"longueur": 2469.51,
 		"coords": [
 			[1356.0, 933.0],
 			[1222.0, 953.0]
 		],
-		"temps": 19.29
+		"temps": 352.79
 	}, {
 		"name": "p182",
 		"couleur": "red",
 		"noeud_depart": "n117",
 		"noeud_fin": "haut AIGUILLE DU FRUIT",
-		"longueur": 127,
+		"longueur": 2323.17,
 		"coords": [
 			[1222.0, 953.0],
 			[1200.0, 1011.0],
 			[1150.0, 1054.0]
 		],
-		"temps": 18.14
+		"temps": 331.88
 	}, {
 		"name": "p183",
 		"couleur": "red",
 		"noeud_depart": "n117",
 		"noeud_fin": "bas CREUX NOIRS",
-		"longueur": 127,
+		"longueur": 2323.17,
 		"coords": [
 			[1222.0, 953.0],
 			[1179.0, 964.0],
 			[1128.0, 898.0]
 		],
-		"temps": 18.14
+		"temps": 331.88
 	}, {
 		"name": "p184",
 		"couleur": "red",
 		"noeud_depart": "n117",
 		"noeud_fin": "n4",
-		"longueur": 239,
+		"longueur": 4371.95,
 		"coords": [
 			[1222.0, 953.0],
 			[1016.0, 1076.0]
 		],
-		"temps": 34.14
+		"temps": 624.56
 	}, {
 		"name": "Cave des creux 1",
 		"couleur": "red",
 		"noeud_depart": "n44",
 		"noeud_fin": "n114",
-		"longueur": 218,
+		"longueur": 3987.8,
 		"coords": [
 			[1142.0, 1179.0],
 			[1163.0, 1279.0],
 			[1128.0, 1346.0],
 			[1093.0, 1369.0]
 		],
-		"temps": 31.14
+		"temps": 569.69
 	}, {
 		"name": "Cave des creux 2",
 		"couleur": "red",
 		"noeud_depart": "n114",
 		"noeud_fin": "n115",
-		"longueur": 101,
+		"longueur": 1847.56,
 		"coords": [
 			[1093.0, 1369.0],
 			[1033.0, 1404.0],
 			[1039.0, 1436.0]
 		],
-		"temps": 14.43
+		"temps": 263.94
 	}, {
 		"name": "p187",
 		"couleur": "red",
 		"noeud_depart": "n115",
 		"noeud_fin": "n116",
-		"longueur": 77,
+		"longueur": 1408.54,
 		"coords": [
 			[1039.0, 1436.0],
 			[1068.0, 1508.0]
 		],
-		"temps": 11.0
+		"temps": 201.22
 	}, {
 		"name": "Altip\u00f4le 2",
 		"couleur": "red",
 		"noeud_depart": "n114",
 		"noeud_fin": "n115",
-		"longueur": 189,
+		"longueur": 3457.32,
 		"coords": [
 			[1093.0, 1369.0],
 			[998.0, 1358.0],
 			[1002.0, 1404.0],
 			[1039.0, 1436.0]
 		],
-		"temps": 27.0
+		"temps": 493.9
 	}, {
 		"name": "Altip\u00f4le 1",
 		"couleur": "red",
 		"noeud_depart": "n113",
 		"noeud_fin": "n114",
-		"longueur": 92,
+		"longueur": 1682.93,
 		"coords": [
 			[1169.0, 1336.0],
 			[1146.0, 1368.0],
 			[1093.0, 1369.0]
 		],
-		"temps": 13.14
+		"temps": 240.42
 	}, {
 		"name": "p190",
 		"couleur": "red",
 		"noeud_depart": "n45",
 		"noeud_fin": "n113",
-		"longueur": 107,
+		"longueur": 1957.32,
 		"coords": [
 			[1190.0, 1231.0],
 			[1169.0, 1336.0]
 		],
-		"temps": 15.29
+		"temps": 279.62
 	}, {
 		"name": "p191",
 		"couleur": "red",
 		"noeud_depart": "n113",
 		"noeud_fin": "n112",
-		"longueur": 58,
+		"longueur": 1060.98,
 		"coords": [
 			[1169.0, 1336.0],
 			[1183.0, 1393.0]
 		],
-		"temps": 8.29
+		"temps": 151.57
 	}, {
 		"name": "p192",
 		"couleur": "black",
 		"noeud_depart": "n132",
 		"noeud_fin": "n112",
-		"longueur": 149,
+		"longueur": 2725.61,
 		"coords": [
 			[1296.0, 1295.0],
 			[1201.0, 1371.0],
 			[1183.0, 1393.0]
 		],
-		"temps": 21.29
+		"temps": 389.37
 	}, {
 		"name": "Mur",
 		"couleur": "black",
 		"noeud_depart": "n112",
 		"noeud_fin": "n116",
-		"longueur": 162,
+		"longueur": 2963.41,
 		"coords": [
 			[1183.0, 1393.0],
 			[1068.0, 1508.0]
 		],
-		"temps": 23.14
+		"temps": 423.34
 	}, {
 		"name": "le Plan de Vah",
 		"couleur": "red",
 		"noeud_depart": "PRAMERUEL",
 		"noeud_fin": "le Plan de Vah",
-		"longueur": 374,
+		"longueur": 6841.46,
 		"coords": [
 			[937.0, 1484.0],
 			[969.0, 1574.0],
 			[1084.0, 1630.0],
 			[1136.0, 1773.0]
 		],
-		"temps": 53.43
+		"temps": 977.35
 	}, {
 		"name": "p195",
 		"couleur": "green",
 		"noeud_depart": "n82",
 		"noeud_fin": "n81",
-		"longueur": 64,
+		"longueur": 1170.73,
 		"coords": [
 			[1751.0, 1294.0],
 			[1815.0, 1291.0]
 		],
-		"temps": 9.14
+		"temps": 167.25
 	}, {
 		"name": "p196",
 		"couleur": "green",
 		"noeud_depart": "n81",
 		"noeud_fin": "n82",
-		"longueur": 64,
+		"longueur": 1170.73,
 		"coords": [
 			[1815.0, 1291.0],
 			[1751.0, 1294.0]
 		],
-		"temps": 9.14
+		"temps": 167.25
 	}, {
 		"name": "p197",
 		"couleur": "green",
 		"noeud_depart": "n82",
 		"noeud_fin": "n83",
-		"longueur": 54,
+		"longueur": 987.8,
 		"coords": [
 			[1751.0, 1294.0],
 			[1787.0, 1335.0]
 		],
-		"temps": 7.71
+		"temps": 141.11
 	}, {
 		"name": "p198",
 		"couleur": "green",
 		"noeud_depart": "n81",
 		"noeud_fin": "n83",
-		"longueur": 52,
+		"longueur": 951.22,
 		"coords": [
 			[1815.0, 1291.0],
 			[1787.0, 1335.0]
 		],
-		"temps": 7.43
+		"temps": 135.89
 	}, {
 		"name": "p199",
 		"couleur": "green",
 		"noeud_depart": "n80",
 		"noeud_fin": "n81",
-		"longueur": 28,
+		"longueur": 512.2,
 		"coords": [
 			[1839.0, 1275.0],
 			[1815.0, 1291.0]
 		],
-		"temps": 4.0
+		"temps": 73.17
 	}, {
 		"name": "p200",
 		"couleur": "green",
 		"noeud_depart": "haut SOURCES / ROCHER DE L'OMBRE",
 		"noeud_fin": "n80",
-		"longueur": 25,
+		"longueur": 457.32,
 		"coords": [
 			[1862.0, 1264.0],
 			[1839.0, 1275.0]
 		],
-		"temps": 3.57
+		"temps": 65.33
 	}, {
 		"name": "Renard",
 		"couleur": "green",
 		"noeud_depart": "n82",
 		"noeud_fin": "n90",
-		"longueur": 194,
+		"longueur": 3548.78,
 		"coords": [
 			[1751.0, 1294.0],
 			[1709.0, 1347.0],
 			[1715.0, 1414.0],
 			[1708.0, 1474.0]
 		],
-		"temps": 27.71
+		"temps": 506.97
 	}, {
 		"name": "p202",
 		"couleur": "red",
 		"noeud_depart": "n76",
 		"noeud_fin": "n80",
-		"longueur": 112,
+		"longueur": 2048.78,
 		"coords": [
 			[1823.0, 1164.0],
 			[1839.0, 1275.0]
 		],
-		"temps": 16.0
+		"temps": 292.68
 	}, {
 		"name": "Super pralong",
 		"couleur": "blue",
 		"noeud_depart": "n87",
 		"noeud_fin": "bas SUISSES",
-		"longueur": 249,
+		"longueur": 4554.88,
 		"coords": [
 			[1527.0, 1190.0],
 			[1483.0, 1192.0],
 			[1366.0, 1233.0],
 			[1288.0, 1261.0]
 		],
-		"temps": 35.57
+		"temps": 650.7
 	}, {
 		"name": "p204",
 		"couleur": "green",
 		"noeud_depart": "haut COSPILLOT",
 		"noeud_fin": "bas PRALONG",
-		"longueur": 26,
+		"longueur": 475.61,
 		"coords": [
 			[1447.0, 1635.0],
 			[1473.0, 1630.0]
 		],
-		"temps": 3.71
+		"temps": 67.94
 	}, {
 		"name": "p205",
 		"couleur": "green",
 		"noeud_depart": "bas PRALONG",
 		"noeud_fin": "haut COSPILLOT",
-		"longueur": 26,
+		"longueur": 475.61,
 		"coords": [
 			[1473.0, 1630.0],
 			[1447.0, 1635.0]
 		],
-		"temps": 3.71
+		"temps": 67.94
 	}, {
 		"name": "p206",
 		"couleur": "green",
 		"noeud_depart": "n104",
 		"noeud_fin": "bas PRALONG",
-		"longueur": 58,
+		"longueur": 1060.98,
 		"coords": [
 			[1521.0, 1597.0],
 			[1473.0, 1630.0]
 		],
-		"temps": 8.29
+		"temps": 151.57
 	}, {
 		"name": "p207",
 		"couleur": "green",
 		"noeud_depart": "n103",
 		"noeud_fin": "n104",
-		"longueur": 39,
+		"longueur": 713.41,
 		"coords": [
 			[1552.0, 1573.0],
 			[1521.0, 1597.0]
 		],
-		"temps": 5.57
+		"temps": 101.92
 	}, {
 		"name": "p208",
 		"couleur": "green",
 		"noeud_depart": "n102",
 		"noeud_fin": "n103",
-		"longueur": 44,
+		"longueur": 804.88,
 		"coords": [
 			[1588.0, 1547.0],
 			[1552.0, 1573.0]
 		],
-		"temps": 6.29
+		"temps": 114.98
 	}, {
 		"name": "Bellec\u00f4te",
 		"couleur": "green",
 		"noeud_depart": "n103",
 		"noeud_fin": "n134",
-		"longueur": 345,
+		"longueur": 6310.98,
 		"coords": [
 			[1552.0, 1573.0],
 			[1545.0, 1598.0],
@@ -3262,129 +3262,129 @@
 			[1690.0, 1809.0],
 			[1752.0, 1818.0]
 		],
-		"temps": 49.29
+		"temps": 901.57
 	}, {
 		"name": "p210",
 		"couleur": "green",
 		"noeud_depart": "n102",
 		"noeud_fin": "n106",
-		"longueur": 81,
+		"longueur": 1481.71,
 		"coords": [
 			[1588.0, 1547.0],
 			[1631.0, 1540.0],
 			[1663.0, 1561.0]
 		],
-		"temps": 11.57
+		"temps": 211.67
 	}, {
 		"name": "p211",
 		"couleur": "green",
 		"noeud_depart": "n106",
 		"noeud_fin": "n108",
-		"longueur": 67,
+		"longueur": 1225.61,
 		"coords": [
 			[1663.0, 1561.0],
 			[1697.0, 1619.0]
 		],
-		"temps": 9.57
+		"temps": 175.09
 	}, {
 		"name": "p212",
 		"couleur": "green",
 		"noeud_depart": "n108",
 		"noeud_fin": "bas COQS",
-		"longueur": 86,
+		"longueur": 1573.17,
 		"coords": [
 			[1697.0, 1619.0],
 			[1783.0, 1630.0]
 		],
-		"temps": 12.29
+		"temps": 224.74
 	}, {
 		"name": "Verdons",
 		"couleur": "green",
 		"noeud_depart": "n83",
 		"noeud_fin": "bas SOURCES / ROCHER DE L'OMBRE",
-		"longueur": 204,
+		"longueur": 3731.71,
 		"coords": [
 			[1787.0, 1335.0],
 			[1784.0, 1420.0],
 			[1780.0, 1480.0],
 			[1787.0, 1539.0]
 		],
-		"temps": 29.14
+		"temps": 533.1
 	}, {
 		"name": "Marquetty",
 		"couleur": "red",
 		"noeud_depart": "n91",
 		"noeud_fin": "n89",
-		"longueur": 171,
+		"longueur": 3128.05,
 		"coords": [
 			[1540.0, 1265.0],
 			[1606.0, 1296.0],
 			[1667.0, 1375.0]
 		],
-		"temps": 24.43
+		"temps": 446.86
 	}, {
 		"name": "p215",
 		"couleur": "red",
 		"noeud_depart": "n89",
 		"noeud_fin": "n90",
-		"longueur": 107,
+		"longueur": 1957.32,
 		"coords": [
 			[1667.0, 1375.0],
 			[1708.0, 1474.0]
 		],
-		"temps": 15.29
+		"temps": 279.62
 	}, {
 		"name": "p216",
 		"couleur": "green",
 		"noeud_depart": "n90",
 		"noeud_fin": "n107",
-		"longueur": 70,
+		"longueur": 1280.49,
 		"coords": [
 			[1708.0, 1474.0],
 			[1662.0, 1527.0]
 		],
-		"temps": 10.0
+		"temps": 182.93
 	}, {
 		"name": "p217",
 		"couleur": "green",
 		"noeud_depart": "n90",
 		"noeud_fin": "bas SOURCES / ROCHER DE L'OMBRE",
-		"longueur": 102,
+		"longueur": 1865.85,
 		"coords": [
 			[1708.0, 1474.0],
 			[1787.0, 1539.0]
 		],
-		"temps": 14.57
+		"temps": 266.55
 	}, {
 		"name": "p218",
 		"couleur": "green",
 		"noeud_depart": "bas SOURCES / ROCHER DE L'OMBRE",
 		"noeud_fin": "n124",
-		"longueur": 33,
+		"longueur": 603.66,
 		"coords": [
 			[1787.0, 1539.0],
 			[1785.0, 1572.0]
 		],
-		"temps": 4.71
+		"temps": 86.24
 	}, {
 		"name": "p219",
 		"couleur": "green",
 		"noeud_depart": "n123",
 		"noeud_fin": "n124",
-		"longueur": 103,
+		"longueur": 1884.15,
 		"coords": [
 			[1875.0, 1604.0],
 			[1845.0, 1592.0],
 			[1826.0, 1568.0],
 			[1785.0, 1572.0]
 		],
-		"temps": 14.71
+		"temps": 269.16
 	}, {
 		"name": "Jardin alpin",
 		"couleur": "green",
 		"noeud_depart": "n108",
 		"noeud_fin": "n133",
-		"longueur": 219,
+		"longueur": 4006.1,
 		"coords": [
 			[1697.0, 1619.0],
 			[1689.0, 1642.0],
@@ -3393,153 +3393,153 @@
 			[1695.0, 1764.0],
 			[1758.0, 1787.0]
 		],
-		"temps": 31.29
+		"temps": 572.3
 	}, {
 		"name": "p221",
 		"couleur": "green",
 		"noeud_depart": "n133",
 		"noeud_fin": "n135",
-		"longueur": 107,
+		"longueur": 1957.32,
 		"coords": [
 			[1758.0, 1787.0],
 			[1807.0, 1784.0],
 			[1846.0, 1740.0]
 		],
-		"temps": 15.29
+		"temps": 279.62
 	}, {
 		"name": "p222",
 		"couleur": "green",
 		"noeud_depart": "n124",
 		"noeud_fin": "bas COQS",
-		"longueur": 58,
+		"longueur": 1060.98,
 		"coords": [
 			[1785.0, 1572.0],
 			[1783.0, 1630.0]
 		],
-		"temps": 8.29
+		"temps": 151.57
 	}, {
 		"name": "p223",
 		"couleur": "green",
 		"noeud_depart": "bas COQS",
 		"noeud_fin": "n135",
-		"longueur": 127,
+		"longueur": 2323.17,
 		"coords": [
 			[1783.0, 1630.0],
 			[1815.0, 1698.0],
 			[1846.0, 1740.0]
 		],
-		"temps": 18.14
+		"temps": 331.88
 	}, {
 		"name": "p224",
 		"couleur": "green",
 		"noeud_depart": "n135",
 		"noeud_fin": "bas VERDONS",
-		"longueur": 97,
+		"longueur": 1774.39,
 		"coords": [
 			[1846.0, 1740.0],
 			[1861.0, 1765.0],
 			[1854.0, 1833.0]
 		],
-		"temps": 13.86
+		"temps": 253.48
 	}, {
 		"name": "p225",
 		"couleur": "green",
 		"noeud_depart": "bas JARDIN ALPIN",
 		"noeud_fin": "bas VERDONS",
-		"longueur": 31,
+		"longueur": 567.07,
 		"coords": [
 			[1823.0, 1834.0],
 			[1854.0, 1833.0]
 		],
-		"temps": 4.43
+		"temps": 81.01
 	}, {
 		"name": "p226",
 		"couleur": "green",
 		"noeud_depart": "bas VERDONS",
 		"noeud_fin": "bas JARDIN ALPIN",
-		"longueur": 31,
+		"longueur": 567.07,
 		"coords": [
 			[1854.0, 1833.0],
 			[1823.0, 1834.0]
 		],
-		"temps": 4.43
+		"temps": 81.01
 	}, {
 		"name": "p227",
 		"couleur": "green",
 		"noeud_depart": "n134",
 		"noeud_fin": "bas JARDIN ALPIN",
-		"longueur": 72,
+		"longueur": 1317.07,
 		"coords": [
 			[1752.0, 1818.0],
 			[1823.0, 1834.0]
 		],
-		"temps": 10.29
+		"temps": 188.15
 	}, {
 		"name": "p228",
 		"couleur": "green",
 		"noeud_depart": "n134",
 		"noeud_fin": "bas BELLECOTE",
-		"longueur": 30,
+		"longueur": 548.78,
 		"coords": [
 			[1752.0, 1818.0],
 			[1780.0, 1805.0]
 		],
-		"temps": 4.29
+		"temps": 78.4
 	}, {
 		"name": "p229",
 		"couleur": "green",
 		"noeud_depart": "n136",
 		"noeud_fin": "n137",
-		"longueur": 119,
+		"longueur": 2176.83,
 		"coords": [
 			[1998.0, 1404.0],
 			[1957.0, 1388.0],
 			[1929.0, 1403.0],
 			[1910.0, 1443.0]
 		],
-		"temps": 17.0
+		"temps": 310.98
 	}, {
 		"name": "p230",
 		"couleur": "blue",
 		"noeud_depart": "n136",
 		"noeud_fin": "n137",
-		"longueur": 96,
+		"longueur": 1756.1,
 		"coords": [
 			[1998.0, 1404.0],
 			[1910.0, 1443.0]
 		],
-		"temps": 13.71
+		"temps": 250.87
 	}, {
 		"name": "p231",
 		"couleur": "green",
 		"noeud_depart": "n137",
 		"noeud_fin": "n123",
-		"longueur": 166,
+		"longueur": 3036.59,
 		"coords": [
 			[1910.0, 1443.0],
 			[1878.0, 1531.0],
 			[1875.0, 1604.0]
 		],
-		"temps": 23.71
+		"temps": 433.8
 	}, {
 		"name": "Cospillot 1",
 		"couleur": "blue",
 		"noeud_depart": "haut COSPILLOT",
 		"noeud_fin": "bas COSPILLOT",
-		"longueur": 298,
+		"longueur": 5451.22,
 		"coords": [
 			[1447.0, 1635.0],
 			[1460.0, 1682.0],
 			[1591.0, 1823.0],
 			[1625.0, 1871.0]
 		],
-		"temps": 42.57
+		"temps": 778.75
 	}, {
 		"name": "p233",
 		"couleur": "blue",
 		"noeud_depart": "bas COSPILLOT",
 		"noeud_fin": "n138",
-		"longueur": 227,
+		"longueur": 4152.44,
 		"coords": [
 			[1625.0, 1871.0],
 			[1650.0, 1867.0],
@@ -3547,108 +3547,108 @@
 			[1806.0, 1910.0],
 			[1841.0, 1926.0]
 		],
-		"temps": 32.43
+		"temps": 593.21
 	}, {
 		"name": "p234",
 		"couleur": "blue",
 		"noeud_depart": "bas VERDONS",
 		"noeud_fin": "n138",
-		"longueur": 110,
+		"longueur": 2012.2,
 		"coords": [
 			[1854.0, 1833.0],
 			[1877.0, 1878.0],
 			[1841.0, 1926.0]
 		],
-		"temps": 15.71
+		"temps": 287.46
 	}, {
 		"name": "p235",
 		"couleur": "blue",
 		"noeud_depart": "n138",
 		"noeud_fin": "n139",
-		"longueur": 49,
+		"longueur": 896.34,
 		"coords": [
 			[1841.0, 1926.0],
 			[1853.0, 1974.0]
 		],
-		"temps": 7.0
+		"temps": 128.05
 	}, {
 		"name": "p236",
 		"couleur": "blue",
 		"noeud_depart": "n138",
 		"noeud_fin": "n140",
-		"longueur": 349,
+		"longueur": 6384.15,
 		"coords": [
 			[1841.0, 1926.0],
 			[1806.0, 1972.0],
 			[1649.0, 2000.0],
 			[1763.0, 2070.0]
 		],
-		"temps": 49.86
+		"temps": 912.02
 	}, {
 		"name": "Tovets",
 		"couleur": "blue",
 		"noeud_depart": "n139",
 		"noeud_fin": "n140",
-		"longueur": 131,
+		"longueur": 2396.34,
 		"coords": [
 			[1853.0, 1974.0],
 			[1763.0, 2070.0]
 		],
-		"temps": 18.71
+		"temps": 342.33
 	}, {
 		"name": "Stade",
 		"couleur": "blue",
 		"noeud_depart": "n139",
 		"noeud_fin": "n141",
-		"longueur": 160,
+		"longueur": 2926.83,
 		"coords": [
 			[1853.0, 1974.0],
 			[1843.0, 2134.0]
 		],
-		"temps": 22.86
+		"temps": 418.12
 	}, {
 		"name": "p239",
 		"couleur": "blue",
 		"noeud_depart": "n140",
 		"noeud_fin": "n141",
-		"longueur": 104,
+		"longueur": 1902.44,
 		"coords": [
 			[1763.0, 2070.0],
 			[1833.0, 2115.0],
 			[1843.0, 2134.0]
 		],
-		"temps": 14.86
+		"temps": 271.78
 	}, {
 		"name": "p240",
 		"couleur": "blue",
 		"noeud_depart": "n140",
 		"noeud_fin": "bas GRANGETTES",
-		"longueur": 122,
+		"longueur": 2231.71,
 		"coords": [
 			[1763.0, 2070.0],
 			[1735.0, 2099.0],
 			[1683.0, 2132.0],
 			[1702.0, 2141.0]
 		],
-		"temps": 17.43
+		"temps": 318.82
 	}, {
 		"name": "p241",
 		"couleur": "blue",
 		"noeud_depart": "n141",
 		"noeud_fin": "bas TOVETS",
-		"longueur": 76,
+		"longueur": 1390.24,
 		"coords": [
 			[1843.0, 2134.0],
 			[1850.0, 2152.0],
 			[1907.0, 2158.0]
 		],
-		"temps": 10.86
+		"temps": 198.61
 	}, {
 		"name": "Grand couloir",
 		"couleur": "black",
 		"noeud_depart": "haut SAULIRE",
 		"noeud_fin": "n74",
-		"longueur": 359,
+		"longueur": 6567.07,
 		"coords": [
 			[1784.0, 680.0],
 			[1791.0, 703.0],
@@ -3658,57 +3658,57 @@
 			[1865.0, 924.0],
 			[1840.0, 1001.0]
 		],
-		"temps": 51.29
+		"temps": 938.15
 	}, {
 		"name": "MARMOTTES",
 		"couleur": "t\u00e9l\u00e9si\u00e8ges",
 		"noeud_depart": "CREUX",
 		"noeud_fin": "VIZELLE",
-		"longueur": 725,
+		"longueur": 13262.2,
 		"coords": [
 			[963.0, 1069.0],
 			[1610.0, 740.0]
 		],
-		"temps": 375.22
+		"temps": 5826.17
 	}, {
 		"name": "SUISSES",
 		"couleur": "t\u00e9l\u00e9si\u00e8ges",
 		"noeud_depart": "bas SUISSES",
 		"noeud_fin": "VIZELLE",
-		"longueur": 612,
+		"longueur": 11195.12,
 		"coords": [
 			[1288.0, 1261.0],
 			[1610.0, 740.0]
 		],
-		"temps": 326.09
+		"temps": 4927.44
 	}, {
 		"name": "SAULIRE",
 		"couleur": "t\u00e9l\u00e9ph\u00e9rique",
 		"noeud_depart": "n82",
 		"noeud_fin": "haut SAULIRE",
-		"longueur": 614,
+		"longueur": 11231.71,
 		"coords": [
 			[1751.0, 1294.0],
 			[1784.0, 680.0]
 		],
-		"temps": 115.82
+		"temps": 1081.06
 	}, {
 		"name": "VIZELLE",
 		"couleur": "t\u00e9l\u00e9cabine",
 		"noeud_depart": "n82",
 		"noeud_fin": "VIZELLE",
-		"longueur": 571,
+		"longueur": 10445.12,
 		"coords": [
 			[1751.0, 1294.0],
 			[1610.0, 740.0]
 		],
-		"temps": 155.17000000000002
+		"temps": 1800.85
 	}, {
 		"name": "BELLECOTE",
 		"couleur": "t\u00e9l\u00e9skis",
 		"noeud_depart": "bas BELLECOTE",
 		"noeud_fin": "n102",
-		"longueur": 365,
+		"longueur": 6676.83,
 		"coords": [
 			[1780.0, 1805.0],
 			[1705.0, 1798.0],
@@ -3716,419 +3716,419 @@
 			[1617.0, 1705.0],
 			[1588.0, 1547.0]
 		],
-		"temps": 156.05
+		"temps": 1817.06
 	}, {
 		"name": "ROC MUGNIER",
 		"couleur": "t\u00e9l\u00e9si\u00e8ges",
 		"noeud_depart": "PRAMERUEL",
 		"noeud_fin": "haut Roc mugnier",
-		"longueur": 535,
+		"longueur": 9786.59,
 		"coords": [
 			[937.0, 1484.0],
 			[436.0, 1295.0]
 		],
-		"temps": 292.61
+		"temps": 4315.04
 	}, {
 		"name": "AIGUILLE DU FRUIT",
 		"couleur": "t\u00e9l\u00e9si\u00e8ges",
 		"noeud_depart": "PRAMERUEL",
 		"noeud_fin": "haut AIGUILLE DU FRUIT",
-		"longueur": 479,
+		"longueur": 8762.2,
 		"coords": [
 			[937.0, 1484.0],
 			[1150.0, 1054.0]
 		],
-		"temps": 268.26
+		"temps": 3869.65
 	}, {
 		"name": "CREUX NOIRS",
 		"couleur": "t\u00e9l\u00e9si\u00e8ges",
 		"noeud_depart": "bas CREUX NOIRS",
 		"noeud_fin": "haut CREUX NOIRS",
-		"longueur": 538,
+		"longueur": 9841.46,
 		"coords": [
 			[1128.0, 898.0],
 			[1481.0, 492.0]
 		],
-		"temps": 293.90999999999997
+		"temps": 4338.9
 	}, {
 		"name": "ALTIPORT",
 		"couleur": "t\u00e9l\u00e9skis",
 		"noeud_depart": "n97",
 		"noeud_fin": "n96",
-		"longueur": 199,
+		"longueur": 3640.24,
 		"coords": [
 			[1401.0, 1624.0],
 			[1371.0, 1427.0]
 		],
-		"temps": 112.37
+		"temps": 1017.96
 	}, {
 		"name": "PRALONG",
 		"couleur": "t\u00e9l\u00e9si\u00e8ges",
 		"noeud_depart": "bas PRALONG",
 		"noeud_fin": "n87",
-		"longueur": 443,
+		"longueur": 8103.66,
 		"coords": [
 			[1473.0, 1630.0],
 			[1527.0, 1190.0]
 		],
-		"temps": 252.61
+		"temps": 3583.33
 	}, {
 		"name": "BIOLLAY",
 		"couleur": "t\u00e9l\u00e9si\u00e8ges",
 		"noeud_depart": "bas COQS",
 		"noeud_fin": "n88",
-		"longueur": 509,
+		"longueur": 9310.98,
 		"coords": [
 			[1783.0, 1630.0],
 			[1744.0, 1611.0],
 			[1650.0, 1487.0],
 			[1552.0, 1191.0]
 		],
-		"temps": 281.3
+		"temps": 4108.25
 	}, {
 		"name": "COSPILLOT",
 		"couleur": "t\u00e9l\u00e9skis",
 		"noeud_depart": "bas COSPILLOT",
 		"noeud_fin": "haut COSPILLOT",
-		"longueur": 312,
+		"longueur": 5707.32,
 		"coords": [
 			[1625.0, 1871.0],
 			[1565.0, 1831.0],
 			[1438.0, 1667.0],
 			[1447.0, 1635.0]
 		],
-		"temps": 142.11
+		"temps": 1561.93
 	}, {
 		"name": "p255",
 		"couleur": "green",
 		"noeud_depart": "n133",
 		"noeud_fin": "bas BELLECOTE",
-		"longueur": 28,
+		"longueur": 512.2,
 		"coords": [
 			[1758.0, 1787.0],
 			[1780.0, 1805.0]
 		],
-		"temps": 4.0
+		"temps": 73.17
 	}, {
 		"name": "p256",
 		"couleur": "green",
 		"noeud_depart": "bas BELLECOTE",
 		"noeud_fin": "bas JARDIN ALPIN",
-		"longueur": 51,
+		"longueur": 932.93,
 		"coords": [
 			[1780.0, 1805.0],
 			[1823.0, 1834.0]
 		],
-		"temps": 7.29
+		"temps": 133.28
 	}, {
 		"name": "p257",
 		"couleur": "blue",
 		"noeud_depart": "n127",
 		"noeud_fin": "bas LOZE",
-		"longueur": 74,
+		"longueur": 1353.66,
 		"coords": [
 			[1896.0, 1734.0],
 			[1870.0, 1784.0],
 			[1875.0, 1802.0]
 		],
-		"temps": 10.57
+		"temps": 193.38
 	}, {
 		"name": "p258",
 		"couleur": "blue",
 		"noeud_depart": "bas LOZE",
 		"noeud_fin": "bas VERDONS",
-		"longueur": 37,
+		"longueur": 676.83,
 		"coords": [
 			[1875.0, 1802.0],
 			[1854.0, 1833.0]
 		],
-		"temps": 5.29
+		"temps": 96.69
 	}, {
 		"name": "p259",
 		"couleur": "red",
 		"noeud_depart": "n161",
 		"noeud_fin": "n162",
-		"longueur": 21,
+		"longueur": 384.15,
 		"coords": [
 			[2387.0, 1624.0],
 			[2366.0, 1627.0]
 		],
-		"temps": 3.0
+		"temps": 54.88
 	}, {
 		"name": "TROIK",
 		"couleur": "t\u00e9l\u00e9skis",
 		"noeud_depart": "n174",
 		"noeud_fin": "n173",
-		"longueur": 47,
+		"longueur": 859.76,
 		"coords": [
 			[3334.0, 2087.0],
 			[3324.0, 2041.0]
 		],
-		"temps": 72.37
+		"temps": 286.25
 	}, {
 		"name": "p261",
 		"couleur": "green",
 		"noeud_depart": "n173",
 		"noeud_fin": "n174",
-		"longueur": 47,
+		"longueur": 859.76,
 		"coords": [
 			[3324.0, 2041.0],
 			[3334.0, 2087.0]
 		],
-		"temps": 6.71
+		"temps": 122.82
 	}, {
 		"name": "p262",
 		"couleur": "green",
 		"noeud_depart": "n174",
 		"noeud_fin": "bas LA TANIA/ GROS MURGER",
-		"longueur": 80,
+		"longueur": 1463.41,
 		"coords": [
 			[3334.0, 2087.0],
 			[3255.0, 2100.0]
 		],
-		"temps": 11.43
+		"temps": 209.06
 	}, {
 		"name": "GRANGETTES",
 		"couleur": "t\u00e9l\u00e9cabine",
 		"noeud_depart": "bas GRANGETTES",
 		"noeud_fin": "bas VERDONS",
-		"longueur": 343,
+		"longueur": 6274.39,
 		"coords": [
 			[1702.0, 2141.0],
 			[1854.0, 1833.0]
 		],
-		"temps": 117.17
+		"temps": 1105.73
 	}, {
 		"name": "TOVETS",
 		"couleur": "t\u00e9l\u00e9si\u00e8ges",
 		"noeud_depart": "bas TOVETS",
 		"noeud_fin": "bas VERDONS",
-		"longueur": 329,
+		"longueur": 6018.29,
 		"coords": [
 			[1907.0, 2158.0],
 			[1854.0, 1833.0]
 		],
-		"temps": 203.04
+		"temps": 2676.65
 	}, {
 		"name": "PRAZ",
 		"couleur": "t\u00e9l\u00e9cabine",
 		"noeud_depart": "bas FORET/ PRAZ",
 		"noeud_fin": "haut PRAZ",
-		"longueur": 743,
+		"longueur": 13591.46,
 		"coords": [
 			[2680.0, 2236.0],
 			[2311.0, 1914.0],
 			[2064.0, 1853.0]
 		],
-		"temps": 183.82999999999998
+		"temps": 2325.24
 	}, {
 		"name": "FORET",
 		"couleur": "t\u00e9l\u00e9si\u00e8ges",
 		"noeud_depart": "bas FORET/ PRAZ",
 		"noeud_fin": "haut FORET",
-		"longueur": 624,
+		"longueur": 11414.63,
 		"coords": [
 			[2680.0, 2236.0],
 			[2529.0, 1630.0]
 		],
-		"temps": 331.3
+		"temps": 5022.88
 	}, {
 		"name": "BOUC BLANC",
 		"couleur": "t\u00e9l\u00e9si\u00e8ges",
 		"noeud_depart": "bas STADE/ BOUC BLANC/ haut GROS MURGER",
 		"noeud_fin": "haut BOUC BLANC",
-		"longueur": 765,
+		"longueur": 13993.9,
 		"coords": [
 			[2863.0, 1812.0],
 			[2230.0, 1382.0]
 		],
-		"temps": 392.61
+		"temps": 6144.3
 	}, {
 		"name": "DOU DES LANCHES",
 		"couleur": "t\u00e9l\u00e9si\u00e8ges",
 		"noeud_depart": "bas DOU DES LANCHES",
 		"noeud_fin": "haut DOU DES LANCHES",
-		"longueur": 396,
+		"longueur": 7243.9,
 		"coords": [
 			[2614.0, 1639.0],
 			[2562.0, 1246.0]
 		],
-		"temps": 232.17
+		"temps": 3209.52
 	}, {
 		"name": "LA TANIA",
 		"couleur": "t\u00e9l\u00e9cabine",
 		"noeud_depart": "bas LA TANIA/ GROS MURGER",
 		"noeud_fin": "haut LA TANIA",
-		"longueur": 771,
+		"longueur": 14103.66,
 		"coords": [
 			[3255.0, 2100.0],
 			[2608.0, 1679.0]
 		],
-		"temps": 188.5
+		"temps": 2410.61
 	}, {
 		"name": "GROS MURGER",
 		"couleur": "t\u00e9l\u00e9skis",
 		"noeud_depart": "bas LA TANIA/ GROS MURGER",
 		"noeud_fin": "bas STADE/ BOUC BLANC/ haut GROS MURGER",
-		"longueur": 486,
+		"longueur": 8890.24,
 		"coords": [
 			[3255.0, 2100.0],
 			[2863.0, 1812.0]
 		],
-		"temps": 187.89
+		"temps": 2399.54
 	}, {
 		"name": "PLANTREY",
 		"couleur": "t\u00e9l\u00e9si\u00e8ges",
 		"noeud_depart": "bas PLANTREY",
 		"noeud_fin": "haut LOZE/PLANTREY",
-		"longueur": 512,
+		"longueur": 9365.85,
 		"coords": [
 			[2096.0, 1945.9999999999998],
 			[2245.0, 1456.0]
 		],
-		"temps": 282.61
+		"temps": 4132.110000000001
 	}, {
 		"name": "VERDONS",
 		"couleur": "t\u00e9l\u00e9cabine",
 		"noeud_depart": "bas VERDONS",
 		"noeud_fin": "n82",
-		"longueur": 548,
+		"longueur": 10024.39,
 		"coords": [
 			[1854.0, 1833.0],
 			[1815.0, 1557.0],
 			[1751.0, 1294.0]
 		],
-		"temps": 151.32999999999998
+		"temps": 1730.73
 	}, {
 		"name": "SOURCES ROCHER DE L'OMBRE",
 		"couleur": "t\u00e9l\u00e9skis",
 		"noeud_depart": "bas SOURCES / ROCHER DE L'OMBRE",
 		"noeud_fin": "haut SOURCES / ROCHER DE L'OMBRE",
-		"longueur": 285,
+		"longueur": 5213.41,
 		"coords": [
 			[1787.0, 1539.0],
 			[1862.0, 1264.0]
 		],
-		"temps": 135.0
+		"temps": 1431.95
 	}, {
 		"name": "COQS",
 		"couleur": "t\u00e9l\u00e9si\u00e8ges",
 		"noeud_depart": "bas COQS",
 		"noeud_fin": "haut COQS/CHENUS",
-		"longueur": 503,
+		"longueur": 9201.22,
 		"coords": [
 			[1783.0, 1630.0],
 			[2195.0, 1341.0]
 		],
-		"temps": 278.7
+		"temps": 4060.53
 	}, {
 		"name": "p275",
 		"couleur": "green",
 		"noeud_depart": "n105",
 		"noeud_fin": "n102",
-		"longueur": 62,
+		"longueur": 1134.15,
 		"coords": [
 			[1552.0, 1496.0],
 			[1588.0, 1547.0]
 		],
-		"temps": 8.86
+		"temps": 162.02
 	}, {
 		"name": "p276",
 		"couleur": "green",
 		"noeud_depart": "haut COQS/CHENUS",
 		"noeud_fin": "haut BOUC BLANC",
-		"longueur": 53,
+		"longueur": 969.51,
 		"coords": [
 			[2195.0, 1341.0],
 			[2230.0, 1382.0]
 		],
-		"temps": 7.57
+		"temps": 138.5
 	}, {
 		"name": "p277",
 		"couleur": "green",
 		"noeud_depart": "haut BOUC BLANC",
 		"noeud_fin": "haut LOZE/PLANTREY",
-		"longueur": 75,
+		"longueur": 1371.95,
 		"coords": [
 			[2230.0, 1382.0],
 			[2245.0, 1456.0]
 		],
-		"temps": 10.71
+		"temps": 195.99
 	}, {
 		"name": "Loze est",
 		"couleur": "green",
 		"noeud_depart": "n158",
 		"noeud_fin": "n136",
-		"longueur": 114,
+		"longueur": 2085.37,
 		"coords": [
 			[2107.0, 1438.0],
 			[1998.0, 1404.0]
 		],
-		"temps": 16.29
+		"temps": 297.91
 	}, {
 		"name": "p279",
 		"couleur": "green",
 		"noeud_depart": "haut LOZE/PLANTREY",
 		"noeud_fin": "n158",
-		"longueur": 139,
+		"longueur": 2542.68,
 		"coords": [
 			[2245.0, 1456.0],
 			[2107.0, 1438.0]
 		],
-		"temps": 19.86
+		"temps": 363.24
 	}, {
 		"name": "p280",
 		"couleur": "green",
 		"noeud_depart": "haut EPICEA",
 		"noeud_fin": "n178",
-		"longueur": 102,
+		"longueur": 1865.85,
 		"coords": [
 			[2290.0, 1741.0],
 			[2232.0, 1743.0],
 			[2199.0, 1773.0]
 		],
-		"temps": 14.57
+		"temps": 266.55
 	}, {
 		"name": "p281",
 		"couleur": "green",
 		"noeud_depart": "n178",
 		"noeud_fin": "n179",
-		"longueur": 154,
+		"longueur": 2817.07,
 		"coords": [
 			[2199.0, 1773.0],
 			[2045.0, 1777.0]
 		],
-		"temps": 22.0
+		"temps": 402.44
 	}, {
 		"name": "p282",
 		"couleur": "green",
 		"noeud_depart": "n179",
 		"noeud_fin": "n180",
-		"longueur": 83,
+		"longueur": 1518.29,
 		"coords": [
 			[2045.0, 1777.0],
 			[2019.0, 1788.0],
 			[1968.0, 1810.0]
 		],
-		"temps": 11.86
+		"temps": 216.9
 	}, {
 		"name": "p283",
 		"couleur": "green",
 		"noeud_depart": "n180",
 		"noeud_fin": "bas VERDONS",
-		"longueur": 118,
+		"longueur": 2158.54,
 		"coords": [
 			[1968.0, 1810.0],
 			[1908.0, 1810.0],
 			[1854.0, 1833.0]
 		],
-		"temps": 16.86
+		"temps": 308.36
 	}, {
 		"name": "Plantrey",
 		"couleur": "green",
 		"noeud_depart": "bas VERDONS",
 		"noeud_fin": "bas PLANTREY",
-		"longueur": 299,
+		"longueur": 5469.51,
 		"coords": [
 			[1854.0, 1833.0],
 			[1890.0, 1841.0],
@@ -4136,24 +4136,24 @@
 			[1950.0, 1918.0],
 			[2096.0, 1945.9999999999998]
 		],
-		"temps": 42.71
+		"temps": 781.36
 	}, {
 		"name": "p285",
 		"couleur": "green",
 		"noeud_depart": "bas PLANTREY",
 		"noeud_fin": "bas EPICEA",
-		"longueur": 49,
+		"longueur": 896.34,
 		"coords": [
 			[2096.0, 1945.9999999999998],
 			[2145.0, 1955.0]
 		],
-		"temps": 7.0
+		"temps": 128.05
 	}, {
 		"name": "p286",
 		"couleur": "green",
 		"noeud_depart": "haut LA TANIA",
 		"noeud_fin": "n183",
-		"longueur": 435,
+		"longueur": 7957.32,
 		"coords": [
 			[2608.0, 1679.0],
 			[2663.0, 1687.0],
@@ -4167,37 +4167,37 @@
 			[2823.0, 1867.0],
 			[2870.0, 1844.0]
 		],
-		"temps": 62.14
+		"temps": 1136.76
 	}, {
 		"name": "p287",
 		"couleur": "green",
 		"noeud_depart": "bas STADE/ BOUC BLANC/ haut GROS MURGER",
 		"noeud_fin": "n183",
-		"longueur": 32,
+		"longueur": 585.37,
 		"coords": [
 			[2863.0, 1812.0],
 			[2870.0, 1844.0]
 		],
-		"temps": 4.57
+		"temps": 83.62
 	}, {
 		"name": "p288",
 		"couleur": "green",
 		"noeud_depart": "n183",
 		"noeud_fin": "n171",
-		"longueur": 113,
+		"longueur": 2067.07,
 		"coords": [
 			[2870.0, 1844.0],
 			[2864.0, 1894.0],
 			[2831.0, 1916.0],
 			[2845.0, 1936.0]
 		],
-		"temps": 16.14
+		"temps": 295.3
 	}, {
 		"name": "p289",
 		"couleur": "green",
 		"noeud_depart": "n171",
 		"noeud_fin": "n184",
-		"longueur": 350,
+		"longueur": 6402.44,
 		"coords": [
 			[2845.0, 1936.0],
 			[2892.0, 1946.0],
@@ -4209,24 +4209,24 @@
 			[3033.0, 2047.0],
 			[3065.0, 2028.0]
 		],
-		"temps": 50.0
+		"temps": 914.63
 	}, {
 		"name": "p290",
 		"couleur": "green",
 		"noeud_depart": "n183",
 		"noeud_fin": "bas STADE/ BOUC BLANC/ haut GROS MURGER",
-		"longueur": 32,
+		"longueur": 585.37,
 		"coords": [
 			[2870.0, 1844.0],
 			[2863.0, 1812.0]
 		],
-		"temps": 4.57
+		"temps": 83.62
 	}, {
 		"name": "Plan fontaine",
 		"couleur": "green",
 		"noeud_depart": "n184",
 		"noeud_fin": "n173",
-		"longueur": 290,
+		"longueur": 5304.88,
 		"coords": [
 			[3065.0, 2028.0],
 			[3091.0, 2014.0],
@@ -4234,208 +4234,208 @@
 			[3212.0, 2007.0],
 			[3324.0, 2041.0]
 		],
-		"temps": 41.43
+		"temps": 757.84
 	}, {
 		"name": "Col de la loze",
 		"couleur": "blue",
 		"noeud_depart": "haut DOU DES LANCHES",
 		"noeud_fin": "n187",
-		"longueur": 177,
+		"longueur": 3237.8,
 		"coords": [
 			[2562.0, 1246.0],
 			[2393.0, 1300.0]
 		],
-		"temps": 25.29
+		"temps": 462.54
 	}, {
 		"name": "p293",
 		"couleur": "blue",
 		"noeud_depart": "n187",
 		"noeud_fin": "haut COQS/CHENUS",
-		"longueur": 202,
+		"longueur": 3695.12,
 		"coords": [
 			[2393.0, 1300.0],
 			[2280.0, 1331.0],
 			[2195.0, 1341.0]
 		],
-		"temps": 28.86
+		"temps": 527.87
 	}, {
 		"name": "An\u00e9mones",
 		"couleur": "blue",
 		"noeud_depart": "haut COQS/CHENUS",
 		"noeud_fin": "n145",
-		"longueur": 111,
+		"longueur": 2030.49,
 		"coords": [
 			[2195.0, 1341.0],
 			[2144.0, 1333.0],
 			[2095.0, 1368.0]
 		],
-		"temps": 15.86
+		"temps": 290.07
 	}, {
 		"name": "p295",
 		"couleur": "blue",
 		"noeud_depart": "n145",
 		"noeud_fin": "n136",
-		"longueur": 103,
+		"longueur": 1884.15,
 		"coords": [
 			[2095.0, 1368.0],
 			[1998.0, 1404.0]
 		],
-		"temps": 14.71
+		"temps": 269.16
 	}, {
 		"name": "p296",
 		"couleur": "blue",
 		"noeud_depart": "n145",
 		"noeud_fin": "n158",
-		"longueur": 71,
+		"longueur": 1298.78,
 		"coords": [
 			[2095.0, 1368.0],
 			[2107.0, 1438.0]
 		],
-		"temps": 10.14
+		"temps": 185.54
 	}, {
 		"name": "p297",
 		"couleur": "blue",
 		"noeud_depart": "n158",
 		"noeud_fin": "n157",
-		"longueur": 44,
+		"longueur": 804.88,
 		"coords": [
 			[2107.0, 1438.0],
 			[2083.0, 1476.0]
 		],
-		"temps": 6.29
+		"temps": 114.98
 	}, {
 		"name": "p298",
 		"couleur": "blue",
 		"noeud_depart": "n157",
 		"noeud_fin": "n176",
-		"longueur": 179,
+		"longueur": 3274.39,
 		"coords": [
 			[2083.0, 1476.0],
 			[2091.0, 1534.0],
 			[2039.0, 1611.0],
 			[2010.0, 1615.0]
 		],
-		"temps": 25.57
+		"temps": 467.77
 	}, {
 		"name": "p299",
 		"couleur": "blue",
 		"noeud_depart": "n176",
 		"noeud_fin": "n156",
-		"longueur": 86,
+		"longueur": 1573.17,
 		"coords": [
 			[2010.0, 1615.0],
 			[1924.0, 1615.0]
 		],
-		"temps": 12.29
+		"temps": 224.74
 	}, {
 		"name": "p300",
 		"couleur": "blue",
 		"noeud_depart": "n156",
 		"noeud_fin": "n123",
-		"longueur": 50,
+		"longueur": 914.63,
 		"coords": [
 			[1924.0, 1615.0],
 			[1875.0, 1604.0]
 		],
-		"temps": 7.14
+		"temps": 130.66
 	}, {
 		"name": "p301",
 		"couleur": "blue",
 		"noeud_depart": "haut LOZE/PLANTREY",
 		"noeud_fin": "n159",
-		"longueur": 87,
+		"longueur": 1591.46,
 		"coords": [
 			[2245.0, 1456.0],
 			[2304.0, 1521.0]
 		],
-		"temps": 12.43
+		"temps": 227.35
 	}, {
 		"name": "p302",
 		"couleur": "blue",
 		"noeud_depart": "n159",
 		"noeud_fin": "n161",
-		"longueur": 132,
+		"longueur": 2414.63,
 		"coords": [
 			[2304.0, 1521.0],
 			[2387.0, 1624.0]
 		],
-		"temps": 18.86
+		"temps": 344.95
 	}, {
 		"name": "Arolles",
 		"couleur": "blue",
 		"noeud_depart": "n161",
 		"noeud_fin": "haut FORET",
-		"longueur": 150,
+		"longueur": 2743.9,
 		"coords": [
 			[2387.0, 1624.0],
 			[2494.0, 1650.0],
 			[2529.0, 1630.0]
 		],
-		"temps": 21.43
+		"temps": 391.99
 	}, {
 		"name": "p304",
 		"couleur": "blue",
 		"noeud_depart": "haut FORET",
 		"noeud_fin": "haut LA TANIA",
-		"longueur": 111,
+		"longueur": 2030.49,
 		"coords": [
 			[2529.0, 1630.0],
 			[2577.0, 1692.0],
 			[2608.0, 1679.0]
 		],
-		"temps": 15.86
+		"temps": 290.07
 	}, {
 		"name": "p305",
 		"couleur": "blue",
 		"noeud_depart": "haut LA TANIA",
 		"noeud_fin": "bas DOU DES LANCHES",
-		"longueur": 40,
+		"longueur": 731.71,
 		"coords": [
 			[2608.0, 1679.0],
 			[2614.0, 1639.0]
 		],
-		"temps": 5.71
+		"temps": 104.53
 	}, {
 		"name": "p306",
 		"couleur": "blue",
 		"noeud_depart": "bas DOU DES LANCHES",
 		"noeud_fin": "haut LA TANIA",
-		"longueur": 40,
+		"longueur": 731.71,
 		"coords": [
 			[2614.0, 1639.0],
 			[2608.0, 1679.0]
 		],
-		"temps": 5.71
+		"temps": 104.53
 	}, {
 		"name": "p307",
 		"couleur": "blue",
 		"noeud_depart": "bas DOU DES LANCHES",
 		"noeud_fin": "bas STADE/ BOUC BLANC/ haut GROS MURGER",
-		"longueur": 310,
+		"longueur": 5670.73,
 		"coords": [
 			[2614.0, 1639.0],
 			[2737.0, 1693.0],
 			[2812.0, 1738.0],
 			[2863.0, 1812.0]
 		],
-		"temps": 44.29
+		"temps": 810.1
 	}, {
 		"name": "p308",
 		"couleur": "blue",
 		"noeud_depart": "bas STADE/ BOUC BLANC/ haut GROS MURGER",
 		"noeud_fin": "n172",
-		"longueur": 91,
+		"longueur": 1664.63,
 		"coords": [
 			[2863.0, 1812.0],
 			[2954.0, 1811.0]
 		],
-		"temps": 13.0
+		"temps": 237.8
 	}, {
 		"name": "Foly\u00e8res",
 		"couleur": "blue",
 		"noeud_depart": "n172",
 		"noeud_fin": "n173",
-		"longueur": 451,
+		"longueur": 8250.0,
 		"coords": [
 			[2954.0, 1811.0],
 			[3073.0, 1843.0],
@@ -4443,178 +4443,178 @@
 			[3271.0, 2004.0],
 			[3324.0, 2041.0]
 		],
-		"temps": 64.43
+		"temps": 1178.57
 	}, {
 		"name": "Chabichou",
 		"couleur": "blue",
 		"noeud_depart": "n180",
 		"noeud_fin": "haut PRAZ",
-		"longueur": 110,
+		"longueur": 2012.2,
 		"coords": [
 			[1968.0, 1810.0],
 			[2004.0, 1845.0],
 			[2064.0, 1853.0]
 		],
-		"temps": 15.71
+		"temps": 287.46
 	}, {
 		"name": "p311",
 		"couleur": "blue",
 		"noeud_depart": "haut PRAZ",
 		"noeud_fin": "bas PLANTREY",
-		"longueur": 135,
+		"longueur": 2469.51,
 		"coords": [
 			[2064.0, 1853.0],
 			[2099.0, 1850.0],
 			[2081.0, 1906.0],
 			[2096.0, 1945.9999999999998]
 		],
-		"temps": 19.29
+		"temps": 352.79
 	}, {
 		"name": "p312",
 		"couleur": "red",
 		"noeud_depart": "n162",
 		"noeud_fin": "n177",
-		"longueur": 118,
+		"longueur": 2158.54,
 		"coords": [
 			[2366.0, 1627.0],
 			[2252.0, 1659.0]
 		],
-		"temps": 16.86
+		"temps": 308.36
 	}, {
 		"name": "p313",
 		"couleur": "red",
 		"noeud_depart": "n177",
 		"noeud_fin": "n178",
-		"longueur": 125,
+		"longueur": 2286.59,
 		"coords": [
 			[2252.0, 1659.0],
 			[2199.0, 1773.0]
 		],
-		"temps": 17.86
+		"temps": 326.66
 	}, {
 		"name": "p314",
 		"couleur": "red",
 		"noeud_depart": "n178",
 		"noeud_fin": "bas PLANTREY",
-		"longueur": 202,
+		"longueur": 3695.12,
 		"coords": [
 			[2199.0, 1773.0],
 			[2130.0, 1870.0],
 			[2096.0, 1945.9999999999998]
 		],
-		"temps": 28.86
+		"temps": 527.87
 	}, {
 		"name": "Dou du midi",
 		"couleur": "red",
 		"noeud_depart": "bas PLANTREY",
 		"noeud_fin": "n165",
-		"longueur": 234,
+		"longueur": 4280.49,
 		"coords": [
 			[2096.0, 1945.9999999999998],
 			[2060.0, 1961.0],
 			[2010.0, 2008.0],
 			[1968.0, 2128.0]
 		],
-		"temps": 33.43
+		"temps": 611.5
 	}, {
 		"name": "p316",
 		"couleur": "red",
 		"noeud_depart": "n165",
 		"noeud_fin": "bas TOVETS",
-		"longueur": 67,
+		"longueur": 1225.61,
 		"coords": [
 			[1968.0, 2128.0],
 			[1907.0, 2158.0]
 		],
-		"temps": 9.57
+		"temps": 175.09
 	}, {
 		"name": "p317",
 		"couleur": "red",
 		"noeud_depart": "bas EPICEA",
 		"noeud_fin": "n163",
-		"longueur": 84,
+		"longueur": 1536.59,
 		"coords": [
 			[2145.0, 1955.0],
 			[2205.0, 2014.0]
 		],
-		"temps": 12.0
+		"temps": 219.51
 	}, {
 		"name": "p318",
 		"couleur": "red",
 		"noeud_depart": "n164",
 		"noeud_fin": "n163",
-		"longueur": 95,
+		"longueur": 1737.8,
 		"coords": [
 			[2271.0, 1946.0],
 			[2222.0, 1989.0],
 			[2205.0, 2014.0]
 		],
-		"temps": 13.57
+		"temps": 248.26
 	}, {
 		"name": "D\u00e9viation 1550",
 		"couleur": "red",
 		"noeud_depart": "n163",
 		"noeud_fin": "n165",
-		"longueur": 279,
+		"longueur": 5103.66,
 		"coords": [
 			[2205.0, 2014.0],
 			[2197.0, 2053.0],
 			[1968.0, 2128.0]
 		],
-		"temps": 39.86
+		"temps": 729.09
 	}, {
 		"name": "Brigues",
 		"couleur": "red",
 		"noeud_depart": "n163",
 		"noeud_fin": "n166",
-		"longueur": 161,
+		"longueur": 2945.12,
 		"coords": [
 			[2205.0, 2014.0],
 			[2252.0, 2113.0],
 			[2300.0, 2134.0]
 		],
-		"temps": 23.0
+		"temps": 420.73
 	}, {
 		"name": "p321",
 		"couleur": "red",
 		"noeud_depart": "n166",
 		"noeud_fin": "n167",
-		"longueur": 112,
+		"longueur": 2048.78,
 		"coords": [
 			[2300.0, 2134.0],
 			[2311.0, 2162.0],
 			[2392.0, 2176.0]
 		],
-		"temps": 16.0
+		"temps": 292.68
 	}, {
 		"name": "p322",
 		"couleur": "red",
 		"noeud_depart": "n167",
 		"noeud_fin": "n168",
-		"longueur": 89,
+		"longueur": 1628.05,
 		"coords": [
 			[2392.0, 2176.0],
 			[2452.0, 2243.0]
 		],
-		"temps": 12.71
+		"temps": 232.58
 	}, {
 		"name": "Amoureux",
 		"couleur": "red",
 		"noeud_depart": "n167",
 		"noeud_fin": "bas FORET/ PRAZ",
-		"longueur": 294,
+		"longueur": 5378.05,
 		"coords": [
 			[2392.0, 2176.0],
 			[2491.0, 2192.0],
 			[2680.0, 2236.0]
 		],
-		"temps": 42.0
+		"temps": 768.29
 	}, {
 		"name": "Saint bon",
 		"couleur": "red",
 		"noeud_depart": "n168",
 		"noeud_fin": "SAINT BON",
-		"longueur": 552,
+		"longueur": 10097.56,
 		"coords": [
 			[2452.0, 2243.0],
 			[2402.0, 2270.0],
@@ -4624,188 +4624,188 @@
 			[2094.0, 2454.0],
 			[2132.0, 2444.0]
 		],
-		"temps": 78.86
+		"temps": 1442.51
 	}, {
 		"name": "p325",
 		"couleur": "red",
 		"noeud_depart": "n169",
 		"noeud_fin": "bas FORET/ PRAZ",
-		"longueur": 178,
+		"longueur": 3256.1,
 		"coords": [
 			[2787.0, 2111.0],
 			[2689.0, 2174.0],
 			[2680.0, 2236.0]
 		],
-		"temps": 25.43
+		"temps": 465.16
 	}, {
 		"name": "Murettes",
 		"couleur": "red",
 		"noeud_depart": "n171",
 		"noeud_fin": "n169",
-		"longueur": 347,
+		"longueur": 6347.56,
 		"coords": [
 			[2845.0, 1936.0],
 			[2961.0, 2053.0],
 			[2787.0, 2111.0]
 		],
-		"temps": 49.57
+		"temps": 906.79
 	}, {
 		"name": "p327",
 		"couleur": "red",
 		"noeud_depart": "n170",
 		"noeud_fin": "n171",
-		"longueur": 183,
+		"longueur": 3347.56,
 		"coords": [
 			[2691.0, 1837.0],
 			[2845.0, 1936.0]
 		],
-		"temps": 26.14
+		"temps": 478.22
 	}, {
 		"name": "p328",
 		"couleur": "red",
 		"noeud_depart": "haut LA TANIA",
 		"noeud_fin": "n183",
-		"longueur": 318,
+		"longueur": 5817.07,
 		"coords": [
 			[2608.0, 1679.0],
 			[2667.0, 1683.0],
 			[2748.0, 1762.0],
 			[2870.0, 1844.0]
 		],
-		"temps": 45.43
+		"temps": 831.01
 	}, {
 		"name": "p329",
 		"couleur": "red",
 		"noeud_depart": "n183",
 		"noeud_fin": "n184",
-		"longueur": 275,
+		"longueur": 5030.49,
 		"coords": [
 			[2870.0, 1844.0],
 			[2998.0, 1921.0],
 			[3065.0, 2028.0]
 		],
-		"temps": 39.29
+		"temps": 718.64
 	}, {
 		"name": "Moretta blanche",
 		"couleur": "red",
 		"noeud_depart": "n184",
 		"noeud_fin": "bas LA TANIA/ GROS MURGER",
-		"longueur": 215,
+		"longueur": 3932.93,
 		"coords": [
 			[3065.0, 2028.0],
 			[3170.0, 2105.0],
 			[3255.0, 2100.0]
 		],
-		"temps": 30.71
+		"temps": 561.85
 	}, {
 		"name": "Lanches",
 		"couleur": "red",
 		"noeud_depart": "haut COQS/CHENUS",
 		"noeud_fin": "n182",
-		"longueur": 362,
+		"longueur": 6621.95,
 		"coords": [
 			[2195.0, 1341.0],
 			[2265.0, 1377.0],
 			[2431.0, 1497.0],
 			[2487.0, 1555.0]
 		],
-		"temps": 51.71
+		"temps": 945.99
 	}, {
 		"name": "p332",
 		"couleur": "red",
 		"noeud_depart": "n159",
 		"noeud_fin": "n160",
-		"longueur": 54,
+		"longueur": 987.8,
 		"coords": [
 			[2304.0, 1521.0],
 			[2358.0, 1520.0]
 		],
-		"temps": 7.71
+		"temps": 141.11
 	}, {
 		"name": "p333",
 		"couleur": "red",
 		"noeud_depart": "haut LOZE/PLANTREY",
 		"noeud_fin": "n160",
-		"longueur": 129,
+		"longueur": 2359.76,
 		"coords": [
 			[2245.0, 1456.0],
 			[2358.0, 1520.0]
 		],
-		"temps": 18.43
+		"temps": 337.11
 	}, {
 		"name": "Bouc blanc",
 		"couleur": "red",
 		"noeud_depart": "n160",
 		"noeud_fin": "haut FORET",
-		"longueur": 203,
+		"longueur": 3713.41,
 		"coords": [
 			[2358.0, 1520.0],
 			[2529.0, 1630.0]
 		],
-		"temps": 29.0
+		"temps": 530.49
 	}, {
 		"name": "p335",
 		"couleur": "red",
 		"noeud_depart": "n182",
 		"noeud_fin": "haut FORET",
-		"longueur": 85,
+		"longueur": 1554.88,
 		"coords": [
 			[2487.0, 1555.0],
 			[2529.0, 1630.0]
 		],
-		"temps": 12.14
+		"temps": 222.13
 	}, {
 		"name": "p336",
 		"couleur": "red",
 		"noeud_depart": "haut FORET",
 		"noeud_fin": "haut LA TANIA",
-		"longueur": 92,
+		"longueur": 1682.93,
 		"coords": [
 			[2529.0, 1630.0],
 			[2608.0, 1679.0]
 		],
-		"temps": 13.14
+		"temps": 240.42
 	}, {
 		"name": "p337",
 		"couleur": "red",
 		"noeud_depart": "haut LOZE/PLANTREY",
 		"noeud_fin": "n189",
-		"longueur": 93,
+		"longueur": 1701.22,
 		"coords": [
 			[2245.0, 1456.0],
 			[2265.0, 1547.0]
 		],
-		"temps": 13.29
+		"temps": 243.03
 	}, {
 		"name": "Petit dou",
 		"couleur": "red",
 		"noeud_depart": "n189",
 		"noeud_fin": "n179",
-		"longueur": 330,
+		"longueur": 6036.59,
 		"coords": [
 			[2265.0, 1547.0],
 			[2183.0, 1626.0],
 			[2144.0, 1725.0],
 			[2045.0, 1777.0]
 		],
-		"temps": 47.14
+		"temps": 862.37
 	}, {
 		"name": "Dou du midi 2",
 		"couleur": "red",
 		"noeud_depart": "n189",
 		"noeud_fin": "n177",
-		"longueur": 112,
+		"longueur": 2048.78,
 		"coords": [
 			[2265.0, 1547.0],
 			[2252.0, 1659.0]
 		],
-		"temps": 16.0
+		"temps": 292.68
 	}, {
 		"name": "Loze",
 		"couleur": "red",
 		"noeud_depart": "haut LOZE/PLANTREY",
 		"noeud_fin": "bas LOZE",
-		"longueur": 524,
+		"longueur": 9585.37,
 		"coords": [
 			[2245.0, 1456.0],
 			[2176.0, 1466.0],
@@ -4814,103 +4814,103 @@
 			[2036.0, 1621.0],
 			[1875.0, 1802.0]
 		],
-		"temps": 74.86
+		"temps": 1369.34
 	}, {
 		"name": "Coqs",
 		"couleur": "red",
 		"noeud_depart": "n157",
 		"noeud_fin": "n156",
-		"longueur": 215,
+		"longueur": 3932.93,
 		"coords": [
 			[2083.0, 1476.0],
 			[2043.0, 1540.0],
 			[1924.0, 1615.0]
 		],
-		"temps": 30.71
+		"temps": 561.85
 	}, {
 		"name": "p342",
 		"couleur": "red",
 		"noeud_depart": "haut BOUC BLANC",
 		"noeud_fin": "n181",
-		"longueur": 63,
+		"longueur": 1152.44,
 		"coords": [
 			[2230.0, 1382.0],
 			[2169.0, 1398.0]
 		],
-		"temps": 9.0
+		"temps": 164.63
 	}, {
 		"name": "p343",
 		"couleur": "red",
 		"noeud_depart": "haut COQS/CHENUS",
 		"noeud_fin": "n181",
-		"longueur": 62,
+		"longueur": 1134.15,
 		"coords": [
 			[2195.0, 1341.0],
 			[2169.0, 1398.0]
 		],
-		"temps": 8.86
+		"temps": 162.02
 	}, {
 		"name": "p344",
 		"couleur": "red",
 		"noeud_depart": "n181",
 		"noeud_fin": "n158",
-		"longueur": 73,
+		"longueur": 1335.37,
 		"coords": [
 			[2169.0, 1398.0],
 			[2107.0, 1438.0]
 		],
-		"temps": 10.43
+		"temps": 190.77
 	}, {
 		"name": "Chenus",
 		"couleur": "red",
 		"noeud_depart": "n158",
 		"noeud_fin": "n123",
-		"longueur": 285,
+		"longueur": 5213.41,
 		"coords": [
 			[2107.0, 1438.0],
 			[1875.0, 1604.0]
 		],
-		"temps": 40.71
+		"temps": 744.77
 	}, {
 		"name": "Jantzen",
 		"couleur": "red",
 		"noeud_depart": "n176",
 		"noeud_fin": "n127",
-		"longueur": 164,
+		"longueur": 3000.0,
 		"coords": [
 			[2010.0, 1615.0],
 			[1896.0, 1734.0]
 		],
-		"temps": 23.43
+		"temps": 428.57
 	}, {
 		"name": "p347",
 		"couleur": "red",
 		"noeud_depart": "n156",
 		"noeud_fin": "n126",
-		"longueur": 85,
+		"longueur": 1554.88,
 		"coords": [
 			[1924.0, 1615.0],
 			[1892.0, 1694.0]
 		],
-		"temps": 12.14
+		"temps": 222.13
 	}, {
 		"name": "p348",
 		"couleur": "black",
 		"noeud_depart": "haut LOZE/PLANTREY",
 		"noeud_fin": "n162",
-		"longueur": 208,
+		"longueur": 3804.88,
 		"coords": [
 			[2245.0, 1456.0],
 			[2338.0, 1591.0],
 			[2366.0, 1627.0]
 		],
-		"temps": 29.71
+		"temps": 543.55
 	}, {
 		"name": "Jean blanc 1",
 		"couleur": "black",
 		"noeud_depart": "n162",
 		"noeud_fin": "n164",
-		"longueur": 384,
+		"longueur": 7024.39,
 		"coords": [
 			[2366.0, 1627.0],
 			[2408.0, 1674.0],
@@ -4918,37 +4918,37 @@
 			[2305.0, 1886.0],
 			[2271.0, 1946.0]
 		],
-		"temps": 54.86
+		"temps": 1003.48
 	}, {
 		"name": "Jean blanc 2",
 		"couleur": "black",
 		"noeud_depart": "n164",
 		"noeud_fin": "n166",
-		"longueur": 202,
+		"longueur": 3695.12,
 		"coords": [
 			[2271.0, 1946.0],
 			[2322.0, 2045.0],
 			[2300.0, 2134.0]
 		],
-		"temps": 28.86
+		"temps": 527.87
 	}, {
 		"name": "p351",
 		"couleur": "black",
 		"noeud_depart": "haut LA TANIA",
 		"noeud_fin": "n170",
-		"longueur": 181,
+		"longueur": 3310.98,
 		"coords": [
 			[2608.0, 1679.0],
 			[2677.0, 1776.0],
 			[2691.0, 1837.0]
 		],
-		"temps": 25.86
+		"temps": 473.0
 	}, {
 		"name": "Jockeys",
 		"couleur": "black",
 		"noeud_depart": "n170",
 		"noeud_fin": "n169",
-		"longueur": 308,
+		"longueur": 5634.15,
 		"coords": [
 			[2691.0, 1837.0],
 			[2736.0, 1924.0],
@@ -4957,100 +4957,100 @@
 			[2751.0, 2038.0],
 			[2787.0, 2111.0]
 		],
-		"temps": 44.0
+		"temps": 804.88
 	}, {
 		"name": "Dou des lanches",
 		"couleur": "black",
 		"noeud_depart": "n187",
 		"noeud_fin": "n190",
-		"longueur": 265,
+		"longueur": 4847.56,
 		"coords": [
 			[2393.0, 1300.0],
 			[2392.0, 1318.0],
 			[2509.0, 1422.0],
 			[2482.0, 1509.0]
 		],
-		"temps": 37.86
+		"temps": 692.51
 	}, {
 		"name": "p354",
 		"couleur": "black",
 		"noeud_depart": "n190",
 		"noeud_fin": "n182",
-		"longueur": 46,
+		"longueur": 841.46,
 		"coords": [
 			[2482.0, 1509.0],
 			[2487.0, 1555.0]
 		],
-		"temps": 6.57
+		"temps": 120.21
 	}, {
 		"name": "p355",
 		"couleur": "black",
 		"noeud_depart": "n182",
 		"noeud_fin": "n191",
-		"longueur": 52,
+		"longueur": 951.22,
 		"coords": [
 			[2487.0, 1555.0],
 			[2539.0, 1560.0]
 		],
-		"temps": 7.43
+		"temps": 135.89
 	}, {
 		"name": "p356",
 		"couleur": "black",
 		"noeud_depart": "n190",
 		"noeud_fin": "n191",
-		"longueur": 76,
+		"longueur": 1390.24,
 		"coords": [
 			[2482.0, 1509.0],
 			[2539.0, 1560.0]
 		],
-		"temps": 10.86
+		"temps": 198.61
 	}, {
 		"name": "p357",
 		"couleur": "black",
 		"noeud_depart": "n191",
 		"noeud_fin": "bas DOU DES LANCHES",
-		"longueur": 119,
+		"longueur": 2176.83,
 		"coords": [
 			[2539.0, 1560.0],
 			[2594.0, 1581.0],
 			[2614.0, 1639.0]
 		],
-		"temps": 17.0
+		"temps": 310.98
 	}, {
 		"name": "JARDIN ALPIN",
 		"couleur": "t\u00e9l\u00e9cabine",
 		"noeud_depart": "bas JARDIN ALPIN",
 		"noeud_fin": "n101",
-		"longueur": 447,
+		"longueur": 8176.83,
 		"coords": [
 			[1823.0, 1834.0],
 			[1714.0, 1734.0],
 			[1693.0, 1645.0],
 			[1568.0, 1477.0]
 		],
-		"temps": 134.5
+		"temps": 1422.81
 	}, {
 		"name": "LOZE",
 		"couleur": "t\u00e9l\u00e9skis",
 		"noeud_depart": "bas LOZE",
 		"noeud_fin": "haut LOZE/PLANTREY",
-		"longueur": 506,
+		"longueur": 9256.1,
 		"coords": [
 			[1875.0, 1802.0],
 			[2245.0, 1456.0]
 		],
-		"temps": 193.16
+		"temps": 2495.82
 	}, {
 		"name": "CHENUS",
 		"couleur": "t\u00e9l\u00e9cabine",
 		"noeud_depart": "bas VERDONS",
 		"noeud_fin": "haut COQS/CHENUS",
-		"longueur": 598,
+		"longueur": 10939.02,
 		"coords": [
 			[1854.0, 1833.0],
 			[2195.0, 1341.0]
 		],
-		"temps": 159.67000000000002
+		"temps": 1883.17
 	}],
 	"details": {
 		"canvas_width": 3601,

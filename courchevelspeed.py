@@ -10,6 +10,7 @@ pistes = data["pistes"]
 # Parcourir chaque piste dans une boucle
 for piste in pistes:
     # Vérifier si la couleur de la piste est rouge
+    piste["longueur"] = round(piste["longueur"] * 18.29268292682927, 2)
     if piste["couleur"] in ["green", "blue", "red", "black"]:
         # Multiplier la valeur de l'attribut par 2
         piste["temps"] = round(piste["longueur"] / 7, 2)
