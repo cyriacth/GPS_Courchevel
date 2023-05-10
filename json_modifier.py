@@ -1,13 +1,11 @@
 import json
-from tkinter.filedialog import askopenfilename, asksaveasfilename
+from tkinter.filedialog import askopenfilename
 
-REQUEST = 2
+REQUEST = 3
+WRITE = True
 
 path_in = askopenfilename(initialdir="./data/")
-path_out = asksaveasfilename(initialdir="./data/", defaultextension=".json")
 
-
-WRITE = True
 with open(path_in, "r") as f:
         dico = json.load(f)
 
@@ -46,7 +44,25 @@ elif REQUEST == 2: # lissage + dup (pistes)
             except:
                 pass
 
+elif REQUEST == 3: # Précision remontée mecanique et tire-fesses
+
+    for i in range(len(dico["pistes"])):
+        if dico["pistes"][i]["couleur"] == "yellow":
+            print(f'{dico["pistes"][i]["name"]} : {dico["pistes"][i]["noeud_depart"]} vers {dico["pistes"][i]["noeud_fin"]}')
+            color_choice = input("téléphérique(1), télécabine(2), télésièges(3) et téléskis(4) ?\n")
+            if color_choice == "1":
+                dico["pistes"][i]["couleur"] = "téléphérique"
+            elif color_choice == "2":
+                dico["pistes"][i]["couleur"] = "télécabine"
+            elif color_choice == "3":
+                dico["pistes"][i]["couleur"] = "télésièges"
+            elif color_choice == "4":
+                dico["pistes"][i]["couleur"] = "téléskis"
+    print("thx")
+
 
 if WRITE:
+    print("writing")
+    path_out = "./data/" + input("save as : ") + ".json"
     with open(path_out, "w") as f:
         json.dump(dico, f, indent=2)
