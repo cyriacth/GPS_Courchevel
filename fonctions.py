@@ -9,7 +9,7 @@ def dijkstra(graph, start, end, niveau):
 
     # Boucle principale de l'algorithme
     while len(visited) != len(graph['noeuds']):
-        # Recherche du noeud non visité avec le plus petite temps
+        # Recherche du noeud non visité avec le plus petit temps
         min_temps = float('inf')
         min_node = None
         for node in graph['noeuds']:
@@ -25,6 +25,7 @@ def dijkstra(graph, start, end, niveau):
             neighbor = edge['noeud_fin']
             poids = edge['temps']
             couleur = edge['couleur']
+            liste_edge = []
 
             if couleur in ["green", "blue", "red", "black"]:
                 if niveau == "débutant":
@@ -55,6 +56,9 @@ def dijkstra(graph, start, end, niveau):
             if temps < all_temps[neighbor]:
                 all_temps[neighbor] = temps
                 predecessors[neighbor] = min_node
+                liste_edge.append[edge]
+            print(liste_edge)
+                
 
     # Construction du chemin le plus court en remontant les prédecesseurs
     path = []
