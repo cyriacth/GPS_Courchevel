@@ -6,6 +6,82 @@ from math import atan2, cos, sin, sqrt
 import json
 
 
+def dijkstra(graph, start, end, niveau):
+    # Initialisation des structures de données
+    all_temps = {node['name']: float('inf') for node in graph['noeuds']}
+    all_temps[start] = 0
+    visited = set()
+    predecessors = {}
+
+    # Boucle principale de l'algorithme
+    while len(visited) != len(graph['noeuds']):
+        # Recherche du noeud non visité avec le plus petite temps
+        min_temps = float('inf')
+        min_node = None
+        for node in graph['noeuds']:
+            if node['name'] not in visited and all_temps[node['name']] < min_temps:
+                min_temps = all_temps[node['name']]
+                min_node = node['name']
+        if min_node is None:
+            break
+        visited.add(min_node)
+
+        # Mise à jour de all_temps pour chaque voisin du noeud courant
+        for edge in get_neighbors(graph, min_node):
+            neighbor = edge['noeud_fin']
+            poids = edge['temps']
+            couleur = edge['couleur']
+
+            if couleur in ["green", "blue", "red", "black"]:
+                if niveau == "Débutant":
+                    if couleur == "green":
+                        temps = min_temps + poids
+                    elif couleur == "blue":
+                        temps = min_temps + poids*1.5
+                    elif couleur == "red":
+                        temps = min_temps + poids*2
+                    elif couleur == "black":
+                        temps = min_temps + poids*4
+                      
+                elif niveau == "Moyen":
+                    if couleur == "green":
+                        temps = min_temps + poids
+                    elif couleur == "blue":
+                        temps = min_temps + poids
+                    elif couleur == "red":
+                        temps = min_temps + poids*1.5
+                    elif couleur == "black":
+                        temps = min_temps + poids*2
+                    
+                elif niveau == "Avancé":
+                    temps = min_temps + poids
+            else:
+                temps = min_temps + poids
+
+            if temps < all_temps[neighbor]:
+                all_temps[neighbor] = temps
+                predecessors[neighbor] = min_node
+
+    # Construction du chemin le plus court en remontant les prédecesseurs
+    path = []
+    node = end
+    while node != start:
+        path.insert(0, node)
+        node = predecessors[node]
+    path.insert(0, start)
+
+    return path, all_temps[end]
+
+
+def get_neighbors(graph, node):
+    # Retourne la liste des voisins d'un noeud dans le graphe
+    neighbors = []
+    for edge in graph['pistes']:
+        if edge['noeud_depart'] == node:
+            neighbors.append(edge)
+    return neighbors
+
+
 def draw_arrow(canvas:tk.Canvas, x1, y1, x2, y2, couleur:str):
         # Dessiner une flèche isocèle entre les points (x1, y1) et (x2, y2)
         arrow_width = 5
@@ -29,33 +105,23 @@ class Noeud():
         self.x = x
         self.y = y
         self.name = name
-        self.sorties = []
-        self.entrees = []
     
-    def show(self, canvas:tk.Canvas):
+    def show(self, canvas:tk.Canvas, name:bool):
         self.canvas_id = []
         self.canvas_id.append(canvas.create_oval(self.x-7, self.y-7, self.x+7, self.y+7, fill="#ff00ff", activefill="yellow"))
-        self.canvas_id.append(canvas.create_text(self.x, self.y-15, text=self.name, font=("Arial", 10)))
-    
-    def __str__(self) -> str:
-        output = "\n#<"+self.name + ">#\nSorties :\n"
-        for piste in self.sorties:
-            output += piste.__str__()
-        output += "\nEntrées :\n"
-        for piste in self.entrees:
-            output += piste.__str__()
-        return output
+        if name:
+            self.canvas_id.append(canvas.create_text(self.x, self.y-15, text=self.name, font=("Arial", 10)))
 
 
 class Piste():
-    def __init__(self, noeud_depart:Noeud, couleur:str):
-        self.noeud_depart = noeud_depart
-        self.couleur = couleur
-        self.noeud_fin = None
-        self.coords = [(self.noeud_depart.x, self.noeud_depart.y)]
+    def __init__(self, name:str, couleur:str, coord):
+        self.name = name
+        if couleur not in ["green", "blue", "red", "black"]:
+            self.couleur = "purple"
+        else:
+            self.couleur = couleur
+        self.coords = coord
         self.canvas_id = []
-        self.longueur = 0
-        self.name = None
     
 
     def show(self, canvas:tk.Canvas):
@@ -65,28 +131,25 @@ class Piste():
             x2, y2 = self.coords[i]
             self.canvas_id.append(draw_arrow(canvas, x1, y1, x2, y2, self.couleur))
 
-    
-    def __str__(self) -> str:
-        if self.couleur != "yellow":
-            return f"'{self.noeud_depart.name}' vers '{self.noeud_fin.name}' < nom_piste : {self.name}, difficulté : {self.couleur}, longueur : {self.longueur} >\n"
-        else:
-            return f"'{self.noeud_depart.name}' vers '{self.noeud_fin.name}' via remontée {self.name} de longueur {self.longueur}\n"
 
 
 class App():
     def __init__(self, root: tk.Tk):
-        self.noeuds = []
-        self.pistes = []
-        self.mode = 1 # 1 = gps mode, 2 = other thing
 
+        with open("courchevelwithspeed.json","r") as f:
+            self.json = json.load(f)
+        self.noeuds = [Noeud(n["x"], n["y"], n["name"]) for n in self.json["noeuds"]]
+        self.pistes = [Piste(p["name"], p["couleur"], p["coords"]) for p in self.json["pistes"]]
+        self.noeud_depart = None
+
+        # Gui
         self.root = root
         self.root.geometry("1500x1080")
         self.root.title("GPS - Station de Courchevel - by Aymeric & Cyriac")
         self.image = Image.open("./data/plan-pistes.jpg")
         self.photo = ImageTk.PhotoImage(self.image)
-        self.canvas = tk.Canvas(self.root, width=1400, height=1080, bg="black", scrollregion=(0, 0, self.image.width, self.image.height))
-        self.canvas.grid(row=0, column=0, columnspan=2, sticky=tk.N+tk.S+tk.E+tk.W)
-        self.canvas.create_image(0, 0, anchor=tk.NW, image=self.photo)
+        self.canvas = tk.Canvas(self.root, width=1400, height=1080, bg="grey", scrollregion=(0, 0, self.image.width, self.image.height))
+        self.canvas.grid(row=0, column=0, columnspan=4, sticky=tk.N+tk.S+tk.E+tk.W)
         menu_bar = tk.Menu(self.root)
         self.root.config(menu=menu_bar)
         menu_bar.add_command(label="Aide", command=self.button_help)
@@ -94,18 +157,29 @@ class App():
 
         # Ajouter des barres de défilement
         self.x_scrollbar = tk.Scrollbar(self.root, orient=tk.HORIZONTAL, command=self.canvas.xview, width= 40)
-        self.x_scrollbar.grid(row=1, column=0, columnspan=2, sticky=tk.E+tk.W)
+        self.x_scrollbar.grid(row=1, column=0, columnspan=4, sticky=tk.E+tk.W)
         self.y_scrollbar = tk.Scrollbar(self.root, orient=tk.VERTICAL, command=self.canvas.yview, width= 40)
-        self.y_scrollbar.grid(row=0, rowspan=1, column=2, sticky=tk.N+tk.S)
+        self.y_scrollbar.grid(row=0, rowspan=1, column=4, sticky=tk.N+tk.S)
         self.canvas.config(xscrollcommand=self.x_scrollbar.set, yscrollcommand=self.y_scrollbar.set)
 
         # Ajouter des checkbox
         self.state_check_box_pistes = tk.BooleanVar()
+        self.state_check_box_pistes.set(False)
         self.check_box_pistes = tk.Checkbutton(self.root, text="Pistes", variable=self.state_check_box_pistes, onvalue=1, offvalue=0, command= self.refresh)
         self.check_box_pistes.grid(row=2, column=0, sticky=tk.E)
         self.state_check_box_noeuds = tk.BooleanVar()
+        self.state_check_box_noeuds.set(True)
         self.check_box_noeuds = tk.Checkbutton(self.root, text="Noeuds", variable=self.state_check_box_noeuds, onvalue=1, offvalue=0, command= self.refresh)
         self.check_box_noeuds.grid(row=2, column=1, sticky=tk.W)
+        self.state_check_box_bg = tk.BooleanVar()
+        self.state_check_box_bg.set(True)
+        self.check_box_bg = tk.Checkbutton(self.root, text="Background", variable=self.state_check_box_bg, onvalue=1, offvalue=0, command= self.refresh)
+        self.check_box_bg.grid(row=2, column=2, sticky=tk.W)
+        self.niveaux = ["Débutant", "Moyen", "Avancé"]
+        self.niveau = tk.StringVar()
+        self.niveau.set(self.niveaux[0])
+        self.option_menu_niveaux = tk.OptionMenu(self.root, self.niveau, *self.niveaux)
+        self.option_menu_niveaux.grid(row=2, column=3, sticky=tk.W)
 
         # Configurer le système de grille
         self.root.columnconfigure(0, weight=1)
@@ -114,11 +188,22 @@ class App():
         # Binding de différentes actions utilisateur
         self.canvas.bind("<Button-1>", self.left_clic)
         self.canvas.bind("<Motion>", self.canvas_cursor)
-    
+        self.refresh()
+        
 
     def refresh(self):
-        p, n = self.state_check_box_pistes.get(), self.state_check_box_noeuds.get()
-        print("pistes"*p+"noeuds"*n)
+        bg, p, n = self.state_check_box_bg.get() ,self.state_check_box_pistes.get(), self.state_check_box_noeuds.get()
+        self.canvas.delete("all")
+        name = True
+        if bg:
+            name = False
+            self.canvas.create_image(0, 0, anchor=tk.NW, image=self.photo)
+        if p:
+            for piste in self.pistes:
+                piste.show(self.canvas)
+        if n:
+            for noeud in self.noeuds:
+                noeud.show(self.canvas, name)
 
 
     def canvas_cursor(self, event):
@@ -134,11 +219,18 @@ class App():
     
 
     def left_clic(self, event):
-        """left_clic a différent comportement selon la valeur que prend self.mode"""
         cursor = event.x + self.image.width*self.x_scrollbar.get()[0], event.y + self.image.height*self.y_scrollbar.get()[0]
-        noeud = self.overlapping(cursor)
-        if self.mode == 1:
-            pass
+        if (noeud:=self.overlapping(cursor)) and not self.noeud_depart:
+            self.state_check_box_pistes.set(False)
+            self.state_check_box_noeuds.set(True)
+            self.refresh()
+            self.canvas.itemconfigure(noeud.canvas_id[0], fill="orange")
+            self.noeud_depart = noeud
+        elif noeud and self.noeud_depart:
+            self.canvas.itemconfigure(noeud.canvas_id[0], fill="orange")
+            chemin, temps = dijkstra(self.json, self.noeud_depart.name, noeud.name, self.niveau.get())
+            print(chemin, temps)
+            self.noeud_depart = None
 
 
     def overlapping(self, xy:tuple)-> Noeud | None:
@@ -148,7 +240,7 @@ class App():
             if 0 <= abs(noeud.x-xy[0]) <= 15 and 0 <= abs(noeud.y-xy[1]) <= 15:
                 return noeud
         return None
-            
+
 
 if __name__ == "__main__":
     root = tk.Tk()
