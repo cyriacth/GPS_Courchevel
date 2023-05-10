@@ -83,4 +83,4 @@ path, temps = dijkstra(graph, 'bas VERDONS', 'n90', 'avance')
 
 # Affichage du résultat
 print('Le plus court chemin est :', ' -> '.join(path)) #path est une liste
-print('Le temps total est :', temps, "secondes") #temps correspond au temps total entre les deux noeuds
+print('Le temps total est :', temps, "secondes, donc :", temps//60, "minutes") #temps correspond au temps total entre les deux noeuds
