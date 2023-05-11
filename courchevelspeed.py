@@ -9,7 +9,7 @@ pistes = data["pistes"]
 
 # Parcourir chaque piste dans une boucle
 for piste in pistes:
-    piste["longueur"] = round(piste["longueur"] * 6.097560975609757, 2)
+    piste["longueur"] = round(piste["longueur"] * 4.7, 2)
     if piste["couleur"] in ["green", "blue", "red", "black"]:
         piste["temps"] = round(piste["longueur"] / 7, 2)
     elif piste["couleur"] == "t\u00e9l\u00e9skis":
