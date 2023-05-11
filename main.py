@@ -189,7 +189,7 @@ class App():
         # Un label affichant le temps de parcourt
 
         self.var_label_temps = tk.StringVar()
-        self.var_label_temps.set("Temps de parcours approximatif ~ 0 minutes\nDistance approximative ~ 0.00 km")
+        self.var_label_temps.set("Temps de parcours approximatif ~ 0 minutes\nDistance approximative ~ 0.00 km\nPlus court chemin : XXX")
         self.label_temps = tk.Label(self.root, textvariable= self.var_label_temps)
         self.label_temps.grid(row=2, column=0, sticky=tk.W)
 
@@ -251,7 +251,7 @@ class App():
                     if string == _noeud.name:
                         _noeud.show(self.canvas, False)
             self.noeud_depart = None
-            self.var_label_temps.set(f"Temps de parcours approximatif ~ {int(temps//60)} minutes\nDistance approximative ~ {round(longueur_totale/1000, 2)} km")
+            self.var_label_temps.set(f"Temps de parcours approximatif ~ {int(temps//60)} minutes\nDistance approximative ~ {round(longueur_totale/1000, 2)} km\nPlus court chemin : {'->'.join(pistes_str)}")
 
 
     def overlapping(self, xy:tuple)-> Noeud | None:
