@@ -8,7 +8,7 @@ import json
 
 def dijkstra(graph, start, end, niveau):
     # Initialisation des structures de données
-    all_temps = {node['name']: float('inf') for node in graph['noeuds']}
+    all_temps = {node["name"]: float("inf") for node in graph["noeuds"]}
     all_temps[start] = 0
     visited = set()
     predecessors = {}
@@ -16,23 +16,23 @@ def dijkstra(graph, start, end, niveau):
 
     
     # Boucle principale de l'algorithme
-    while len(visited) != len(graph['noeuds']):
-        # Recherche du noeud non visité avec le plus petite temps
-        min_temps = float('inf')
+    while len(visited) != len(graph["noeuds"]):
+        # Recherche du noeud non visité avec le plus petit temps
+        min_temps = float("inf")
         min_node = None
-        for node in graph['noeuds']:
-            if node['name'] not in visited and all_temps[node['name']] < min_temps:
-                min_temps = all_temps[node['name']]
-                min_node = node['name']
+        for node in graph["noeuds"]:
+            if node["name"] not in visited and all_temps[node["name"]] < min_temps:
+                min_temps = all_temps[node["name"]]
+                min_node = node["name"]
         if min_node is None:
             break
         visited.add(min_node)
 
         # Mise à jour de all_temps pour chaque voisin du noeud courant
         for edge in get_neighbors(graph, min_node):
-            neighbor = edge['noeud_fin']
-            poids = edge['temps']
-            couleur = edge['couleur']
+            neighbor = edge["noeud_fin"]
+            poids = edge["temps"]
+            couleur = edge["couleur"]
 
             if couleur in ["green", "blue", "red", "black"]:
                 if niveau == "Débutant":
@@ -63,7 +63,7 @@ def dijkstra(graph, start, end, niveau):
             if temps < all_temps[neighbor]:
                 all_temps[neighbor] = temps
                 predecessors[neighbor] = min_node
-                edge_names[(min_node, neighbor)] = edge['name']
+                edge_names[(min_node, neighbor)] = edge["name"]
 
     # Construction du chemin le plus court en remontant les prédecesseurs
     path = []
@@ -81,8 +81,8 @@ def dijkstra(graph, start, end, niveau):
 def get_neighbors(graph, node):
     # Retourne la liste des voisins d'un noeud dans le graphe
     neighbors = []
-    for edge in graph['pistes']:
-        if edge['noeud_depart'] == node:
+    for edge in graph["pistes"]:
+        if edge["noeud_depart"] == node:
             neighbors.append(edge)
     return neighbors
 
