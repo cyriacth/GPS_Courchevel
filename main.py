@@ -4,6 +4,7 @@ from tkinter.simpledialog import askstring
 from PIL import Image, ImageTk
 from math import atan2, cos, sin
 import json
+import webbrowser
 
 
 def dijkstra(graph, start, end, niveau):
@@ -71,7 +72,10 @@ def dijkstra(graph, start, end, niveau):
     node = end
     while node != start:
         path.insert(0, node)
-        edge_path.insert(0, edge_names[(predecessors[node], node)])
+        try:
+            edge_path.insert(0, edge_names[(predecessors[node], node)])
+        except KeyError as e:
+            return None, None, None
         node = predecessors[node]
     path.insert(0, start)
 
@@ -190,7 +194,7 @@ class App():
 
         self.var_label_temps = tk.StringVar()
         self.var_label_temps.set("Temps de parcours approximatif ~ 0 minutes\nDistance approximative ~ 0.00 km\nPlus court chemin : XXX")
-        self.label_temps = tk.Label(self.root, textvariable= self.var_label_temps)
+        self.label_temps = tk.Label(self.root, textvariable= self.var_label_temps, wraplength=1400)
         self.label_temps.grid(row=2, column=0, sticky=tk.W)
 
         # Configurer le système de grille
@@ -223,7 +227,7 @@ class App():
 
 
     def button_github(self):
-        pass
+        webbrowser.open("https://github.com/uvsq22104322/GPS_Courchevel")
     
 
     def left_clic(self, event):
@@ -241,17 +245,21 @@ class App():
             self.canvas.itemconfigure(noeud_cliqué.canvas_id[0], fill="orange")
             noeuds_str, temps, pistes_str = dijkstra(self.json, self.noeud_depart.name, noeud_cliqué.name, self.niveau.get()) #noeuds, temps, pistes
             longueur_totale = 0
-            for string in pistes_str:
-                for _piste in self.pistes:
-                    if string == _piste.name:
-                        _piste.show(self.canvas)
-                        longueur_totale += _piste.longueur
-            for string in noeuds_str:
-                for _noeud in self.noeuds:
-                    if string == _noeud.name:
-                        _noeud.show(self.canvas, False)
             self.noeud_depart = None
-            self.var_label_temps.set(f"Temps de parcours approximatif ~ {int(temps//60)} minutes\nDistance approximative ~ {round(longueur_totale/1000, 2)} km\nPlus court chemin : {'->'.join(pistes_str)}")
+            if noeuds_str and temps and pistes_str:
+                for string in pistes_str:
+                    for _piste in self.pistes:
+                        if string == _piste.name:
+                            _piste.show(self.canvas)
+                            longueur_totale += _piste.longueur
+                for string in noeuds_str:
+                    for _noeud in self.noeuds:
+                        if string == _noeud.name:
+                            _noeud.show(self.canvas, False)
+                str_path = '->'.join(pistes_str)
+                self.var_label_temps.set(f"Temps de parcours approximatif ~ {int(temps//60)} minutes\nDistance approximative ~ {round(longueur_totale/1000, 2)} km\nPlus court chemin : {str_path}")
+            else:
+                self.var_label_temps.set("Ce chemin est impossible !")
 
 
     def overlapping(self, xy:tuple)-> Noeud | None:
