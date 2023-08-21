@@ -1,5 +1,4 @@
 import tkinter as tk
-#from tkinter.filedialog import askopenfilename, asksaveasfilename
 from tkinter.simpledialog import askstring
 from PIL import Image, ImageTk
 from math import atan2, cos, sin
