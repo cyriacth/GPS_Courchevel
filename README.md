@@ -47,7 +47,7 @@ python main.py
 
 ## Screenshots
 
-_Insert relevant screenshots of the application interface here._
+![image](https://github.com/uvsq22104322/GPS_Courchevel/assets/91068737/ac5c1810-c1f1-48ba-8cca-7f8d64a90280)
 
 ## Contributing
 
